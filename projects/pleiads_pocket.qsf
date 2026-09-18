@@ -842,3 +842,21 @@ set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to dram_we_n
 # ==============================================================================
 set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "core_top:ic|tp84_core:tp|tp84_main:u_main|cpu_e"
 set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to "core_top:ic|tp84_core:tp|tp84_main:u_main|cpu_q"
+
+# ==============================================================================
+# DSP balancing.
+#
+# The two sound sections between them ask for 79 DSP blocks on a device with
+# 66, while using 40% of the logic. The envelope steps are the bulk of it --
+# each is a 16x24 multiply and there are five in Pleiads' effects board and two
+# in Phoenix's noise board, none of them shared, because a SystemVerilog
+# function is inlined at every call site.
+#
+# Sequencing them through one datapath would be the tidier fix and there is
+# ample time to do it: each block computes one sample every 917 system clocks
+# and uses one. But the resource that is short is DSP blocks and the resource
+# that is spare is logic, so the cheaper answer is to say so and let the
+# synthesiser move these multipliers into LUTs.
+# ==============================================================================
+set_global_assignment -name DSP_BLOCK_BALANCING "Logic Elements" -entity pleiads_sound
+set_global_assignment -name DSP_BLOCK_BALANCING "Logic Elements" -entity phoenix_noise

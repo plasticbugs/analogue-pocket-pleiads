@@ -1,9 +1,17 @@
 // The board's audio section: the melody chip, the effects board, the mixer,
 // and the handover to the platform's audio clock.
 //
-// The two sound sources run at different rates -- the melody chip at its own
-// 15808 Hz, the effects board at 48 kHz -- so the melody is interpolated up
-// rather than held. Holding it measured 44% too much energy above 4 kHz
+// The two games have different sound sections and this picks between them.
+//
+//   Pleiads  a TMS3615 sounding single notes, plus an analogue effects board
+//            of four 556 tones, a noise source and five RC envelopes.
+//   Phoenix  an MM6221AA playing one of three built-in melodies, a custom
+//            board that makes only noise, and a discrete netlist of two
+//            555-based effect generators.
+//
+// The melody chip runs at its own rate in both -- 15808 Hz for Pleiads,
+// 23808 Hz for Phoenix -- while everything else is at 48 kHz, so the melody is
+// interpolated up rather than held. Holding it measured 44% too much energy above 4 kHz
 // against MAME, which resamples with a filter; interpolating lands at 76% of
 // it, closer, and costs one multiply.
 //
@@ -51,50 +59,52 @@ module phoenix_audio #(
     assign dbg_tms = tms_sample;
     assign dbg_fx  = fx_sample;
     // ------------------------------------------------------------- melody chip
-    // Pleiads' TMS3615 has decays 0.33, 0.33, 0, 0.33, 0, 0.33 -- so
-    // 32767/0.33 = 99293 on voices 0, 1, 3 and 5.
     logic [15:0] tms_sample;
     logic        tms_tick;
     logic [7:0]  tms_phase;
-    logic        note_we;
-    logic [1:0]  note_octave;
+    logic        note_we, tune_we;
+    logic [1:0]  note_octave, tune_num;
     logic [3:0]  note_value;
 
-    tms36xx #(
-        .CLK_HZ(CLK_HZ), .TMS_CLK(247),
-        .DECAY0(99293), .DECAY1(99293), .DECAY2(0),
-        .DECAY3(99293), .DECAY4(0),     .DECAY5(99293)
-    ) u_tms (
-        .clk(clk), .reset(reset),
+    tms36xx #(.CLK_HZ(CLK_HZ)) u_tms (
+        .clk(clk), .reset(reset), .is_phoenix(is_phoenix),
         .note_we(note_we), .note_octave(note_octave), .note_value(note_value),
+        .tune_we(tune_we), .tune_num_in(tune_num),
         .sample(tms_sample), .sample_tick(tms_tick), .phase8(tms_phase),
         .dbg_freq0(dbg_freq0), .dbg_vol0(dbg_vol0)
     );
 
-    // A write to sound latch B is a note write: the low four bits are the note
-    // and bits 7:6 pick one of three clock inputs. Two of the four encodings
-    // are the same because IC2 and IC3 are tied together.
+    // A write to sound latch B means different things to the two boards.
+    //
+    //   Pleiads  the low four bits are a note and bits 7:6 pick one of three
+    //            clock inputs; two of the four encodings are the same because
+    //            IC2 and IC3 are tied together.
+    //   Phoenix  bits 7:6 select which of the three built-in tunes plays.
+    //
+    // Registered on the way in for the same reason the effects boards are:
+    // keep every path inside the sound section starting and ending there, so
+    // the SDC can describe it.
     logic [7:0] snd_b_q, snd_b_r;
     always_ff @(posedge clk) begin
-        // Registered on the way in for the same reason the effects board does
-        // it: keep every path inside the sound section starting and ending
-        // there, so the SDC can describe it.
         snd_b_r <= snd_b;
         if (reset) begin
-            snd_b_q <= 8'd0; note_we <= 1'b0;
+            snd_b_q <= 8'd0; note_we <= 1'b0; tune_we <= 1'b0;
         end else begin
             note_we <= 1'b0;
+            tune_we <= 1'b0;
             if (snd_b_r != snd_b_q) begin
                 snd_b_q     <= snd_b_r;
                 note_value  <= snd_b_r[3:0];
                 note_octave <= (snd_b_r[7:6] == 2'd3) ? 2'd2 : snd_b_r[7:6];
-                note_we     <= 1'b1;
+                tune_num    <= snd_b_r[7:6];
+                note_we     <= ~is_phoenix;
+                tune_we     <=  is_phoenix;
                 dbg_notes   <= ~dbg_notes;
             end
         end
     end
 
-    // ----------------------------------------------------------- effects board
+    // ------------------------------------------------- Pleiads' effects board
     logic signed [17:0] fx_sample;
     logic               fx_tick;
 
@@ -106,10 +116,31 @@ module phoenix_audio #(
         .dbg_poly(dbg_poly), .dbg_pa6(dbg_pa6), .dbg_pc5(dbg_pc5), .dbg_pa5(dbg_pa5)
     );
 
+    // ------------------------------------- Phoenix's noise board and effects
+    logic [16:0]        nz_sample;
+    logic               nz_tick;
+    logic signed [17:0] px_sample;
+    logic               px_tick;
+
+    phoenix_noise #(.CLK_HZ(CLK_HZ), .RATE(RATE)) u_nz (
+        .clk(clk), .reset(reset), .latch_a(snd_a),
+        .sample(nz_sample), .sample_tick(nz_tick)
+    );
+
+    phoenix_effects #(.CLK_HZ(CLK_HZ), .RATE(RATE)) u_px (
+        .clk(clk), .reset(reset), .latch_a(snd_a), .latch_b(snd_b),
+        .sample(px_sample), .sample_tick(px_tick)
+    );
+
     // ------------------------------------------------------------------- mixer
-    // MAME routes the melody at 0.75 and the effects at 0.40 into one speaker.
-    localparam int G_TMS = 49152;       // 0.75 in 0.16
-    localparam int G_FX  = 26214;       // 0.40 in 0.16
+    // MAME's route gains into the one speaker:
+    //   Pleiads  melody 0.75, effects 0.40
+    //   Phoenix  melody 0.50, noise 0.40, discrete effects 0.60
+    localparam int G_TMS_P = 49152;     // 0.75 in 0.16
+    localparam int G_FX_P  = 26214;     // 0.40
+    localparam int G_TMS_X = 32768;     // 0.50
+    localparam int G_NZ_X  = 26214;     // 0.40
+    localparam int G_PX_X  = 39322;     // 0.60
 
     logic [15:0] tms_prev, tms_cur;
     always_ff @(posedge clk) begin
@@ -117,11 +148,22 @@ module phoenix_audio #(
         else if (tms_tick) begin tms_prev <= tms_cur; tms_cur <= tms_sample; end
     end
 
-    logic signed [15:0] fx_clamped;
+    logic signed [15:0] fx_clamped, px_clamped;
     always_comb begin
         if      (fx_sample >  18'sd32767) fx_clamped =  16'sd32767;
         else if (fx_sample < -18'sd32768) fx_clamped =  16'sh8000;
         else                              fx_clamped =  16'(fx_sample);
+        if      (px_sample >  18'sd32767) px_clamped =  16'sd32767;
+        else if (px_sample < -18'sd32768) px_clamped =  16'sh8000;
+        else                              px_clamped =  16'(px_sample);
+    end
+
+    // The noise board's output is 0..65534, unipolar as MAME's is, and MAME
+    // halves it before clamping.
+    logic signed [15:0] nz_clamped;
+    always_comb begin
+        automatic logic [16:0] h = nz_sample >> 1;
+        nz_clamped = (h > 17'd32767) ? 16'sd32767 : 16'($signed({1'b0, h[15:0]}));
     end
 
     always_ff @(posedge clk) begin
@@ -129,7 +171,7 @@ module phoenix_audio #(
             sample <= '0; sample_tick <= 1'b0;
         end else begin
             sample_tick <= 1'b0;
-            if (fx_tick) begin
+            if (is_phoenix ? nz_tick : fx_tick) begin
                 logic signed [31:0] interp, delta;
                 logic signed [47:0] mixed;
                 // prev + (cur - prev) * phase / 256.
@@ -144,7 +186,12 @@ module phoenix_audio #(
                 delta  = $signed({16'd0, tms_cur}) - $signed({16'd0, tms_prev});
                 interp = $signed({16'd0, tms_prev})
                        + ((delta * $signed({24'd0, tms_phase})) >>> 8);
-                mixed = (interp * G_TMS + 48'($signed(fx_clamped)) * G_FX) >>> 16;
+                mixed = is_phoenix
+                      ? ((interp * G_TMS_X
+                          + 48'($signed(nz_clamped)) * G_NZ_X
+                          + 48'($signed(px_clamped)) * G_PX_X) >>> 16)
+                      : ((interp * G_TMS_P
+                          + 48'($signed(fx_clamped)) * G_FX_P) >>> 16);
                 if      (mixed >  48'sd32767) sample <=  16'sd32767;
                 else if (mixed < -48'sd32768) sample <=  16'sh8000;
                 else                          sample <= 16'(mixed);

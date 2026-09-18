@@ -375,3 +375,96 @@ Two things to know if you ever decode one:
 `tools/make_icon.py` and `tools/make_platform_image.py` encode both formats and
 round-trip through the same decoder that read the existing files. They are
 tooling, not content -- nothing they produce is shipped.
+
+## Phoenix's sound
+
+Phoenix is the same board as Pleiads with a different sound section, and the
+core originally gave it Pleiads'. On hardware that was not subtly wrong, it was
+wrong: measured against MAME, correlation **−0.725** and essentially no AC
+content at all — Pleiads' tone 1 sat at DC because Phoenix's latch values never
+disable it the way Pleiads' do.
+
+Phoenix has three sources where Pleiads has two:
+
+| | |
+|---|---|
+| melody | **MM6221AA** playing one of three built-in tunes, picked by latch B bits 7:6. MAME uses the same TMS36XX device as Pleiads but in tune mode, at 372 Hz rather than 247, with decays 0.50 and 1.05 on voices 0 and 3 and a tune speed of 0.21 |
+| noise | a custom board that, unlike Pleiads', makes **only** noise — two RC envelopes on latch A bits 6 and 7 set its rate and level, and a 4006 shift register makes the noise |
+| effects | a **discrete netlist** of two 555-based generators driven by the low bits of both latches |
+
+### The melody was the whole of what was missing
+
+Latch B reads `CF` and `0F` — tune 3 and silence. The core fed those to the
+single-note path, where MAME's `note > 12` check discards them, so **no music
+played at all**. Melody and noise alone took correlation from −0.725 to +0.886.
+
+### DISCRETE_NOTE's off state (cost a round)
+
+The two effects are counters preloaded from the latch, and the obvious reading
+is that the output frequency is `clock / ((16 - data) * 2)`, so data 15 is the
+fastest tone. It is the opposite. MAME's counter does not run at all when the
+preload equals the maximum:
+
+```c
+if (DSS_NOTE__DATA != DSS_NOTE__MAX1) { ...count... }
+```
+
+Data 15 is **silence**, and both effects sit there for most of a game —
+measured over 20 seconds of play, effect 1 is armed 0.1% of the time and effect
+2 is 32%. Running the counter anyway put 128× too much energy above 4 kHz into
+the mix and dragged the correlation down by a third.
+
+### Frequency, not capacitors
+
+MAME simulates each 555 at the capacitor, integrating the charge and discharge
+exponentials and resolving edges to sub-sample precision. Every 555 here is a
+*clock* whose divided output is what reaches the speaker, so the core works in
+frequency instead — `tools/gen_555_lut.py` tabulates
+
+```
+t_high = (R1 + R2) * C * ln((Vch - Vcv/2) / (Vch - Vcv))
+t_low  =       R2  * C * ln(2)
+```
+
+against control voltage, and a phase accumulator does the rest. The capacitor
+waveform is never heard.
+
+Anti-aliasing is 4× oversampling rather than MAME's energy output, because the
+energy fraction needs a divide by a *variable* phase step; Quartus builds that
+as a real divider and it took the design from 54 DSP blocks to 81 on a device
+with 66. A box average over four ticks at 192 kHz costs two adders and sounds
+the same.
+
+### Where it ended up
+
+| | RTL vs MAME | reference vs MAME | RTL vs reference |
+|---|---|---|---|
+| correlation, first 4 s | **+0.889** | +0.908 | **+0.984** |
+| overall RMS | 0.86 | 0.87 | 1.00 |
+| 20–200 Hz | 1.01 | 1.01 | 1.00 |
+| 200–600 Hz | 0.99 | 0.99 | 1.00 |
+| 600–1500 Hz | 1.17 | 1.16 | 1.01 |
+| 1500–4000 Hz | 1.03 | 0.98 | 1.05 |
+| 4000–12000 Hz | 1.12 | 0.80 | 1.41 |
+
+The effects' level is **calibrated, not derived**: the netlist's own 40000
+final gain into MAME's discrete output does not survive being reasoned about,
+so it was fitted instead — 0.25 minimises the mean |log| band-energy ratio over
+600 Hz–12 kHz across four windows where the effect is armed, taking it from
+1.254 to 0.815.
+
+Global correlation is the wrong metric for these effects and was nearly a
+trap: adding them *lowers* it, because an oscillator free-running against
+MAME's is phase-incoherent even when its content is right. In the windows where
+effect 2 is actually armed, the upper bands go from 0.23 and 0.38 without it to
+0.95 and 1.16 with it. That is what gets heard.
+
+### Fitting it
+
+The two sound boards between them wanted 79 DSP blocks on a device with 66,
+while using 40% of the logic — five unshared envelope multipliers in Pleiads'
+board and two in Phoenix's, because a SystemVerilog function is inlined at
+every call site. Sequencing them through one datapath would be tidier and there
+is ample time for it, but the short resource was DSP blocks and the spare one
+was logic, so the QSF says so and the synthesiser moves those multipliers into
+LUTs: 23 DSP blocks and 12 660 ALMs.

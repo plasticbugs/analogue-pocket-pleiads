@@ -14,7 +14,8 @@ if [ ! -x "$OBJ/Vphoenix_audio" ] || [ -n "$(find rtl sim -newer "$OBJ/Vphoenix_
         -Wall -Wno-DECLFILENAME -Wno-UNUSEDSIGNAL -Wno-UNUSEDPARAM \
         -Wno-WIDTHTRUNC -Wno-WIDTHEXPAND -Wno-BLKSEQ -Wno-MULTIDRIVEN -Wno-PINCONNECTEMPTY \
         -Irtl --Mdir "$OBJ" -CFLAGS "-O2" --top-module phoenix_audio \
-        rtl/tms36xx.sv rtl/pleiads_sound.sv rtl/phoenix_audio.sv \
+        rtl/tms36xx.sv rtl/pleiads_sound.sv rtl/phoenix_noise.sv \
+        rtl/phoenix_effects.sv rtl/phoenix_audio.sv \
         sim/tb_audio.cpp >/dev/null
 fi
 
@@ -27,9 +28,13 @@ if [ ! -f "build/snd_$GAME.txt" ] || [ ! -f "build/mame_$GAME.wav" ] || [ "${REG
 fi
 
 echo "reference model..."
-python3 tools/sound_model.py "build/snd_$GAME.txt" "build/ref_$GAME.wav" "$SECS" >/dev/null
+if [ "$GAME" = "phoenix" ]; then
+    python3 tools/sound_model_phoenix.py "build/snd_$GAME.txt" "build/ref_$GAME.wav" "$SECS" >/dev/null
+else
+    python3 tools/sound_model.py "build/snd_$GAME.txt" "build/ref_$GAME.wav" "$SECS" >/dev/null
+fi
 echo "RTL..."
-"$OBJ/Vphoenix_audio" "build/snd_$GAME.txt" "build/rtl_$GAME.wav" "$SECS"
+PL_GAME="$GAME" "$OBJ/Vphoenix_audio" "build/snd_$GAME.txt" "build/rtl_$GAME.wav" "$SECS"
 
 echo
 echo "=== RTL against MAME ==="
