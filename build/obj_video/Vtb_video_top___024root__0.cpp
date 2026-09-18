@@ -344,7 +344,7 @@ void Vtb_video_top___024root___nba_sequent__TOP__0(Vtb_video_top___024root* vlSe
     if (vlSelfRef.reset) {
         __Vdly__tb_video_top__DOT__u_video__DOT__phase = 0U;
         __Vdly__hcnt = 0U;
-        __Vdly__vcnt = 0U;
+        __Vdly__vcnt = 0xd0U;
         vlSelfRef.de = 0U;
         vlSelfRef.vblank = 1U;
         vlSelfRef.hblank = 1U;

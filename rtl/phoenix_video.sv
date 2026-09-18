@@ -85,7 +85,13 @@ module phoenix_video #(
         if (reset) begin
             phase <= '0;
             hcnt  <= '0;
-            vcnt  <= '0;
+            // Start at the top of vblank, not at the top of the picture.
+            // MAME's screen does, and the full-system bench compares bus
+            // transactions from reset against MAME's -- the game polls vblank
+            // within the first 6700 T-states, so a 48-line phase difference
+            // makes the two diverge there and nowhere useful. On hardware the
+            // phase at power-on is arbitrary and nothing depends on it.
+            vcnt  <= 8'(VACTIVE);
         end else begin
             phase <= phase + 3'd1;
             if (phase == 3'd7) begin

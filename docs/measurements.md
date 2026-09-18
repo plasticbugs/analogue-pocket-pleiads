@@ -89,3 +89,55 @@ connection as a 1 Ω resistor, which swamps the 270 Ω low bit.
 Pleiads never writes a non-zero scroll in any capture taken so far; the
 background scroll path is covered by Phoenix instead. Both games agree with
 MAME to zero pixels across 14 states.
+
+## MAME's screen starts in vblank
+
+At CPU reset MAME's screen is at the **start of vblank** (line 208), not at
+line 0. Measured by logging every DSW0 read with the time it happened and
+looking at where bit 7 changes: the transitions to 0 land exactly 48 lines
+before a naive `t x 5.5MHz / 352` line count would put them.
+
+This matters only for the full-system bench. The core starts its raster at the
+same place so the two agree from reset; on hardware the power-on phase is
+arbitrary and nothing depends on it.
+
+## The address decode (cost a round, and would have cost a build)
+
+The board decodes A14 down to A11. Getting A12 out of the decode made
+`sel_vram` cover `4000-5FFF` instead of `4000-4FFF`, and shifted every register
+up one block -- so a write to sound control A at `6000` landed on the video
+register, whose bit 0 is the video RAM page select. The game's scratch RAM
+silently switched pages mid-frame.
+
+Nothing in the video regression could see this: that bench sets the video
+registers directly and never exercises the CPU's decode. The bus trace found
+it at transaction 50668, as a read of `438D` returning 00 where MAME returned
+0F -- a value that had been correctly written 37000 transactions earlier.
+
+## What the bus trace can and cannot prove
+
+Against MAME, from reset, with the same ROM:
+
+| | transactions identical |
+|---|---|
+| Pleiads | 53 004 |
+| Phoenix | 100 985 |
+
+Both then diverge at a DSW0 read, in bit 7 only. That is not a fault. MAME
+executes a whole instruction and charges its cycles afterwards, so when the
+game reads DSW0 the screen's vblank line is evaluated as of the instruction's
+*start*. Real hardware, and this core, sample it three or four T-states in.
+The offset is fixed, not accumulating; it only becomes visible when a vblank
+edge lands inside that window, and then the polling loop runs one extra
+iteration and the two are no longer comparable -- they are running the same
+program from different loop counts.
+
+The timing half of the check is therefore separate and exact:
+`tools/check_cycles.py` parses `lut_cycles_8085` straight out of
+`ref/mame/i8085.cpp` and compares it against the T-states the RTL actually
+spent on every instruction it executed, taken-branch extras included.
+
+| | instructions checked | opcodes exercised | mismatches |
+|---|---|---|---|
+| Pleiads | 131 393 | 75 | 0 |
+| Phoenix | 135 027 | 71 | 0 |
