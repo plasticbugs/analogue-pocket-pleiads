@@ -335,3 +335,15 @@ Two changes, either of which would have done, and both are worth having:
   than at each block inside it. Everything in there is paced by a sample tick
   917 clocks apart, so naming the boundary once is both truer and harder to get
   wrong than naming each block and hoping the list is complete.
+
+### After the fix
+
+| | before | after |
+|---|---|---|
+| clk_sys setup slack | **−19.129 ns** | **+8.844 ns** |
+| total negative slack | −1167.877 ns | 0.000 ns |
+| logic (ALMs) | 5,443 / 18,480 | 5,359 / 18,480 |
+| DSP blocks | 54 / 66 | 54 / 66 |
+
+No negative slack on any clock at any corner — setup, hold or minimum pulse
+width, at 0 °C and 85 °C.

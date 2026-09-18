@@ -31,3 +31,4 @@ projects/db/
 projects/incremental_db/
 projects/*.qws
 build/
+release/

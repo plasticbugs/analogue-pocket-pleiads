@@ -12,9 +12,10 @@ a couple of video-register bits, so the gateware sums the 16 KB program region
 as the image loads and recognises which game it has.
 
 > **Status: in progress.** The core boots both ROMs, runs the games, produces
-> MAME's exact picture and reproduces its audio. It compiles for the Pocket but
-> has not been run on hardware, and Phoenix's sound section is still Pleiads'.
-> There is no release to install yet.
+> MAME's exact picture and reproduces its audio. It compiles clean for the
+> Pocket — 29% of the logic, timing met with 8.8 ns to spare — but has not been
+> run on hardware, and Phoenix's sound section is still Pleiads'. There is no
+> release to install yet.
 
 ## How it is being built
 
@@ -42,8 +43,12 @@ Following `METHODOLOGY.md`, which is the write-up from a previous core:
 | CPU cycle counts vs MAME | 131 393 instructions, 0 wrong | 135 027, 0 wrong |
 | **End to end: core plays the game** | **4/4 frames, 0 px** | **3/3 frames, 0 px** |
 | Audio vs MAME | **correlation +1.0000** | uses Pleiads' sound |
-| Pocket integration | compiles | compiles |
+| Pocket integration | compiles, timing met | compiles, timing met |
 | Run on hardware | not yet | not yet |
+
+On a Cyclone V 5CEBA4: 5,359 of 18,480 ALMs (29%), 54 of 66 DSP blocks, 47 of
+308 RAM blocks, and no negative slack on any clock at any corner — setup, hold
+or minimum pulse width.
 
 "End to end" means the core is given nothing but the ROM image, boots it, runs
 the game's own code for up to 1800 frames, and its own video output is diffed
