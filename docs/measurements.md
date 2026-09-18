@@ -159,3 +159,58 @@ it stands at the *end* of a frame while the core renders during one. The
 matching offset starts at 4 frames and converges to 1 by frame 1800, which is
 those two effects and nothing else. The bench captures a window and requires an
 exact match somewhere in it.
+
+## Sound: what the target actually is
+
+Pleiads' sound is two devices and neither can be matched bit for bit, for
+reasons that are worth stating plainly rather than discovering later.
+
+The melody is an Epson **7910E multi-melody IC whose ROM has never been
+dumped**. MAME substitutes a TMS3615 with hand-picked parameters and flags the
+driver `MACHINE_IMPERFECT_SOUND` because of it. That stand-in is the best
+reference anyone has, and it is what this core targets.
+
+The effects are an **analogue board** — four 556-timer tones, a noise source
+and five RC envelope followers — which MAME models behaviourally, with its
+author's own comments marking most component values unknown (`10u??`,
+`330K??`). Matching MAME is achievable and checkable; matching the 1981 board
+is not, without a board to measure.
+
+So the bar is METHODOLOGY §4's: same command stream, same window, compare
+level and spectral balance. `tools/sound_model.py` is a literal port of MAME's
+model and `tools/compare_audio.py` holds it to MAME's own recording of the
+same 20 seconds of play:
+
+| measure | ratio to MAME |
+|---|---|
+| overall RMS | 0.98 |
+| RMS per 4 s window | 0.89 – 1.09 |
+| 20–200 Hz | 1.03 |
+| 200–600 Hz | 1.17 |
+| 600–1500 Hz | 0.96 |
+| 1500–4000 Hz | 0.91 |
+| 4000–12000 Hz | 0.76 |
+| **waveform correlation, first 4 s** | **+0.89** |
+
+The correlation is the number that matters: +0.89 says this is substantially
+the same waveform, not merely a similar-sounding noise with the same energy.
+
+The top band is resampling, not the model. The melody chip runs at its own
+15808 Hz and has to reach 48 kHz. Holding each sample gave 1.44 in that band;
+linear interpolation gives 0.76; MAME resamples with a filter and sits between
+them. Linear interpolation is the closer of the two and is one multiply-add in
+gateware, so that is what the core does.
+
+### Quirks reproduced deliberately
+
+MAME's model has several things that look like slips. They change the sound, and
+MAME is what we are matching, so the port reproduces them and marks each one:
+
+- `tone3` takes its step count from **tone2's** counter, not its own.
+- `tone3` divides the modulation level by **33768**, not 32768.
+- `tone3`, `update_c_pc5` and `update_c_pa5` add one sample period to their
+  counter where the corresponding charge paths add *n*.
+- `tone1` reuses its `max_freq` field as the divider's counter.
+- `update_c_pa6`'s discharge path uses a hard-coded 0.1 s constant rather than
+  the `discharge_time` in its own struct, and only runs while the polynomial
+  bit is high.

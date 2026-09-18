@@ -1,0 +1,23 @@
+build/mame_pleiads.wav vs build/ref_pleiads.wav: 960000 samples at 48000 Hz (20.0 s)
+
+                            A            B      B/A
+peak                    32767        29693    0.906
+rms                    7925.0       7755.1    0.979
+
+RMS over 4 s windows:
+    window          A          B      B/A
+        0s     6553.0     6463.3    0.986
+        4s     6414.5     6443.4    1.005
+        8s     9434.4     8366.3    0.887
+       12s     7257.0     7843.2    1.081
+       16s     9395.1     9268.7    0.987
+
+band energy over a 4.0 s window from 7s:
+       band Hz            A            B      B/A
+        20-200    1.857e+13    1.916e+13    1.032
+       200-600    4.785e+13    5.583e+13    1.167
+      600-1500    8.189e+13    7.847e+13    0.958
+     1500-4000    2.460e+13    2.239e+13    0.910
+    4000-12000    7.931e+12    6.003e+12    0.757
+
+correlation over the first 4 s: +0.8912
