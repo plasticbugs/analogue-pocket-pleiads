@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pleiads core &mdash; video regression</title>
+<style>
+  :root { --bg:#faf9f7; --fg:#1b1a18; --mut:#6b6762; --line:#e2ded8;
+           --ok:#1c7c4a; --okbg:#e8f5ed; --bad:#a8271c; --badbg:#fdeceb; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme=light]) {
+    --bg:#14130f; --fg:#f2efe9; --mut:#9a948b; --line:#2f2c27;
+    --ok:#6ed79f; --okbg:#152a1f; --bad:#f08a80; --badbg:#2e1714; --card:#1c1a16; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); padding:0 16px 64px;
+          font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  header { padding:40px 0 24px; border-bottom:1px solid var(--line); margin-bottom:28px; }
+  h1 { font-size:26px; margin:0 0 6px; letter-spacing:-.02em; }
+  .sub { color:var(--mut); font-size:14px; margin:0; }
+  .summary { display:inline-block; margin-top:16px; padding:8px 14px; border-radius:8px;
+              font-weight:600; font-size:14px;
+              background:var(--okbg);
+              color:var(--ok); }
+  .state { background:var(--card); border:1px solid var(--line); border-radius:12px;
+            padding:18px 20px 20px; margin-bottom:20px; }
+  h2 { font-size:16px; margin:0 0 4px; display:flex; align-items:center; gap:10px;
+        flex-wrap:wrap; letter-spacing:-.01em; }
+  .badge { font-size:12px; font-weight:600; padding:3px 9px; border-radius:99px; }
+  .ok .badge { background:var(--okbg); color:var(--ok); }
+  .bad .badge { background:var(--badbg); color:var(--bad); }
+  .meta { color:var(--mut); font-size:13px; margin:0 0 14px; }
+  code { font:12px ui-monospace,SFMono-Regular,Menlo,monospace; background:var(--bg);
+          padding:1px 5px; border-radius:4px; border:1px solid var(--line); }
+  .imgs { display:flex; gap:16px; flex-wrap:wrap; }
+  figure { margin:0; }
+  img { display:block; width:208px; height:256px; image-rendering:pixelated;
+         border:1px solid var(--line); border-radius:6px; background:#000; }
+  figcaption { font-size:12px; color:var(--mut); margin-top:6px; text-align:center; }
+  @media (max-width:700px) { img { width:150px; height:185px; } }
+</style></head><body><div class="wrap">
+<header>
+  <h1>Pleiads / Phoenix &mdash; video regression</h1>
+  <p class="sub">Reference renderer against MAME, one row per frozen state. Generated 2026-09-18 12:33:17.</p>
+  <div class="summary">ALL 14 STATES PIXEL-IDENTICAL</div>
+</header>
+
+    <section class="state ok">
+      <h2>pleiads &middot; frame 0120
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_0120.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_0120.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_0120.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>pleiads &middot; frame 0300
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_0300.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_0300.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_0300.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>pleiads &middot; frame 0600
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_0600.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_0600.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_0600.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>pleiads &middot; frame 0900
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_0900.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_0900.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_0900.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>pleiads &middot; frame 1400
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_1400.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_1400.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_1400.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>pleiads &middot; frame 1900
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_1900.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_1900.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_1900.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>pleiads &middot; frame 2400
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_2400.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_2400.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_2400.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>pleiads &middot; frame 3000
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_3000.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_3000.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_3000.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>pleiads &middot; frame 3600
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>04</code> &rarr; page 0, palette bank 2
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_3600.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_3600.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_3600.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>pleiads &middot; frame 4200
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="pleiads/mame_4200.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="pleiads/ref_4200.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="pleiads/diff_4200.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>phoenix &middot; frame 0300
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>00</code></p>
+      <div class="imgs">
+        <figure><img src="phoenix/mame_0300.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="phoenix/ref_0300.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="phoenix/diff_0300.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>phoenix &middot; frame 0900
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>68</code></p>
+      <div class="imgs">
+        <figure><img src="phoenix/mame_0900.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="phoenix/ref_0900.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="phoenix/diff_0900.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>phoenix &middot; frame 1800
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>00</code> &rarr; page 0, palette bank 0
+         &middot; scroll <code>F8</code></p>
+      <div class="imgs">
+        <figure><img src="phoenix/mame_1800.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="phoenix/ref_1800.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="phoenix/diff_1800.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+    <section class="state ok">
+      <h2>phoenix &middot; frame 2600
+          <span class="badge">0 px differ</span></h2>
+      <p class="meta">videoreg <code>02</code> &rarr; page 0, palette bank 1
+         &middot; scroll <code>48</code></p>
+      <div class="imgs">
+        <figure><img src="phoenix/mame_2600.png" alt="MAME"><figcaption>MAME (oracle)</figcaption></figure>
+        <figure><img src="phoenix/ref_2600.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
+        <figure><img src="phoenix/diff_2600.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
+      </div>
+    </section>
+</div></body></html>
