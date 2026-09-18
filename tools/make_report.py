@@ -5,7 +5,7 @@ current pass/fail. Open it in a browser and refresh after any change.
 
 No dependencies; it only references the PNGs the other tools already wrote.
 """
-import os, sys, glob, subprocess, html, datetime
+import os, sys, glob, subprocess, html, datetime, shutil, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -53,6 +53,27 @@ def main():
                              ref=os.path.relpath(ref, os.path.join(ROOT, 'artifacts')),
                              dif=os.path.relpath(dif, os.path.join(ROOT, 'artifacts'))))
 
+    # --- audio -----------------------------------------------------------
+    audio = []
+    adir = os.path.join(ROOT, 'artifacts', 'audio')
+    for game in ('pleiads', 'phoenix'):
+        m = os.path.join(ROOT, 'build', f'mame_{game}.wav')
+        r = os.path.join(ROOT, 'build', f'rtl_{game}.wav')
+        if not (os.path.exists(m) and os.path.exists(r)):
+            continue
+        os.makedirs(adir, exist_ok=True)
+        for src, name in ((m, f'{game}_mame.wav'), (r, f'{game}_rtl.wav')):
+            dst = os.path.join(adir, name)
+            if not os.path.exists(dst) or os.path.getmtime(src) > os.path.getmtime(dst):
+                shutil.copy(src, dst)
+        out = subprocess.run([sys.executable, os.path.join(ROOT, 'tools/compare_audio.py'), m, r],
+                             capture_output=True, text=True).stdout
+        corr = re.search(r'correlation over the first [\d.]+ s: ([+-][\d.]+)', out)
+        rms = re.search(r'^rms\s+\S+\s+\S+\s+([\d.]+)', out, re.M)
+        audio.append(dict(game=game, corr=corr.group(1) if corr else '?',
+                          rms=rms.group(1) if rms else '?', text=out,
+                          mame=f'audio/{game}_mame.wav', rtl=f'audio/{game}_rtl.wav'))
+
     ok = bad == 0
     body = []
     for r in rows:
@@ -69,6 +90,27 @@ def main():
         <figure><img src="{r['dif']}" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
       </div>
     </section>''')
+
+    audio_html = ''
+    if audio:
+        rows = []
+        for a in audio:
+            good = a['corr'].startswith('+') and float(a['corr']) > 0.9
+            rows.append(f'''
+    <section class="state {'ok' if good else 'bad'}">
+      <h2>{html.escape(a['game'])} &middot; audio
+          <span class="badge">correlation {html.escape(a['corr'])}</span></h2>
+      <p class="meta">RMS ratio to MAME <code>{html.escape(a['rms'])}</code> &middot;
+         same sound command stream, twenty seconds of play</p>
+      <div class="imgs">
+        <figure><audio controls src="{a['mame']}"></audio>
+                <figcaption>MAME (oracle)</figcaption></figure>
+        <figure><audio controls src="{a['rtl']}"></audio>
+                <figcaption>this core</figcaption></figure>
+      </div>
+      <details><summary>full measurement</summary><pre>{html.escape(a['text'])}</pre></details>
+    </section>''')
+        audio_html = '\n'.join(rows)
 
     now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     doc = f'''<!doctype html>
@@ -108,6 +150,11 @@ def main():
          border:1px solid var(--line); border-radius:6px; background:#000; }}
   figcaption {{ font-size:12px; color:var(--mut); margin-top:6px; text-align:center; }}
   @media (max-width:700px) {{ img {{ width:150px; height:185px; }} }}
+  audio {{ display:block; width:260px; }}
+  details {{ margin-top:14px; font-size:13px; color:var(--mut); }}
+  summary {{ cursor:pointer; }}
+  pre {{ overflow-x:auto; font-size:12px; background:var(--bg); padding:12px;
+         border:1px solid var(--line); border-radius:8px; }}
 </style></head><body><div class="wrap">
 <header>
   <h1>Pleiads / Phoenix &mdash; video regression</h1>
@@ -115,6 +162,7 @@ def main():
   <div class="summary">{'ALL ' + str(tot) + ' STATES PIXEL-IDENTICAL' if ok else f'{bad} of {tot} STATES DIFFER'}</div>
 </header>
 {''.join(body)}
+{audio_html}
 </div></body></html>'''
     out = os.path.join(ROOT, 'artifacts/index.html')
     open(out, 'w').write(doc)

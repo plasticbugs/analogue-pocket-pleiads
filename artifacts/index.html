@@ -35,10 +35,15 @@
          border:1px solid var(--line); border-radius:6px; background:#000; }
   figcaption { font-size:12px; color:var(--mut); margin-top:6px; text-align:center; }
   @media (max-width:700px) { img { width:150px; height:185px; } }
+  audio { display:block; width:260px; }
+  details { margin-top:14px; font-size:13px; color:var(--mut); }
+  summary { cursor:pointer; }
+  pre { overflow-x:auto; font-size:12px; background:var(--bg); padding:12px;
+         border:1px solid var(--line); border-radius:8px; }
 </style></head><body><div class="wrap">
 <header>
   <h1>Pleiads / Phoenix &mdash; video regression</h1>
-  <p class="sub">Reference renderer against MAME, one row per frozen state. Generated 2026-09-18 14:40:24.</p>
+  <p class="sub">Reference renderer against MAME, one row per frozen state. Generated 2026-09-18 14:47:41.</p>
   <div class="summary">ALL 14 STATES PIXEL-IDENTICAL</div>
 </header>
 
@@ -195,5 +200,41 @@
         <figure><img src="phoenix/ref_2600.png" alt="reference"><figcaption>reference renderer</figcaption></figure>
         <figure><img src="phoenix/diff_2600.png" alt="diff"><figcaption>diff (red = differing)</figcaption></figure>
       </div>
+    </section>
+
+    <section class="state ok">
+      <h2>pleiads &middot; audio
+          <span class="badge">correlation +1.0000</span></h2>
+      <p class="meta">RMS ratio to MAME <code>0.998</code> &middot;
+         same sound command stream, twenty seconds of play</p>
+      <div class="imgs">
+        <figure><audio controls src="audio/pleiads_mame.wav"></audio>
+                <figcaption>MAME (oracle)</figcaption></figure>
+        <figure><audio controls src="audio/pleiads_rtl.wav"></audio>
+                <figcaption>this core</figcaption></figure>
+      </div>
+      <details><summary>full measurement</summary><pre>/Users/scottmoschella/work/pleiads/build/mame_pleiads.wav vs /Users/scottmoschella/work/pleiads/build/rtl_pleiads.wav: 959999 samples at 48000 Hz (20.0 s)
+
+                            A            B      B/A
+peak                    32767        32767    1.000
+rms                    7925.0       7910.5    0.998
+
+RMS over 4 s windows:
+    window          A          B      B/A
+        0s     6553.0     6554.0    1.000
+        4s     6414.5     6403.4    0.998
+        8s     9434.4     9415.4    0.998
+       12s     7257.0     7153.1    0.986
+
+band energy over a 4.0 s window from 7s:
+       band Hz            A            B      B/A
+        20-200    1.858e+13    1.845e+13    0.993
+       200-600    4.785e+13    4.809e+13    1.005
+      600-1500    8.190e+13    8.019e+13    0.979
+     1500-4000    2.459e+13    2.377e+13    0.967
+    4000-12000    7.929e+12    1.176e+13    1.483
+
+correlation over the first 4 s: +1.0000
+</pre></details>
     </section>
 </div></body></html>
