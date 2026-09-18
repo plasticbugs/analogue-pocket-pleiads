@@ -1,0 +1,54 @@
+<misterromdescription>
+    <name>Phoenix</name>
+    <setname>phoenix</setname>
+    <year>1980</year>
+    <manufacturer>Amstar</manufacturer>
+    <category>Shooter</category>
+    <rbf>pleiads</rbf>
+
+    <!--
+      Phoenix (Amstar, set 1). Same board family as Pleiads and the same image
+      layout, so the core takes one ROM format for both and tells them apart by
+      checksumming the program region at load time. See docs/hardware.md.
+
+        0x0000  16K  maincpu  8085A program
+        0x4000   4K  bgtiles  background character generator
+        0x5000   4K  fgtiles  foreground character generator
+        0x6000  512  proms    two 256x4 colour PROMs
+    -->
+
+    <rom index="0" zip="phoenix.zip" md5="aebeef2fb155d5481cb827520f7d26d8">
+        <!-- 0x0000: maincpu, 16 KB -->
+        <part name="ic45"        crc="9f68086b"/>
+        <part name="ic46"        crc="273a4a82"/>
+        <part name="ic47"        crc="3d4284b9"/>
+        <part name="ic48"        crc="cb5d9915"/>
+        <part name="h5-ic49.5a"  crc="a105e4e7"/>
+        <part name="h6-ic50.6a"  crc="ac5e9ec1"/>
+        <part name="h7-ic51.7a"  crc="2eab35b4"/>
+        <part name="h8-ic52.8a"  crc="aff8e9c5"/>
+
+        <!-- 0x4000: bgtiles, 4 KB -->
+        <part name="ic23.3d"     crc="3c7e623f"/>
+        <part name="ic24.4d"     crc="59916d3b"/>
+
+        <!-- 0x5000: fgtiles, 4 KB -->
+        <part name="b1-ic39.3b"  crc="53413e8f"/>
+        <part name="b2-ic40.4b"  crc="0be2ba91"/>
+
+        <!-- 0x6000: colour PROMs, 256 B each -->
+        <part name="mmi6301.ic40" crc="79350b25"/>
+        <part name="mmi6301.ic41" crc="e176b768"/>
+    </rom>
+
+    <switches default="00,01" base="0">
+        <dip name="Lives"       bits="0,1" ids="3,4,5,6"/>
+        <dip name="Bonus Life"  bits="2,3" ids="3K 30K,4K 40K,5K 50K,6K 60K"/>
+        <dip name="Coinage"     bits="4"   ids="1 Coin/1 Credit,2 Coins/1 Credit"/>
+        <dip name="Unknown"     bits="5"   ids="On,Off"/>
+        <dip name="Unknown 2"   bits="6"   ids="On,Off"/>
+        <dip name="Cabinet"     bits="8"   ids="Upright,Cocktail"/>
+    </switches>
+
+    <buttons names="Fire,Barrier,-,-,Start 1P,Start 2P,Coin" default="A,B,Start,Select,R"/>
+</misterromdescription>

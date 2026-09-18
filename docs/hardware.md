@@ -167,7 +167,7 @@ Two ROM regions, 4 KB each, identical format:
 8×8 tiles, 256 per region, 2 bits per pixel
 plane 0 (MSB) at bit offset 256*8*8 = byte 0x800
 plane 1 (LSB) at bit offset 0        = byte 0x000
-x offsets {7,6,5,4,3,2,1,0}   -- leftmost pixel is bit 7
+x offsets {7,6,5,4,3,2,1,0}   -- see the warning below
 y offsets {0,8,16,...,56}     -- one byte per row
 64 bits (8 bytes) per tile
 ```
@@ -175,10 +175,22 @@ y offsets {0,8,16,...,56}     -- one byte per row
 So for tile *N*, row *y*, column *x*:
 
 ```
-lsb   = (rom[0x000 + N*8 + y] >> (7-x)) & 1
-msb   = (rom[0x800 + N*8 + y] >> (7-x)) & 1
+lsb   = (rom[0x000 + N*8 + y] >> x) & 1
+msb   = (rom[0x800 + N*8 + y] >> x) & 1
 pixel = msb*2 + lsb          -- 0..3
 ```
+
+**The x order is a trap.** `charlayout` lists `xoffset` as `{7,6,5,4,3,2,1,0}`
+and the driver comments it "pretty straightforward layout", which reads as
+"leftmost pixel is bit 7". It is not. MAME counts gfx bit offsets **from the
+MSB**, so offset 0 means bit 7 of the byte and offset 7 means bit 0. Column 0
+therefore takes the byte's *least* significant bit and the tile is laid out
+LSB-first.
+
+Getting this backwards mirrors every tile about its own centre. On a starfield
+that looks almost plausible; on text it is obvious. It was caught by making
+MAME draw a synthetic tile-code ramp (`tools/probe_pattern.lua`) and matching
+the shapes back, not by staring at the diff.
 
 `bgtiles` is the background layer, `fgtiles` the foreground.
 
