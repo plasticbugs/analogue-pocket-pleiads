@@ -67,6 +67,8 @@ module tms36xx #(
         (DECAY2 != 0), (DECAY1 != 0), (DECAY0 != 0)};
     localparam int VOICES = 2 * ((DECAY0 != 0) + (DECAY1 != 0) + (DECAY2 != 0)
                                + (DECAY3 != 0) + (DECAY4 != 0) + (DECAY5 != 0));
+    localparam int VOICES_LOG2 = (VOICES >= 16) ? 4 : (VOICES >= 8) ? 3
+                               : (VOICES >= 4)  ? 2 : (VOICES >= 2) ? 1 : 0;
 
     // ------------------------------------------------------------- sample rate
     logic [26:0] acc;
@@ -115,10 +117,17 @@ module tms36xx #(
     logic [3:0]  note_val_l;
 
     // Decay constants for the voice being worked on.
+    // The twelve voices are two banks of the same six footages, so the decay
+    // constants repeat with period six. `vi % 6` is a *runtime* modulo and
+    // Quartus builds an lpm_divide for it -- about 600 logic elements to
+    // subtract six. The voice index only ever reaches 11.
     logic [19:0] d_q;
     logic [19:0] d_r;
+    logic [3:0]  d_sel;
+    assign d_sel = (vi >= 4'd6) ? (vi - 4'd6) : vi;
+
     always_comb begin
-        case (vi % 6)
+        case (d_sel)
             0: begin d_q = D0Q; d_r = D0R; end
             1: begin d_q = D1Q; d_r = D1R; end
             2: begin d_q = D2Q; d_r = D2R; end
@@ -256,7 +265,10 @@ module tms36xx #(
             // voice count leaves a 0..32767 unipolar sample -- which is what
             // its stream carries, DC offset and all.
             S_OUT: begin
-                sample      <= (VOICES == 0) ? 16'd0 : 16'(sum / VOICES);
+                // VOICES is 8 for Pleiads and 4 for Phoenix -- both powers of
+                // two, so this is a shift. Written as a division Quartus may
+                // not fold it and will build a divider instead.
+                sample      <= (VOICES == 0) ? 16'd0 : 16'(sum >> VOICES_LOG2);
                 sample_tick <= 1'b1;
                 state       <= S_IDLE;
             end

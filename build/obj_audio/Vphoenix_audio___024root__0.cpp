@@ -2548,7 +2548,11 @@ void Vphoenix_audio___024root___nba_sequent__TOP__2(Vphoenix_audio___024root* vl
             = __VdlyVal__phoenix_audio__DOT__u_tms__DOT__vol__v14;
     }
     vlSelfRef.dbg_tms = vlSelfRef.phoenix_audio__DOT__tms_sample;
-    __Vtemp_1 = VL_MATCHMASKED_I(32, VL_MODDIV_III(32, (IData)(vlSelfRef.phoenix_audio__DOT__u_tms__DOT__vi), (IData)(6U)), Vphoenix_audio__ConstPool__CONST_h31ebeb16_0);
+    __Vtemp_1 = VL_MATCHMASKED_I(32, (0x0000000fU & 
+                                      ((6U <= (IData)(vlSelfRef.phoenix_audio__DOT__u_tms__DOT__vi))
+                                        ? ((IData)(vlSelfRef.phoenix_audio__DOT__u_tms__DOT__vi) 
+                                           - (IData)(6U))
+                                        : (IData)(vlSelfRef.phoenix_audio__DOT__u_tms__DOT__vi))), Vphoenix_audio__ConstPool__CONST_h31ebeb16_0);
     vlSelfRef.__VdfgRegularize_hebeb780c_0_0 = Vphoenix_audio__ConstPool__TABLE_h4f0555cb_0
         [__Vtemp_1];
     __VdfgRegularize_hebeb780c_0_1 = (0x0000007fU & 

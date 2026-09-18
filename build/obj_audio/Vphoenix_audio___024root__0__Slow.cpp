@@ -148,7 +148,13 @@ VL_ATTR_COLD bool Vphoenix_audio___024root___eval_phase__stl(Vphoenix_audio___02
                     vlSelfRef.dbg_pc5 = vlSelfRef.phoenix_audio__DOT__u_fx__DOT__pc5_lvl;
                     vlSelfRef.dbg_pa5 = vlSelfRef.phoenix_audio__DOT__u_fx__DOT__pa5_lvl;
                     __Vinline_0__eval_stl___Vinline_0__stl_sequent__TOP__0___Vtemp_1 
-                        = VL_MATCHMASKED_I(32, VL_MODDIV_III(32, (IData)(vlSelfRef.phoenix_audio__DOT__u_tms__DOT__vi), (IData)(6U)), Vphoenix_audio__ConstPool__CONST_h31ebeb16_0);
+                        = VL_MATCHMASKED_I(32, (0x0000000fU 
+                                                & ((6U 
+                                                    <= (IData)(vlSelfRef.phoenix_audio__DOT__u_tms__DOT__vi))
+                                                    ? 
+                                                   ((IData)(vlSelfRef.phoenix_audio__DOT__u_tms__DOT__vi) 
+                                                    - (IData)(6U))
+                                                    : (IData)(vlSelfRef.phoenix_audio__DOT__u_tms__DOT__vi))), Vphoenix_audio__ConstPool__CONST_h31ebeb16_0);
                     vlSelfRef.__VdfgRegularize_hebeb780c_0_0 
                         = Vphoenix_audio__ConstPool__TABLE_h4f0555cb_0
                         [__Vinline_0__eval_stl___Vinline_0__stl_sequent__TOP__0___Vtemp_1];
