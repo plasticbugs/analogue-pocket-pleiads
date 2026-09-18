@@ -58,6 +58,22 @@ module phoenix_audio #(
 );
     assign dbg_tms = tms_sample;
     assign dbg_fx  = fx_sample;
+    // ---------------------------------------------------------- latch boundary
+    // The three control latches are registered once, here, and every sound
+    // block downstream sees the registered copies.
+    //
+    // This is the second time the same fault has closed a build. Registering
+    // them inside pleiads_sound fixed the first one, and then phoenix_noise
+    // and phoenix_effects arrived without it and the worst path in the design
+    // became sound latch A straight into the noise board's rate counter -- a
+    // path that starts one level up, in phoenix_core, and so matches neither
+    // end of a multicycle scoped to this module. Doing it at the boundary
+    // instead of in each block is what stops it happening a third time.
+    logic [7:0] a_r, b_r, c_r;
+    always_ff @(posedge clk) begin
+        a_r <= snd_a; b_r <= snd_b; c_r <= snd_c;
+    end
+
     // ------------------------------------------------------------- melody chip
     logic [15:0] tms_sample;
     logic        tms_tick;
@@ -86,7 +102,7 @@ module phoenix_audio #(
     // the SDC can describe it.
     logic [7:0] snd_b_q, snd_b_r;
     always_ff @(posedge clk) begin
-        snd_b_r <= snd_b;
+        snd_b_r <= b_r;
         if (reset) begin
             snd_b_q <= 8'd0; note_we <= 1'b0; tune_we <= 1'b0;
         end else begin
@@ -110,7 +126,7 @@ module phoenix_audio #(
 
     pleiads_sound #(.CLK_HZ(CLK_HZ), .RATE(RATE)) u_fx (
         .clk(clk), .reset(reset),
-        .latch_a(snd_a), .latch_b(snd_b), .latch_c(snd_c),
+        .latch_a(a_r), .latch_b(b_r), .latch_c(c_r),
         .sample(fx_sample), .sample_tick(fx_tick),
         .dbg_pb4(dbg_pb4), .dbg_t1(), .dbg_t4(),
         .dbg_poly(dbg_poly), .dbg_pa6(dbg_pa6), .dbg_pc5(dbg_pc5), .dbg_pa5(dbg_pa5)
@@ -123,12 +139,12 @@ module phoenix_audio #(
     logic               px_tick;
 
     phoenix_noise #(.CLK_HZ(CLK_HZ), .RATE(RATE)) u_nz (
-        .clk(clk), .reset(reset), .latch_a(snd_a),
+        .clk(clk), .reset(reset), .latch_a(a_r),
         .sample(nz_sample), .sample_tick(nz_tick)
     );
 
     phoenix_effects #(.CLK_HZ(CLK_HZ), .RATE(RATE)) u_px (
-        .clk(clk), .reset(reset), .latch_a(snd_a), .latch_b(snd_b),
+        .clk(clk), .reset(reset), .latch_a(a_r), .latch_b(b_r),
         .sample(px_sample), .sample_tick(px_tick)
     );
 
