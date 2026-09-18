@@ -1,0 +1,26 @@
+# Never commit ROMs or romsets (METHODOLOGY 5.6)
+*.rom
+*.zip
+pleiads/
+phoenix/
+*.bin
+
+# Bulk artifacts: regenerable, and some are large
+artifacts/**/*.wav
+artifacts/**/*.ppm
+artifacts/**/*.raw
+artifacts/**/*.mp4
+
+# MAME scratch
+mamecfg/
+nvram/
+cfg/
+
+# Build output
+obj_dir/
+projects/db/
+projects/incremental_db/
+projects/output_files/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,61 @@
+<misterromdescription>
+    <name>Pleiads</name>
+    <setname>pleiads</setname>
+    <year>1981</year>
+    <manufacturer>Tehkan</manufacturer>
+    <category>Shooter</category>
+    <rbf>pleiads</rbf>
+
+    <!--
+      Pocket / MiSTer ROM image for the Phoenix-hardware game Pleiads.
+
+      Layout is flat and contiguous; the core copies each region straight into
+      block RAM at load time. Offsets below are into the built image.
+
+        0x0000  16K  maincpu  8085A program
+        0x4000   4K  bgtiles  background character generator
+        0x5000   4K  fgtiles  foreground character generator
+        0x6000  512  proms    two 256x4 colour PROMs
+
+      The Epson 7910E melody ROM is deliberately absent: no dump of it exists.
+      See docs/hardware.md section 9.
+    -->
+
+    <rom index="0" zip="pleiads.zip" md5="81c9b4b754660bca515be597ca337311">
+        <!-- 0x0000: maincpu, 16 KB -->
+        <part name="ic47.r1"  crc="960212c8"/>
+        <part name="ic48.r2"  crc="b254217c"/>
+        <part name="ic47.bin" crc="87e700bb"/>
+        <part name="ic48.bin" crc="2d5198d0"/>
+        <part name="ic51.r5"  crc="49c629bc"/>
+        <part name="ic50.bin" crc="f1a8a00d"/>
+        <part name="ic53.r7"  crc="b5f07fbc"/>
+        <part name="ic52.bin" crc="b1b5a8a6"/>
+
+        <!-- 0x4000: bgtiles, 4 KB. ic23 is plane 1 (LSB), ic24 plane 0 (MSB) -->
+        <part name="ic23.bin" crc="4e30f9e7"/>
+        <part name="ic24.bin" crc="5188fc29"/>
+
+        <!-- 0x5000: fgtiles, 4 KB. ic39 is plane 1 (LSB), ic40 plane 0 (MSB) -->
+        <part name="ic39.bin" crc="85866607"/>
+        <part name="ic40.bin" crc="a841d511"/>
+
+        <!-- 0x6000: colour PROMs, 256 B each -->
+        <part name="7611-5.26" crc="7a1bcb1e"/>
+        <part name="7611-5.33" crc="e38eeb83"/>
+    </rom>
+
+    <switches default="00,01" base="0">
+        <!-- DSW0 at 0x7800 -->
+        <dip name="Lives"       bits="0,1" ids="3,4,5,6"/>
+        <dip name="Bonus Life"  bits="2,3" ids="3K 30K,4K 40K,5K 50K,6K 60K"/>
+        <dip name="Coinage"     bits="4"   ids="1 Coin/1 Credit,2 Coins/1 Credit"/>
+        <dip name="Unknown"     bits="5"   ids="On,Off"/>
+        <dip name="Demo Sounds" bits="6"   ids="Off,On"/>
+        <!-- bit 7 is VBLANK, not a switch -->
+        <!-- Cabinet is a hard link on the PCB, not part of DSW0 -->
+        <dip name="Cabinet"     bits="8"   ids="Upright,Cocktail"/>
+    </switches>
+
+    <buttons names="Fire,-,-,-,Start 1P,Start 2P,Coin" default="A,Start,Select,R"/>
+</misterromdescription>
