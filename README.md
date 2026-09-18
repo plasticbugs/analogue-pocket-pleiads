@@ -11,8 +11,9 @@ One core, one ROM format. The two games differ only in their sound section and
 a couple of video-register bits, so the gateware sums the 16 KB program region
 as the image loads and recognises which game it has.
 
-> **Status: in progress.** Video is done and verified. CPU, sound and platform
-> integration are not finished yet. There is no release to install.
+> **Status: in progress.** The core boots both ROMs, runs the games and
+> produces MAME's exact picture. Sound and Pocket integration are not done yet.
+> There is no release to install.
 
 ## How it is being built
 
@@ -31,14 +32,20 @@ Following `METHODOLOGY.md`, which is the write-up from a previous core:
 
 ### Current state
 
-| | |
-|---|---|
-| ROM builder, CRC-checked | done |
-| Reference renderer vs MAME | **14/14 states, 0 pixels differ** |
-| Video RTL vs MAME | **14/14 states, 0 pixels differ** |
-| 8085 CPU + memory map | not started |
-| Sound | not started |
-| Pocket integration | not started |
+| | Pleiads | Phoenix |
+|---|---|---|
+| ROM builder, CRC-checked | done | done |
+| Reference renderer vs MAME | 10/10 states, 0 px | 4/4 states, 0 px |
+| Video RTL vs MAME | 10/10 states, 0 px | 4/4 states, 0 px |
+| CPU bus trace vs MAME | 53 004 transactions identical | 100 985 identical |
+| CPU cycle counts vs MAME | 131 393 instructions, 0 wrong | 135 027, 0 wrong |
+| **End to end: core plays the game** | **4/4 frames, 0 px** | **3/3 frames, 0 px** |
+| Sound | not started | not started |
+| Pocket integration | not started | not started |
+
+"End to end" means the core is given nothing but the ROM image, boots it, runs
+the game's own code for up to 1800 frames, and its own video output is diffed
+against MAME's picture of the same moment. `sim/run_endtoend.sh`.
 
 ## Building the ROM
 
@@ -57,7 +64,9 @@ the `.mra`. Nothing but Python 3 is needed. **No ROMs are distributed here.**
 ```sh
 tools/capture_states.sh          # dump frozen states + MAME snapshots
 tools/regress_ref.sh             # reference renderer vs MAME
-sim/run_video.sh                 # RTL vs MAME
+sim/run_video.sh                 # video RTL vs MAME, frozen states
+sim/run_system.sh                # CPU bus trace + cycle counts vs MAME
+sim/run_endtoend.sh              # the core plays the game, vs MAME's picture
 python3 tools/make_report.py     # writes artifacts/index.html
 ```
 

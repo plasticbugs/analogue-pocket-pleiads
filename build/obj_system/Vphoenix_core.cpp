@@ -42,7 +42,9 @@ Vphoenix_core::Vphoenix_core(VerilatedContext* _vcontextp__, const char* _vcname
     , dbg_we{vlSymsp->TOP.dbg_we}
     , dbg_stb{vlSymsp->TOP.dbg_stb}
     , dbg_fetch{vlSymsp->TOP.dbg_fetch}
+    , dbg_vcnt{vlSymsp->TOP.dbg_vcnt}
     , dbg_addr{vlSymsp->TOP.dbg_addr}
+    , dbg_hcnt{vlSymsp->TOP.dbg_hcnt}
     , dl_addr{vlSymsp->TOP.dl_addr}
     , rgb{vlSymsp->TOP.rgb}
     , rootp{&(vlSymsp->TOP)}

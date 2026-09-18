@@ -170,15 +170,15 @@ void Vphoenix_core___024root___eval_ico(Vphoenix_core___024root* vlSelf) {
             if (vlSelfRef.phoenix_core__DOT__u_video__DOT__cocktail) {
                 __Vinline_0__ico_sequent__TOP__0_phoenix_core__DOT__u_video__DOT__sy 
                     = (0x000000ffU & ((IData)(0xffU) 
-                                      - (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)));
+                                      - (IData)(vlSelfRef.dbg_vcnt)));
                 __Vinline_0__ico_sequent__TOP__0_phoenix_core__DOT__u_video__DOT__sx 
                     = (0x000000ffU & ((IData)(0xffU) 
-                                      - (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt)));
+                                      - (IData)(vlSelfRef.dbg_hcnt)));
             } else {
                 __Vinline_0__ico_sequent__TOP__0_phoenix_core__DOT__u_video__DOT__sy 
-                    = (0x000000ffU & (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt));
+                    = (0x000000ffU & (IData)(vlSelfRef.dbg_vcnt));
                 __Vinline_0__ico_sequent__TOP__0_phoenix_core__DOT__u_video__DOT__sx 
-                    = (0x000000ffU & (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt));
+                    = (0x000000ffU & (IData)(vlSelfRef.dbg_hcnt));
             }
             vlSelfRef.phoenix_core__DOT__bgrom_addr 
                 = ((((3U == (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__phase))
@@ -274,7 +274,7 @@ void Vphoenix_core___024root___eval_ico(Vphoenix_core___024root* vlSelf) {
                                                           << 1U) 
                                                          | (IData)(vlSelfRef.coin1)))))))
                                          : ((((0xd0U 
-                                               > (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)) 
+                                               > (IData)(vlSelfRef.dbg_vcnt)) 
                                               << 7U) 
                                              | (IData)(vlSelfRef.dsw)) 
                                             | (- (IData)(
@@ -788,10 +788,10 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
     __Vdly__phoenix_core__DOT__u_mem__DOT__prog_sum = 0;
     CData/*2:0*/ __Vdly__phoenix_core__DOT__u_video__DOT__phase;
     __Vdly__phoenix_core__DOT__u_video__DOT__phase = 0;
-    SData/*8:0*/ __Vdly__phoenix_core__DOT__u_video__DOT__hcnt;
-    __Vdly__phoenix_core__DOT__u_video__DOT__hcnt = 0;
-    CData/*7:0*/ __Vdly__phoenix_core__DOT__u_video__DOT__vcnt;
-    __Vdly__phoenix_core__DOT__u_video__DOT__vcnt = 0;
+    SData/*8:0*/ __Vdly__dbg_hcnt;
+    __Vdly__dbg_hcnt = 0;
+    CData/*7:0*/ __Vdly__dbg_vcnt;
+    __Vdly__dbg_vcnt = 0;
     CData/*1:0*/ __Vdly__phoenix_core__DOT__u_cpu__DOT__state;
     __Vdly__phoenix_core__DOT__u_cpu__DOT__state = 0;
     SData/*15:0*/ __Vdly__phoenix_core__DOT__u_cpu__DOT__pc;
@@ -881,8 +881,8 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
         = vlSelfRef.phoenix_core__DOT__u_mem__DOT__prog_sum;
     __Vdly__phoenix_core__DOT__u_video__DOT__phase 
         = vlSelfRef.phoenix_core__DOT__u_video__DOT__phase;
-    __Vdly__phoenix_core__DOT__u_video__DOT__hcnt = vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt;
-    __Vdly__phoenix_core__DOT__u_video__DOT__vcnt = vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt;
+    __Vdly__dbg_hcnt = vlSelfRef.dbg_hcnt;
+    __Vdly__dbg_vcnt = vlSelfRef.dbg_vcnt;
     __Vdly__phoenix_core__DOT__u_cpu__DOT__state = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__state;
     __Vdly__phoenix_core__DOT__u_cpu__DOT__pc = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc;
     __Vdly__phoenix_core__DOT__u_cpu__DOT__ustep = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ustep;
@@ -980,13 +980,12 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
     if (vlSelfRef.reset) {
         __Vdly__phoenix_core__DOT__div = 0U;
         __Vdly__phoenix_core__DOT__u_video__DOT__phase = 0U;
-        __Vdly__phoenix_core__DOT__u_video__DOT__hcnt = 0U;
-        __Vdly__phoenix_core__DOT__u_video__DOT__vcnt = 0xd0U;
+        __Vdly__dbg_hcnt = 0U;
+        __Vdly__dbg_vcnt = 0xd0U;
         vlSelfRef.de = 0U;
         vlSelfRef.hsync = 0U;
         vlSelfRef.hblank = 1U;
-        vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt 
-            = __Vdly__phoenix_core__DOT__u_video__DOT__hcnt;
+        vlSelfRef.dbg_hcnt = __Vdly__dbg_hcnt;
         vlSelfRef.vsync = 0U;
         vlSelfRef.vblank = 1U;
     } else {
@@ -996,29 +995,27 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
         __Vdly__phoenix_core__DOT__u_video__DOT__phase 
             = (7U & ((IData)(1U) + (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__phase)));
         if ((7U == (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__phase))) {
-            if ((0x015fU == (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt))) {
-                __Vdly__phoenix_core__DOT__u_video__DOT__vcnt 
-                    = ((0xffU == (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt))
-                        ? 0U : (0x000000ffU & ((IData)(1U) 
-                                               + (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt))));
-                __Vdly__phoenix_core__DOT__u_video__DOT__hcnt = 0U;
+            if ((0x015fU == (IData)(vlSelfRef.dbg_hcnt))) {
+                __Vdly__dbg_vcnt = ((0xffU == (IData)(vlSelfRef.dbg_vcnt))
+                                     ? 0U : (0x000000ffU 
+                                             & ((IData)(1U) 
+                                                + (IData)(vlSelfRef.dbg_vcnt))));
+                __Vdly__dbg_hcnt = 0U;
             } else {
-                __Vdly__phoenix_core__DOT__u_video__DOT__hcnt 
-                    = (0x000001ffU & ((IData)(1U) + (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt)));
+                __Vdly__dbg_hcnt = (0x000001ffU & ((IData)(1U) 
+                                                   + (IData)(vlSelfRef.dbg_hcnt)));
             }
             vlSelfRef.de = vlSelfRef.phoenix_core__DOT__u_video__DOT__active;
-            vlSelfRef.hsync = ((0x0110U <= (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt)) 
-                               & (0x0130U > (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt)));
-            vlSelfRef.hblank = (0x0100U <= (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt));
-            vlSelfRef.vsync = ((0xd8U <= (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)) 
-                               & (0xdcU > (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)));
-            vlSelfRef.vblank = (0xd0U <= (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt));
+            vlSelfRef.hsync = ((0x0110U <= (IData)(vlSelfRef.dbg_hcnt)) 
+                               & (0x0130U > (IData)(vlSelfRef.dbg_hcnt)));
+            vlSelfRef.hblank = (0x0100U <= (IData)(vlSelfRef.dbg_hcnt));
+            vlSelfRef.vsync = ((0xd8U <= (IData)(vlSelfRef.dbg_vcnt)) 
+                               & (0xdcU > (IData)(vlSelfRef.dbg_vcnt)));
+            vlSelfRef.vblank = (0xd0U <= (IData)(vlSelfRef.dbg_vcnt));
         }
-        vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt 
-            = __Vdly__phoenix_core__DOT__u_video__DOT__hcnt;
+        vlSelfRef.dbg_hcnt = __Vdly__dbg_hcnt;
     }
-    vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt 
-        = __Vdly__phoenix_core__DOT__u_video__DOT__vcnt;
+    vlSelfRef.dbg_vcnt = __Vdly__dbg_vcnt;
     vlSelfRef.dbg_fetch = vlSelfRef.phoenix_core__DOT__cpu_fetch_q;
     if ((3U == (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__phase))) {
         vlSelfRef.phoenix_core__DOT__u_video__DOT__fg_lsb 
@@ -1077,8 +1074,8 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
         }
     }
     vlSelfRef.phoenix_core__DOT__u_video__DOT__active 
-        = ((0x0100U > (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt)) 
-           & (0xd0U > (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)));
+        = ((0x0100U > (IData)(vlSelfRef.dbg_hcnt)) 
+           & (0xd0U > (IData)(vlSelfRef.dbg_vcnt)));
     vlSelfRef.phoenix_core__DOT__prom_hi = vlSelfRef.phoenix_core__DOT__u_mem__DOT__u_ph__DOT__mem
         [Vphoenix_core__ConstPool__TABLE_h043dfa72_0
         [((0x00000180U & (((IData)(vlSelfRef.game_phoenix)
@@ -10402,15 +10399,15 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
     if (vlSelfRef.phoenix_core__DOT__u_video__DOT__cocktail) {
         phoenix_core__DOT__u_video__DOT__sy = (0x000000ffU 
                                                & ((IData)(0xffU) 
-                                                  - (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)));
+                                                  - (IData)(vlSelfRef.dbg_vcnt)));
         phoenix_core__DOT__u_video__DOT__sx = (0x000000ffU 
                                                & ((IData)(0xffU) 
-                                                  - (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt)));
+                                                  - (IData)(vlSelfRef.dbg_hcnt)));
     } else {
         phoenix_core__DOT__u_video__DOT__sy = (0x000000ffU 
-                                               & (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt));
+                                               & (IData)(vlSelfRef.dbg_vcnt));
         phoenix_core__DOT__u_video__DOT__sx = (0x000000ffU 
-                                               & (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt));
+                                               & (IData)(vlSelfRef.dbg_hcnt));
     }
     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc = __Vdly__phoenix_core__DOT__u_cpu__DOT__pc;
     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ustep 
@@ -10625,7 +10622,7 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                                                                   | (IData)(vlSelfRef.coin1)))))))
                                                      : 
                                                     ((((0xd0U 
-                                                        > (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)) 
+                                                        > (IData)(vlSelfRef.dbg_vcnt)) 
                                                        << 7U) 
                                                       | (IData)(vlSelfRef.dsw)) 
                                                      | (- (IData)(

@@ -72,7 +72,9 @@ module phoenix_core (
     output logic [7:0]  dbg_data,
     output logic        dbg_we,
     output logic        dbg_stb,
-    output logic        dbg_fetch
+    output logic        dbg_fetch,
+    output logic [8:0]  dbg_hcnt,
+    output logic [7:0]  dbg_vcnt
 );
     // ------------------------------------------------------------ clock enables
     logic [3:0] div;
@@ -209,7 +211,7 @@ module phoenix_core (
         .bgrom_addr(bgrom_addr), .bgrom_lsb(bgrom_lsb), .bgrom_msb(bgrom_msb),
         .fgrom_addr(fgrom_addr), .fgrom_lsb(fgrom_lsb), .fgrom_msb(fgrom_msb),
         .prom_addr(prom_addr), .prom_lo(prom_lo), .prom_hi(prom_hi),
-        .hcnt(), .vcnt(), .vblank_raw(vblank_raw),
+        .hcnt(dbg_hcnt), .vcnt(dbg_vcnt), .vblank_raw(vblank_raw),
         .rgb(rgb), .hsync(hsync), .vsync(vsync),
         .hblank(hblank), .vblank(vblank), .de(de)
     );

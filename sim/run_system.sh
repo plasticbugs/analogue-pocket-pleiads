@@ -13,7 +13,7 @@ if [ ! -x "$OBJ/Vphoenix_core" ] || [ -n "$(find rtl sim -newer "$OBJ/Vphoenix_c
     verilator --cc --exe --build -j 0 -O2 \
         -Wall -Wno-DECLFILENAME -Wno-UNUSEDSIGNAL -Wno-PINCONNECTEMPTY \
         -Wno-WIDTHTRUNC -Wno-WIDTHEXPAND -Wno-BLKSEQ -Wno-CASEOVERLAP \
-        -Irtl --Mdir "$OBJ" -CFLAGS "-O2" --top-module phoenix_core \
+        -Irtl --Mdir "$OBJ" -CFLAGS "-O2" -LDFLAGS "-lz" --top-module phoenix_core \
         rtl/phoenix_dpram.sv rtl/phoenix_mem.sv rtl/phoenix_video.sv \
         rtl/i8085.sv rtl/phoenix_core.sv sim/tb_system.cpp >/dev/null
 fi
@@ -26,7 +26,7 @@ if [ ! -f "build/mame_bus_$GAME.txt" ] || [ "${REGEN:-0}" = "1" ]; then
 fi
 
 echo "running the RTL..."
-"$OBJ/Vphoenix_core" "$GAME.rom" "build/rtl_bus_$GAME.txt" "$N"
+"$OBJ/Vphoenix_core" bus "$GAME.rom" "build/rtl_bus_$GAME.txt" "$N"
 python3 tools/diff_bus.py "build/mame_bus_$GAME.txt" "build/rtl_bus_$GAME.txt"
 echo
 python3 tools/check_cycles.py "build/rtl_bus_$GAME.txt"

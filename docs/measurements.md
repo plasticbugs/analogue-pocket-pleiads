@@ -141,3 +141,21 @@ spent on every instruction it executed, taken-branch extras included.
 |---|---|---|---|
 | Pleiads | 131 393 | 75 | 0 |
 | Phoenix | 135 027 | 71 | 0 |
+
+## End to end
+
+`sim/run_endtoend.sh` gives the core nothing but the ROM image, lets it boot
+and run the game's own code, and diffs its own video output against MAME's
+picture of the same moment.
+
+| game | frames checked | result |
+|---|---|---|
+| Pleiads | 200, 600, 1200, 1800 | 0 differing pixels |
+| Phoenix | 200, 600, 1200 | 0 differing pixels |
+
+Frame numbering does not line up exactly and is not assumed to: MAME starts
+mid-vblank so its first frame is short, and its frozen dump is the video RAM as
+it stands at the *end* of a frame while the core renders during one. The
+matching offset starts at 4 frames and converges to 1 by frame 1800, which is
+those two effects and nothing else. The bench captures a window and requires an
+exact match somewhere in it.

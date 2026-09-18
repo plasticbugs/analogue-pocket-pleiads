@@ -49,6 +49,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vphoenix_core___024root final {
         VL_OUT8(dbg_we,0,0);
         VL_OUT8(dbg_stb,0,0);
         VL_OUT8(dbg_fetch,0,0);
+        VL_OUT8(dbg_vcnt,7,0);
         CData/*3:0*/ phoenix_core__DOT__div;
         CData/*7:0*/ phoenix_core__DOT__cpu_dout;
         CData/*7:0*/ phoenix_core__DOT__cpu_din;
@@ -70,7 +71,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vphoenix_core___024root final {
         CData/*7:0*/ phoenix_core__DOT__prom_lo;
         CData/*7:0*/ phoenix_core__DOT__prom_hi;
         CData/*0:0*/ phoenix_core__DOT__u_mem__DOT__sel_prog;
-        CData/*7:0*/ phoenix_core__DOT__u_video__DOT__vcnt;
         CData/*2:0*/ phoenix_core__DOT__u_video__DOT__phase;
         CData/*0:0*/ phoenix_core__DOT__u_video__DOT__cocktail;
         CData/*7:0*/ phoenix_core__DOT__u_video__DOT__bx;
@@ -135,13 +135,13 @@ class alignas(VL_CACHE_LINE_BYTES) Vphoenix_core___024root final {
         CData/*0:0*/ __VactPhaseResult;
         CData/*0:0*/ __VnbaPhaseResult;
         VL_OUT16(dbg_addr,15,0);
+        VL_OUT16(dbg_hcnt,8,0);
         SData/*15:0*/ phoenix_core__DOT__cpu_addr;
         SData/*12:0*/ phoenix_core__DOT__vram_b_addr;
         SData/*10:0*/ phoenix_core__DOT__bgrom_addr;
         SData/*10:0*/ phoenix_core__DOT__fgrom_addr;
         SData/*12:0*/ phoenix_core__DOT____Vcellinp__u_mem__vram_a_addr;
         SData/*13:0*/ phoenix_core__DOT__u_mem__DOT____Vcellinp__u_prog__a_addr;
-        SData/*8:0*/ phoenix_core__DOT__u_video__DOT__hcnt;
         SData/*15:0*/ phoenix_core__DOT__u_cpu__DOT__sp;
         SData/*15:0*/ phoenix_core__DOT__u_cpu__DOT__pc;
         SData/*15:0*/ phoenix_core__DOT__u_cpu__DOT__wz;

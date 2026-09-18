@@ -61,7 +61,9 @@ class alignas(VL_CACHE_LINE_BYTES) Vphoenix_core VL_NOT_FINAL : public Verilated
     VL_OUT8(&dbg_we,0,0);
     VL_OUT8(&dbg_stb,0,0);
     VL_OUT8(&dbg_fetch,0,0);
+    VL_OUT8(&dbg_vcnt,7,0);
     VL_OUT16(&dbg_addr,15,0);
+    VL_OUT16(&dbg_hcnt,8,0);
     VL_IN(&dl_addr,16,0);
     VL_OUT(&rgb,23,0);
 

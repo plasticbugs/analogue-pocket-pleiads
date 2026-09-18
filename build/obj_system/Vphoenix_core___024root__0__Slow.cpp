@@ -452,8 +452,8 @@ VL_ATTR_COLD void Vphoenix_core___024root___stl_sequent__TOP__0(Vphoenix_core___
                            << 0x0000000cU)) | (0x00000fffU 
                                                & (IData)(vlSelfRef.phoenix_core__DOT__cpu_addr)));
     vlSelfRef.phoenix_core__DOT__u_video__DOT__active 
-        = ((0x0100U > (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt)) 
-           & (0xd0U > (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)));
+        = ((0x0100U > (IData)(vlSelfRef.dbg_hcnt)) 
+           & (0xd0U > (IData)(vlSelfRef.dbg_vcnt)));
     vlSelfRef.phoenix_core__DOT__wr_pulse = ((IData)(vlSelfRef.phoenix_core__DOT__cpu_mreq) 
                                              & ((IData)(vlSelfRef.phoenix_core__DOT__cpu_we) 
                                                 & (1U 
@@ -551,15 +551,15 @@ VL_ATTR_COLD void Vphoenix_core___024root___stl_sequent__TOP__0(Vphoenix_core___
     if (vlSelfRef.phoenix_core__DOT__u_video__DOT__cocktail) {
         phoenix_core__DOT__u_video__DOT__sy = (0x000000ffU 
                                                & ((IData)(0xffU) 
-                                                  - (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)));
+                                                  - (IData)(vlSelfRef.dbg_vcnt)));
         phoenix_core__DOT__u_video__DOT__sx = (0x000000ffU 
                                                & ((IData)(0xffU) 
-                                                  - (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt)));
+                                                  - (IData)(vlSelfRef.dbg_hcnt)));
     } else {
         phoenix_core__DOT__u_video__DOT__sy = (0x000000ffU 
-                                               & (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt));
+                                               & (IData)(vlSelfRef.dbg_vcnt));
         phoenix_core__DOT__u_video__DOT__sx = (0x000000ffU 
-                                               & (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__hcnt));
+                                               & (IData)(vlSelfRef.dbg_hcnt));
     }
     vlSelfRef.phoenix_core__DOT__cpu_din = (0x000000ffU 
                                             & ((0x00004000U 
@@ -614,7 +614,7 @@ VL_ATTR_COLD void Vphoenix_core___024root___stl_sequent__TOP__0(Vphoenix_core___
                                                                   | (IData)(vlSelfRef.coin1)))))))
                                                      : 
                                                     ((((0xd0U 
-                                                        > (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__vcnt)) 
+                                                        > (IData)(vlSelfRef.dbg_vcnt)) 
                                                        << 7U) 
                                                       | (IData)(vlSelfRef.dsw)) 
                                                      | (- (IData)(
@@ -833,6 +833,8 @@ VL_ATTR_COLD void Vphoenix_core___024root___ctor_var_reset(Vphoenix_core___024ro
     vlSelf->dbg_we = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 5806864404134174129ull);
     vlSelf->dbg_stb = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 9816685914744449375ull);
     vlSelf->dbg_fetch = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 1942815942514982492ull);
+    vlSelf->dbg_hcnt = VL_SCOPED_RAND_RESET_I(9, __VscopeHash, 5533455257196878596ull);
+    vlSelf->dbg_vcnt = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 8162866712865986448ull);
     vlSelf->phoenix_core__DOT__div = VL_SCOPED_RAND_RESET_I(4, __VscopeHash, 8219281913240698932ull);
     vlSelf->phoenix_core__DOT__cpu_addr = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 10339899729296347313ull);
     vlSelf->phoenix_core__DOT__cpu_dout = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 17355174409942241982ull);
@@ -885,8 +887,6 @@ VL_ATTR_COLD void Vphoenix_core___024root___ctor_var_reset(Vphoenix_core___024ro
     for (int __Vi0 = 0; __Vi0 < 16384; ++__Vi0) {
         vlSelf->phoenix_core__DOT__u_mem__DOT__u_prog__DOT__mem[__Vi0] = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 4324622969500868180ull);
     }
-    vlSelf->phoenix_core__DOT__u_video__DOT__hcnt = VL_SCOPED_RAND_RESET_I(9, __VscopeHash, 11107462033700757568ull);
-    vlSelf->phoenix_core__DOT__u_video__DOT__vcnt = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 348271766118241267ull);
     vlSelf->phoenix_core__DOT__u_video__DOT__phase = VL_SCOPED_RAND_RESET_I(3, __VscopeHash, 6536773850311057546ull);
     vlSelf->phoenix_core__DOT__u_video__DOT__cocktail = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 8124868806285582191ull);
     vlSelf->phoenix_core__DOT__u_video__DOT__bx = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 8049441070046481022ull);
