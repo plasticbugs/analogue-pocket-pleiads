@@ -143,6 +143,19 @@ module pleiads_sound #(
     end
 
     // ------------------------------------------------------------------ state
+    // The three control latches are registered on the way in. Without this the
+    // worst path in the whole design runs from sound latch C, through the PC4
+    // envelope's multiply, through the op-amp divider's multiply, into the
+    // tone 4 counter's multiply -- three chained multipliers and about 42 ns,
+    // on a 22.7 ns clock. Registering them costs one system clock, which is
+    // 23 ns against a sample period of 20.8 us, and it also means every path
+    // inside this module both starts and ends here, so the multicycle
+    // constraint in the SDC can describe it honestly.
+    logic [7:0] la, lb, lc;
+    always_ff @(posedge clk) begin
+        la <= latch_a; lb <= latch_b; lc <= latch_c;
+    end
+
     logic signed [31:0] t1_ctr, t2_ctr, t3_ctr, t4_ctr, noise_ctr;
     logic [3:0]         t1_div;
     logic               t1_out, t2_out, t3_out, t4_out;
@@ -240,7 +253,7 @@ module pleiads_sound #(
                 logic signed [31:0] c;
 
                 // ---- tone 1: a fixed 8 kHz clock divided by 1..15 ----------
-                if (latch_a[3:0] != 4'hf) begin
+                if (la[3:0] != 4'hf) begin
                     t1_ctr = t1_ctr - TONE1_CLOCK;
                     // One step at most: the divider's clock is well below the
                     // sample rate. A data-dependent loop here would not
@@ -250,7 +263,7 @@ module pleiads_sound #(
                         t1_div = t1_div + 4'd1;
                         // MAME counts up to 16 and reloads from the latch.
                         if (t1_div == 4'd0) begin
-                            t1_div = latch_a[3:0];
+                            t1_div = la[3:0];
                             t1_out = ~t1_out;
                         end
                     end
@@ -258,11 +271,11 @@ module pleiads_sound #(
                 s_t1 = t1_out ? 18'sd32767 : -18'sd32767;
 
                 // ---- tones 2 and 3: the upper 556, swept by PB4 ------------
-                {pb4_ctr, pb4_lvl} = rc_step(pb4_lvl, pb4_ctr, latch_b[4],
+                {pb4_ctr, pb4_lvl} = rc_step(pb4_lvl, pb4_ctr, lb[4],
                                              16'd0, KB4_C, KB4_D, 1'b1);
                 lvl23 = 16'(VMAX) - pb4_lvl;
 
-                if (latch_b[5] && lvl23 < 16'(VMAX)) begin
+                if (lb[5] && lvl23 < 16'(VMAX)) begin
                     t2_ctr = t2_ctr - $signed(32'((T2_MAX * 32'(lvl23)) >> 15));
                     if (t2_ctr <= 0) begin
                         n = 32'(div_rate(26'(-t2_ctr))) + 32'd1;
@@ -281,17 +294,17 @@ module pleiads_sound #(
                         t3_out = t3_out ^ n[0];
                     end
                 end
-                s_t23 = latch_b[5]
+                s_t23 = lb[5]
                       ? div2((t2_out ? 18'sd32767 : -18'sd32767)
                            + (t3_out ? 18'sd32767 : -18'sd32767))
                       : 18'sd0;
 
                 // ---- tone 4: the lower 556, gated by the polynomial bit ----
-                {pc4_ctr, pc4_lvl} = rc_step(pc4_lvl, pc4_ctr, latch_c[4],
+                {pc4_ctr, pc4_lvl} = rc_step(pc4_lvl, pc4_ctr, lc[4],
                                              16'(PC4_MIN), KC4_C, KC4_D, 1'b1);
-                {pc5_ctr, pc5_lvl} = rc_step(pc5_lvl, pc5_ctr, latch_c[5],
+                {pc5_ctr, pc5_lvl} = rc_step(pc5_lvl, pc5_ctr, lc[5],
                                              16'd0, KC5_C, KC5_D, 1'b0);
-                {pa5_ctr, pa5_lvl} = rc_step(pa5_lvl, pa5_ctr, latch_a[5],
+                {pa5_ctr, pa5_lvl} = rc_step(pa5_lvl, pa5_ctr, la[5],
                                              16'd0, KA5_C, KA5_D, 1'b0);
 
                 // Two resistors divide the op-amp output between 0 V and the
@@ -316,7 +329,7 @@ module pleiads_sound #(
                 // PA6 charges on latch A bit 6 and only discharges while the
                 // polynomial bit is high, with a hard-coded constant rather
                 // than the one in its own struct.
-                if (latch_a[6]) begin
+                if (la[6]) begin
                     {pa6_ctr, pa6_lvl} = rc_step(pa6_lvl, pa6_ctr, 1'b1,
                                                  16'd0, KA6_C, KA6_D, 1'b1);
                 end else if (polybit) begin
@@ -324,7 +337,7 @@ module pleiads_sound #(
                                                  16'd0, KA6_C, KA6_D, 1'b1);
                 end
 
-                noise_ctr = noise_ctr - $signed(32'(latch_a[4] ? (NOISE_FREQ * 2 / 3)
+                noise_ctr = noise_ctr - $signed(32'(la[4] ? (NOISE_FREQ * 2 / 3)
                                                                : (NOISE_FREQ * 1 / 3)));
                 if (noise_ctr <= 0) begin
                     n = 32'(div_rate(26'(-noise_ctr))) + 32'd1;
@@ -347,7 +360,7 @@ module pleiads_sound #(
                 // parse even though the simulator accepts it.
                 pa6_s   = $signed({2'b00, pa6_lvl});
                 s_noise = polybit ? pa6_s : -pa6_s;
-                if (latch_a[7]) s_noise = polybit ? (s_noise + 18'sd32767)
+                if (la[7]) s_noise = polybit ? (s_noise + 18'sd32767)
                                                   : (s_noise - 18'sd32767);
                 s_noise = div2(s_noise);
 

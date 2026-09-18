@@ -296,3 +296,42 @@ device. The core currently gives Phoenix Pleiads' sound section, which is
 wrong. Its video, CPU and timing are verified; its audio is not implemented.
 
 **Hardware.** Nothing here has been run on a Pocket.
+
+## Timing: the constraint that did not cover the path it was written for
+
+The first full compile fitted comfortably -- 29% of the logic, 82% of the DSP
+blocks -- and **failed timing by 19.1 ns on a 22.7 ns clock**, with 1168 ns of
+total negative slack. Synthesis had said nothing; `quartus_map` cannot, because
+it does not place or route.
+
+Asking the timing analyser to name the registers rather than reading the
+summary gave the path immediately:
+
+```
+-19.129  phoenix_core|snd_c[4]
+      -> phoenix_core|phoenix_audio|pleiads_sound|t4_ctr[0]
+```
+
+Sound control latch C, through the PC4 envelope's multiply, through the op-amp
+divider's multiply, into tone 4's counter multiply. Three chained multipliers
+in one combinational path, about 42 ns.
+
+The SDC already had a multicycle for exactly this, and it did not apply:
+
+```tcl
+set_multicycle_path -setup 4 -from [get_registers {*|pleiads_sound:*|*}] ...
+```
+
+The path *starts* at `snd_c`, which lives one level up in `phoenix_core`, so it
+matched neither `-from` nor `-to`. The constraint was true and useless.
+
+Two changes, either of which would have done, and both are worth having:
+
+- The three control latches are now registered inside `pleiads_sound`, and the
+  note write inside `phoenix_audio`. One system clock of latency -- 23 ns
+  against a 20.8 us sample period -- and every path in the sound section now
+  both starts and ends there.
+- The multicycle is written at the enclosing level, `phoenix_audio`, rather
+  than at each block inside it. Everything in there is paced by a sample tick
+  917 clocks apart, so naming the boundary once is both truer and harder to get
+  wrong than naming each block and hoping the list is complete.

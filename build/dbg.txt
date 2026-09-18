@@ -1,2 +1,0 @@
-trace build/cputrace.log,maincpu
-go

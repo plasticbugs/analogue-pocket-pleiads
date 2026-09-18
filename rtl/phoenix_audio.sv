@@ -74,16 +74,20 @@ module phoenix_audio #(
     // A write to sound latch B is a note write: the low four bits are the note
     // and bits 7:6 pick one of three clock inputs. Two of the four encodings
     // are the same because IC2 and IC3 are tied together.
-    logic [7:0] snd_b_q;
+    logic [7:0] snd_b_q, snd_b_r;
     always_ff @(posedge clk) begin
+        // Registered on the way in for the same reason the effects board does
+        // it: keep every path inside the sound section starting and ending
+        // there, so the SDC can describe it.
+        snd_b_r <= snd_b;
         if (reset) begin
             snd_b_q <= 8'd0; note_we <= 1'b0;
         end else begin
             note_we <= 1'b0;
-            if (snd_b != snd_b_q) begin
-                snd_b_q     <= snd_b;
-                note_value  <= snd_b[3:0];
-                note_octave <= (snd_b[7:6] == 2'd3) ? 2'd2 : snd_b[7:6];
+            if (snd_b_r != snd_b_q) begin
+                snd_b_q     <= snd_b_r;
+                note_value  <= snd_b_r[3:0];
+                note_octave <= (snd_b_r[7:6] == 2'd3) ? 2'd2 : snd_b_r[7:6];
                 note_we     <= 1'b1;
                 dbg_notes   <= ~dbg_notes;
             end

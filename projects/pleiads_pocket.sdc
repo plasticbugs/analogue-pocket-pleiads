@@ -77,7 +77,13 @@ set_multicycle_path -hold  7 -from [get_registers {*|i8085:*|*}] -to [get_regist
 # Scoped to paths inside each sound block, for the same reason as the CPU: what
 # leaves them is registered and read a whole sample period later.
 # ==============================================================================
-set_multicycle_path -setup 4 -from [get_registers {*|pleiads_sound:*|*}] -to [get_registers {*|pleiads_sound:*|*}]
-set_multicycle_path -hold  3 -from [get_registers {*|pleiads_sound:*|*}] -to [get_registers {*|pleiads_sound:*|*}]
-set_multicycle_path -setup 4 -from [get_registers {*|tms36xx:*|*}] -to [get_registers {*|tms36xx:*|*}]
-set_multicycle_path -hold  3 -from [get_registers {*|tms36xx:*|*}] -to [get_registers {*|tms36xx:*|*}]
+# Scoped to the whole audio section rather than to each block inside it. The
+# first attempt constrained pleiads_sound and tms36xx separately, and the worst
+# path in the design promptly appeared as sound latch C -> tone 4's counter --
+# starting one level up, in phoenix_core, and so matching neither -from. The
+# latches are now registered inside the sound blocks as well, so no path enters
+# from outside, but the constraint is written at the enclosing level anyway:
+# everything in here is paced by a sample tick, and naming the boundary once is
+# harder to get wrong than naming each block.
+set_multicycle_path -setup 8 -from [get_registers {*|phoenix_audio:*|*}] -to [get_registers {*|phoenix_audio:*|*}]
+set_multicycle_path -hold  7 -from [get_registers {*|phoenix_audio:*|*}] -to [get_registers {*|phoenix_audio:*|*}]
