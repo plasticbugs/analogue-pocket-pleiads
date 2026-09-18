@@ -347,3 +347,31 @@ Two changes, either of which would have done, and both are worth having:
 
 No negative slack on any clock at any corner — setup, hold or minimum pulse
 width, at 0 °C and 85 °C.
+
+## The Pocket's two image formats
+
+Recorded because neither is what you would assume, and both were established by
+decoding files already on a card rather than from documentation. The core ships
+**no artwork**; this is here so whoever draws it knows what to produce.
+
+| | icon | platform banner |
+|---|---|---|
+| file | `Cores/<id>/icon.bin` | `Platforms/_images/<id>.bin` |
+| size | 2 592 bytes | 171 930 bytes |
+| pixels | 36 × 36 | 521 × 165 as displayed |
+| storage | row-major, as displayed | **rotated**: 165 per row, 521 rows |
+| pixel | RGB565 **little**-endian | RGB565 **big**-endian |
+
+Storage index `(x, y)` in the banner maps to display `(row = x, col = 520 - y)`.
+
+Two things to know if you ever decode one:
+
+- Reading the banner as 521 wide gives sheared noise. The right width was found
+  by scoring candidates on how well adjacent rows correlate — a real image is
+  smooth vertically, a wrong width is not. 165 scored 0.81 against 521's 0.60.
+- Reading it little-endian gives a legible but heavily blue-cast image, which
+  looks like a bad dump rather than a wrong reader. Big-endian is correct.
+
+`tools/make_icon.py` and `tools/make_platform_image.py` encode both formats and
+round-trip through the same decoder that read the existing files. They are
+tooling, not content -- nothing they produce is shipped.
