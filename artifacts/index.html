@@ -43,7 +43,7 @@
 </style></head><body><div class="wrap">
 <header>
   <h1>Pleiads / Phoenix &mdash; video regression</h1>
-  <p class="sub">Reference renderer against MAME, one row per frozen state. Generated 2026-09-18 14:47:41.</p>
+  <p class="sub">Reference renderer against MAME, one row per frozen state. Generated 2026-09-18 16:57:16.</p>
   <div class="summary">ALL 14 STATES PIXEL-IDENTICAL</div>
 </header>
 
@@ -235,6 +235,42 @@ band energy over a 4.0 s window from 7s:
     4000-12000    7.929e+12    1.176e+13    1.483
 
 correlation over the first 4 s: +1.0000
+</pre></details>
+    </section>
+
+    <section class="state bad">
+      <h2>phoenix &middot; audio
+          <span class="badge">correlation +0.8892</span></h2>
+      <p class="meta">RMS ratio to MAME <code>0.864</code> &middot;
+         same sound command stream, twenty seconds of play</p>
+      <div class="imgs">
+        <figure><audio controls src="audio/phoenix_mame.wav"></audio>
+                <figcaption>MAME (oracle)</figcaption></figure>
+        <figure><audio controls src="audio/phoenix_rtl.wav"></audio>
+                <figcaption>this core</figcaption></figure>
+      </div>
+      <details><summary>full measurement</summary><pre>/Users/scottmoschella/work/pleiads/build/mame_phoenix.wav vs /Users/scottmoschella/work/pleiads/build/rtl_phoenix.wav: 959999 samples at 48000 Hz (20.0 s)
+
+                            A            B      B/A
+peak                    22539        14351    0.637
+rms                    4562.4       3941.4    0.864
+
+RMS over 4 s windows:
+    window          A          B      B/A
+        0s     1900.1     1454.9    0.766
+        4s     3034.1     3040.5    1.002
+        8s     5633.9     4704.0    0.835
+       12s     6519.6     5279.4    0.810
+
+band energy over a 4.0 s window from 7s:
+       band Hz            A            B      B/A
+        20-200    4.016e+12    4.051e+12    1.009
+       200-600    5.927e+13    5.888e+13    0.993
+      600-1500    6.382e+12    7.493e+12    1.174
+     1500-4000    3.417e+12    3.530e+12    1.033
+    4000-12000    1.735e+12    1.945e+12    1.121
+
+correlation over the first 4 s: +0.8892
 </pre></details>
     </section>
 </div></body></html>
