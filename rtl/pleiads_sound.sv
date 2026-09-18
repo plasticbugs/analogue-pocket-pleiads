@@ -85,12 +85,18 @@ module pleiads_sound #(
     // Written as `x / 48000` Quartus instantiates a real divider: a general
     // lpm_divide costs about 670 logic elements, and this module has enough of
     // them that it synthesised to 14 335 -- most of the device, for the sound
-    // section alone. Each multiplier below is exact over the range the operand
-    // can actually take, checked by tools/gen_recip.py, not approximate.
+    // section alone.
+    //
+    // Each of these is exact over the range its operand can actually take, and
+    // tools/gen_recip.py proves it exhaustively rather than relying on the
+    // usual bound. That matters: an earlier /80 pair came from a sparse check
+    // and was wrong for every operand above 699 119, where the real ones reach
+    // 1 540 049. The audio bench did not catch it, because the envelopes it
+    // divides were idle through most of the captured command stream.
     localparam int RATE_S  = 41, RATE_M  = 45812985;  // /48000, x < 2^26
     localparam int T3DIV_S = 39, T3DIV_M = 16280379;  // /33768, x < 2^24
     localparam int R67_S   = 26, R67_M   = 1001625;   // /67,    x < 2^21
-    localparam int R80_S   = 25, R80_M   = 419431;    // /80,    x < 2^21
+    localparam int R80_S   = 26, R80_M   = 838861;    // /80,    x < 2^21
 
     // How many whole sample periods an accumulated rate has crossed.
     //
@@ -301,8 +307,8 @@ module pleiads_sound #(
                     t4_ctr = t4_ctr + $signed(n * RATE);
                     t4_out = t4_out ^ n[0];
                 end
-                r80a = 21'(pc5_lvl * 6'(PA5_R)) * 19'(R80_M);
-                r80b = 21'(pa5_lvl * 6'(PC5_R)) * 19'(R80_M);
+                r80a = 21'(pc5_lvl * 6'(PA5_R)) * 20'(R80_M);
+                r80b = 21'(pa5_lvl * 6'(PC5_R)) * 20'(R80_M);
                 s_t4 = 18'((r80a >> R80_S) + (r80b >> R80_S));
                 if (!t4_out) s_t4 = -s_t4;
 

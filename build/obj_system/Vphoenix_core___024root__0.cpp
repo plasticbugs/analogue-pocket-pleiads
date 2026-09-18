@@ -345,30 +345,30 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
     Vphoenix_core__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Locals
-    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h887a3381__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h887a3381__0 = 0;
-    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h887b7933__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h887b7933__0 = 0;
-    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h2c745652__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h2c745652__0 = 0;
-    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h2c76a095__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h2c76a095__0 = 0;
-    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h8da7322c__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h8da7322c__0 = 0;
-    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h8da4641e__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h8da4641e__0 = 0;
-    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h1238ff9e__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h1238ff9e__0 = 0;
-    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h1246d8db__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h1246d8db__0 = 0;
-    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4aa01a38__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4aa01a38__0 = 0;
-    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4aa10c0a__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4aa10c0a__0 = 0;
-    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4bd00b05__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4bd00b05__0 = 0;
-    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4bd95127__0;
-    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4bd95127__0 = 0;
+    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_he589e31a__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_he589e31a__0 = 0;
+    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_he596ac3c__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_he596ac3c__0 = 0;
+    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h696dab6c__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h696dab6c__0 = 0;
+    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h696e719a__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h696e719a__0 = 0;
+    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h6b76a3cb__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h6b76a3cb__0 = 0;
+    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h6b5d6fb9__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h6b5d6fb9__0 = 0;
+    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hfbdbd3f5__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hfbdbd3f5__0 = 0;
+    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hfbe2f1d4__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hfbe2f1d4__0 = 0;
+    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hdae9b3bc__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hdae9b3bc__0 = 0;
+    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hdaf4ddef__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hdaf4ddef__0 = 0;
+    IData/*31:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h52d1fec3__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h52d1fec3__0 = 0;
+    SData/*15:0*/ phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h52d3270a__0;
+    phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h52d3270a__0 = 0;
     CData/*7:0*/ phoenix_core__DOT__u_video__DOT__sx;
     phoenix_core__DOT__u_video__DOT__sx = 0;
     CData/*7:0*/ phoenix_core__DOT__u_video__DOT__sy;
@@ -387,7 +387,15 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__k_discharge = 0;
     CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__n_on_discharge;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__rate_val;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0____VlefCall_1__div_rate = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__rate_val;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__rate_val = 0;
     IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__n;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__n = 0;
@@ -395,50 +403,18 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__l = 0;
     IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__level;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__level = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__counter;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__counter = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__charging;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__charging = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__floor_lvl;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__floor_lvl = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__k_charge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__k_charge = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__k_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__k_discharge = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n_on_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__rate_val;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__rate_val = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__level;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__level = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__counter;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__counter = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__charging;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__charging = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__floor_lvl;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__floor_lvl = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__k_charge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__k_charge = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__k_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__k_discharge = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n_on_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__rate_val;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__rate_val = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__t = 0;
     SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__level;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__level = 0;
     IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__counter;
@@ -453,7 +429,15 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__k_discharge = 0;
     CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n_on_discharge;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__rate_val;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3____VlefCall_1__div_rate = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__rate_val;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__rate_val = 0;
     IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n = 0;
@@ -461,115 +445,53 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__l = 0;
     IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__level;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__level = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__counter;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__counter = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__charging;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__charging = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__floor_lvl;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__floor_lvl = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__k_charge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__k_charge = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__k_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__k_discharge = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n_on_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__rate_val;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__rate_val = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__level;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__level = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__counter;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__counter = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__charging;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__charging = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__floor_lvl;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__floor_lvl = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__k_charge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__k_charge = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__k_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__k_discharge = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n_on_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__rate_val;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__rate_val = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__level;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__level = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__counter;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__counter = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__charging;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__charging = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__floor_lvl;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__floor_lvl = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__k_charge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__k_charge = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__k_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__k_discharge = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n_on_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__rate_val;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__rate_val = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__level;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__level = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__counter;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__counter = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__charging;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__charging = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__floor_lvl;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__floor_lvl = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__k_charge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__k_charge = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__k_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__k_discharge = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n_on_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__rate_val;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__rate_val = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__level;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__level = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__counter;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__counter = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__k_charge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__k_charge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__rate_val;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__rate_val = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__n;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__n = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__l;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__l = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__6__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__6__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__6__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__6__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__7__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__7__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__7__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__7__t = 0;
+    IData/*17:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__8__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__8__x = 0;
+    IData/*17:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__8__y;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__8__y = 0;
     SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__level;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__level = 0;
     IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__counter;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__counter = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__charging;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__charging = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__floor_lvl;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__floor_lvl = 0;
     IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_charge;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_charge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__rate_val;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_discharge = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n_on_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n_on_discharge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9____VlefCall_1__div_rate = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__rate_val;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__rate_val = 0;
     IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n = 0;
@@ -577,42 +499,362 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l = 0;
     IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c;
     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__level;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__level = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__counter;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__counter = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__floor_lvl;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__floor_lvl = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__k_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__k_discharge = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n_on_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__rate_val;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__rate_val = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__l;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__l = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__level;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__level = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__counter;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__counter = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__floor_lvl;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__floor_lvl = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__k_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__k_discharge = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n_on_discharge;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n_on_discharge = 0;
-    QData/*47:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__rate_val;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__rate_val = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__l;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__l = 0;
-    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c;
-    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__t = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__level;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__level = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__counter;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__counter = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__charging;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__charging = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__floor_lvl;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__floor_lvl = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__k_charge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__k_charge = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__k_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__k_discharge = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n_on_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n_on_discharge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12____VlefCall_1__div_rate = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__rate_val;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__rate_val = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__t = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__level;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__level = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__counter;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__counter = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__charging;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__charging = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__floor_lvl;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__floor_lvl = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__k_charge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__k_charge = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__k_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__k_discharge = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n_on_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n_on_discharge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15____VlefCall_1__div_rate = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__rate_val;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__rate_val = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__t = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__level;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__level = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__counter;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__counter = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__charging;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__charging = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__floor_lvl;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__floor_lvl = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__k_charge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__k_charge = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__k_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__k_discharge = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n_on_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n_on_discharge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18____VlefCall_1__div_rate = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__rate_val;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__rate_val = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__t = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__level;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__level = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__counter;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__counter = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__charging;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__charging = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__floor_lvl;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__floor_lvl = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__k_charge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__k_charge = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__k_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__k_discharge = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n_on_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n_on_discharge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21____VlefCall_1__div_rate = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__rate_val;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__rate_val = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__t = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__level;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__level = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__counter;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__counter = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__charging;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__charging = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__floor_lvl;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__floor_lvl = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__k_charge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__k_charge = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__k_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__k_discharge = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n_on_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n_on_discharge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24____VlefCall_1__div_rate = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__rate_val;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__rate_val = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__27__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__27__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__27__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__27__t = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__level;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__level = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__counter;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__counter = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__k_charge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__k_charge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__rate_val;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__rate_val = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__n;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__n = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__l;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__l = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__t = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__level;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__level = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__counter;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__counter = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__k_charge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__k_charge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31____VlefCall_0__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31____VlefCall_0__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__rate_val;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__rate_val = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__n;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__n = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__l;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__l = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__t = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__level;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__level = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__counter;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__counter = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__floor_lvl;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__floor_lvl = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__k_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__k_discharge = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n_on_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n_on_discharge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34____VlefCall_1__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__rate_val;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__rate_val = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__l;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__l = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__t = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__level;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__level = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__counter;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__counter = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__floor_lvl;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__floor_lvl = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__k_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__k_discharge = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n_on_discharge;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n_on_discharge = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37____VlefCall_1__div_rate;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37____VlefCall_1__div_rate = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__delta;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__delta = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__prod;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__prod = 0;
+    QData/*39:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__rate_val;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__rate_val = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__l;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__l = 0;
+    IData/*31:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__Vfuncout = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__t = 0;
+    IData/*25:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__40__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__40__x = 0;
+    QData/*51:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__40__t;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__40__t = 0;
+    IData/*17:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__Vfuncout = 0;
+    IData/*17:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__x = 0;
+    IData/*17:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__y;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__y = 0;
+    IData/*17:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__42__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__42__x = 0;
+    IData/*17:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__42__y;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__42__y = 0;
+    IData/*17:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__43__x;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__43__x = 0;
+    IData/*17:0*/ __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__43__y;
+    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__43__y = 0;
     IData/*31:0*/ __Vdly__phoenix_core__DOT__u_mem__DOT__prog_sum;
     __Vdly__phoenix_core__DOT__u_mem__DOT__prog_sum = 0;
     IData/*26:0*/ __Vdly__phoenix_core__DOT__u_audio__DOT__u_fx__DOT__acc;
@@ -908,6 +1150,8 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                 = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_ctr;
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__level 
                 = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_lvl;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__delta = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__prod = 0;
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__rate_val = 0;
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__n = 0;
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__l 
@@ -916,21 +1160,35 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                 = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__counter;
             if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__charging) {
                 if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__k_charge)))));
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__k_charge))) 
-                            >> 0x0000000cU));
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__prod 
+                           >> 0x0000000cU);
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c 
                         = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c 
                            - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__rate_val));
                     if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__1__Vfuncout;
                         __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c), (IData)(0x0000bb80U)));
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0____VlefCall_0__div_rate);
                         __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c 
                             = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c 
                                + ((IData)(0x0000bb80U) 
@@ -945,21 +1203,33 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                 }
             } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__l) 
                         > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__floor_lvl))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__delta 
+                    = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__l) 
+                                      - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__floor_lvl)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__prod 
+                    = (0x000000ffffffffffULL & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__delta)) 
+                                                * (QData)((IData)(
+                                                                  (0x00ffffffU 
+                                                                   & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__k_discharge)))));
                 __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__rate_val 
-                    = (0x0000000fffffffffULL & (((0x0000ffffffffffffULL 
-                                                  & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__l)) 
-                                                     - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__floor_lvl)))) 
-                                                 * 
-                                                 (0x0000ffffffffffffULL 
-                                                  & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__k_discharge))) 
-                                                >> 0x0000000cU));
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__prod 
+                       >> 0x0000000cU);
                 __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c 
                     = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c 
                        - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__rate_val));
                 if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__x 
+                        = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__x))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__Vfuncout 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__t 
+                                                  >> 0x29U)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0____VlefCall_1__div_rate 
+                        = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__2__Vfuncout;
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c), (IData)(0x0000bb80U)));
+                        = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0____VlefCall_1__div_rate);
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c 
                         = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c 
                            + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__n_on_discharge)
@@ -978,239 +1248,21 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
             vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_0__rc_step 
                 = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__c)) 
                     << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__0__l)));
-            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h887a3381__0 
+            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_he589e31a__0 
                 = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_0__rc_step 
                            >> 0x00000010U));
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n_on_discharge = 1U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__k_discharge = 0x0000a000U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__k_charge = 0x0000a000U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__floor_lvl = 0U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__charging 
-                = (1U & ((IData)(vlSelfRef.snd_b) >> 4U));
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__counter 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_ctr;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__level 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_lvl;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__rate_val = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__level;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__counter;
-            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__charging) {
-                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l))) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__k_charge))) 
-                            >> 0x0000000cU));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c 
-                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__rate_val));
-                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c)) {
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c), (IData)(0x0000bb80U)));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c 
-                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c 
-                               + ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l 
-                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l) 
-                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n))
-                                ? 0x00007fffU : (0x0000ffffU 
-                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l) 
-                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n)));
-                    }
-                }
-            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l) 
-                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__floor_lvl))) {
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__rate_val 
-                    = (0x0000000fffffffffULL & (((0x0000ffffffffffffULL 
-                                                  & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l)) 
-                                                     - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__floor_lvl)))) 
-                                                 * 
-                                                 (0x0000ffffffffffffULL 
-                                                  & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__k_discharge))) 
-                                                >> 0x0000000cU));
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c 
-                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c 
-                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__rate_val));
-                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c)) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c), (IData)(0x0000bb80U)));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c 
-                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n_on_discharge)
-                               ? ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n)
-                               : 0x0000bb80U));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l 
-                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l) 
-                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__floor_lvl) 
-                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n))
-                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__floor_lvl)
-                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l) 
-                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__n)));
-                }
-            }
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_1__rc_step 
-                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__c)) 
-                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__1__l)));
-            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h887b7933__0 
-                = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_1__rc_step));
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_ctr 
-                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h887a3381__0;
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_lvl 
-                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h887b7933__0;
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23 
-                = (0x0000ffffU & ((IData)(0x7fffU) 
-                                  - (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_lvl)));
-            if ((((IData)(vlSelfRef.snd_b) >> 5U) & 
-                 (0x7fffU > (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23)))) {
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr 
-                    = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr 
-                       - (((IData)(0x0000015fU) * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23)) 
-                          >> 0x0000000fU));
-                if (VL_GTES_III(32, 0U, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr)) {
-                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr), (IData)(0x0000bb80U)));
-                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr 
-                        = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr 
-                           + ((IData)(0x0000bb80U) 
-                              * vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
-                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_out 
-                        = (1U & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_out) 
-                                 ^ vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
-                }
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__step 
-                    = ((IData)(0x000000c2U) + VL_DIV_III(32, 
-                                                         ((IData)(0x00000184U) 
-                                                          * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23)), (IData)(0x000083e8U)));
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr 
-                    = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr 
-                       - vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__step);
-                if (VL_GTES_III(32, 0U, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr)) {
-                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr), (IData)(0x0000bb80U)));
-                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr 
-                        = ((IData)(0x0000bb80U) + vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr);
-                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_out 
-                        = (1U & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_out) 
-                                 ^ vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
-                }
-            }
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t23 
-                = ((0x00000020U & (IData)(vlSelfRef.snd_b))
-                    ? (0x0003ffffU & VL_DIVS_III(18, 
-                                                 (0x0003ffffU 
-                                                  & (((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_out)
-                                                       ? 0x00007fffU
-                                                       : 0x00038001U) 
-                                                     + 
-                                                     ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_out)
-                                                       ? 0x00007fffU
-                                                       : 0x00038001U))), (IData)(2U)))
-                    : 0U);
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n_on_discharge = 1U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__k_discharge = 0x0002d745U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__k_charge = 0x0000f26cU;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__floor_lvl = 0x11ebU;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__charging 
-                = (1U & ((IData)(vlSelfRef.snd_c) >> 4U));
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__counter 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_ctr;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__level 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__rate_val = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__level;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__counter;
-            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__charging) {
-                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l))) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__k_charge))) 
-                            >> 0x0000000cU));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c 
-                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__rate_val));
-                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c)) {
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c), (IData)(0x0000bb80U)));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c 
-                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c 
-                               + ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l 
-                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l) 
-                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n))
-                                ? 0x00007fffU : (0x0000ffffU 
-                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l) 
-                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n)));
-                    }
-                }
-            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l) 
-                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__floor_lvl))) {
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__rate_val 
-                    = (0x0000000fffffffffULL & (((0x0000ffffffffffffULL 
-                                                  & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l)) 
-                                                     - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__floor_lvl)))) 
-                                                 * 
-                                                 (0x0000ffffffffffffULL 
-                                                  & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__k_discharge))) 
-                                                >> 0x0000000cU));
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c 
-                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c 
-                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__rate_val));
-                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c)) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c), (IData)(0x0000bb80U)));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c 
-                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n_on_discharge)
-                               ? ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n)
-                               : 0x0000bb80U));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l 
-                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l) 
-                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__floor_lvl) 
-                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n))
-                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__floor_lvl)
-                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l) 
-                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__n)));
-                }
-            }
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_2__rc_step 
-                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__c)) 
-                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__2__l)));
-            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h2c745652__0 
-                = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_2__rc_step 
-                           >> 0x00000010U));
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n_on_discharge = 1U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__k_discharge = 0x0002d745U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__k_charge = 0x0000f26cU;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__floor_lvl = 0x11ebU;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__k_discharge = 0x0000a000U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__k_charge = 0x0000a000U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__floor_lvl = 0U;
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__charging 
-                = (1U & ((IData)(vlSelfRef.snd_c) >> 4U));
+                = (1U & ((IData)(vlSelfRef.snd_b) >> 4U));
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__counter 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_ctr;
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_ctr;
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__level 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl;
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_lvl;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__delta = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__prod = 0;
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__rate_val = 0;
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n = 0;
             __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__l 
@@ -1219,21 +1271,35 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                 = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__counter;
             if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__charging) {
                 if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__k_charge)))));
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__k_charge))) 
-                            >> 0x0000000cU));
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__prod 
+                           >> 0x0000000cU);
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c 
                         = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c 
                            - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__rate_val));
                     if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__4__Vfuncout;
                         __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c), (IData)(0x0000bb80U)));
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3____VlefCall_0__div_rate);
                         __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c 
                             = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c 
                                + ((IData)(0x0000bb80U) 
@@ -1248,21 +1314,33 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                 }
             } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__l) 
                         > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__floor_lvl))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__delta 
+                    = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__l) 
+                                      - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__floor_lvl)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__prod 
+                    = (0x000000ffffffffffULL & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__delta)) 
+                                                * (QData)((IData)(
+                                                                  (0x00ffffffU 
+                                                                   & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__k_discharge)))));
                 __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__rate_val 
-                    = (0x0000000fffffffffULL & (((0x0000ffffffffffffULL 
-                                                  & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__l)) 
-                                                     - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__floor_lvl)))) 
-                                                 * 
-                                                 (0x0000ffffffffffffULL 
-                                                  & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__k_discharge))) 
-                                                >> 0x0000000cU));
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__prod 
+                       >> 0x0000000cU);
                 __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c 
                     = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c 
                        - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__rate_val));
                 if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__x 
+                        = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__x))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__Vfuncout 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__t 
+                                                  >> 0x29U)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3____VlefCall_1__div_rate 
+                        = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__5__Vfuncout;
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c), (IData)(0x0000bb80U)));
+                        = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3____VlefCall_1__div_rate);
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c 
                         = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c 
                            + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n_on_discharge)
@@ -1278,462 +1356,145 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                                               - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__n)));
                 }
             }
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_3__rc_step 
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_1__rc_step 
                 = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__c)) 
                     << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__3__l)));
-            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h2c76a095__0 
-                = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_3__rc_step));
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_ctr 
-                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h2c745652__0;
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl 
-                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h2c76a095__0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n_on_discharge = 0U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__k_discharge = 0x0000a000U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__k_charge = 0x0012f07cU;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__floor_lvl = 0U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__charging 
-                = (1U & ((IData)(vlSelfRef.snd_c) >> 5U));
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__counter 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_ctr;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__level 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_lvl;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__rate_val = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__level;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__counter;
-            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__charging) {
-                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l))) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__k_charge))) 
-                            >> 0x0000000cU));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c 
-                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__rate_val));
-                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c)) {
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c), (IData)(0x0000bb80U)));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c 
-                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c 
-                               + ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l 
-                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l) 
-                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n))
-                                ? 0x00007fffU : (0x0000ffffU 
-                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l) 
-                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n)));
-                    }
+            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_he596ac3c__0 
+                = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_1__rc_step));
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_ctr 
+                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_he589e31a__0;
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_lvl 
+                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_he596ac3c__0;
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23 
+                = (0x0000ffffU & ((IData)(0x7fffU) 
+                                  - (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_lvl)));
+            if ((((IData)(vlSelfRef.snd_b) >> 5U) & 
+                 (0x7fffU > (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23)))) {
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr 
+                    = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr 
+                       - (((IData)(0x0000015fU) * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23)) 
+                          >> 0x0000000fU));
+                if (VL_GTES_III(32, 0U, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__6__x 
+                        = (0x03ffffffU & (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__6__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__6__x))));
+                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_2__div_rate 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__6__t 
+                                                  >> 0x29U)));
+                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n 
+                        = ((IData)(1U) + vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_2__div_rate);
+                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr 
+                        = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr 
+                           + ((IData)(0x0000bb80U) 
+                              * vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
+                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_out 
+                        = (1U & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_out) 
+                                 ^ vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
                 }
-            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l) 
-                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__floor_lvl))) {
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__rate_val 
-                    = (0x0000000fffffffffULL & (((0x0000ffffffffffffULL 
-                                                  & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l)) 
-                                                     - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__floor_lvl)))) 
-                                                 * 
-                                                 (0x0000ffffffffffffULL 
-                                                  & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__k_discharge))) 
-                                                >> 0x0000000cU));
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c 
-                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c 
-                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__rate_val));
-                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c)) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c), (IData)(0x0000bb80U)));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c 
-                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n_on_discharge)
-                               ? ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n)
-                               : 0x0000bb80U));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l 
-                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l) 
-                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__floor_lvl) 
-                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n))
-                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__floor_lvl)
-                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l) 
-                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__n)));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__t3mul 
+                    = (0x0000ffffffffffffULL & (0x0000000000f86b3bULL 
+                                                * (QData)((IData)(
+                                                                  (0x00ffffffU 
+                                                                   & ((IData)(0x00000184U) 
+                                                                      * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23)))))));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__step 
+                    = ((IData)(0x000000c2U) + (IData)(
+                                                      (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__t3mul 
+                                                       >> 0x00000027U)));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr 
+                    = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr 
+                       - vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__step);
+                if (VL_GTES_III(32, 0U, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__7__x 
+                        = (0x03ffffffU & (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr));
+                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr 
+                        = ((IData)(0x0000bb80U) + vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__7__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__7__x))));
+                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_3__div_rate 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__7__t 
+                                                  >> 0x29U)));
+                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n 
+                        = ((IData)(1U) + vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_3__div_rate);
+                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_out 
+                        = (1U & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_out) 
+                                 ^ vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
                 }
             }
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_4__rc_step 
-                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__c)) 
-                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__4__l)));
-            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h8da7322c__0 
-                = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_4__rc_step 
-                           >> 0x00000010U));
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n_on_discharge = 0U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__k_discharge = 0x0000a000U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__k_charge = 0x0012f07cU;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__floor_lvl = 0U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__charging 
-                = (1U & ((IData)(vlSelfRef.snd_c) >> 5U));
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__counter 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_ctr;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__level 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_lvl;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__rate_val = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__level;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__counter;
-            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__charging) {
-                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l))) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__k_charge))) 
-                            >> 0x0000000cU));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c 
-                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__rate_val));
-                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c)) {
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c), (IData)(0x0000bb80U)));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c 
-                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c 
-                               + ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l 
-                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l) 
-                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n))
-                                ? 0x00007fffU : (0x0000ffffU 
-                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l) 
-                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n)));
-                    }
-                }
-            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l) 
-                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__floor_lvl))) {
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__rate_val 
-                    = (0x0000000fffffffffULL & (((0x0000ffffffffffffULL 
-                                                  & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l)) 
-                                                     - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__floor_lvl)))) 
-                                                 * 
-                                                 (0x0000ffffffffffffULL 
-                                                  & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__k_discharge))) 
-                                                >> 0x0000000cU));
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c 
-                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c 
-                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__rate_val));
-                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c)) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c), (IData)(0x0000bb80U)));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c 
-                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n_on_discharge)
-                               ? ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n)
-                               : 0x0000bb80U));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l 
-                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l) 
-                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__floor_lvl) 
-                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n))
-                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__floor_lvl)
-                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l) 
-                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__n)));
-                }
+            if ((0x00000020U & (IData)(vlSelfRef.snd_b))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__8__x 
+                    = (0x0003ffffU & (((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_out)
+                                        ? 0x00007fffU
+                                        : 0x00038001U) 
+                                      + ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_out)
+                                          ? 0x00007fffU
+                                          : 0x00038001U)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__8__y 
+                    = (0x0003ffffU & (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__8__x 
+                                      + ((0x00020000U 
+                                          & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__8__x)
+                                          ? 1U : 0U)));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_4__div2 
+                    = (0x0003ffffU & VL_SHIFTRS_III(18,18,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__8__y, 1U));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCond_5 
+                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_4__div2;
+            } else {
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCond_5 = 0U;
             }
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_5__rc_step 
-                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__c)) 
-                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__5__l)));
-            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h8da4641e__0 
-                = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_5__rc_step));
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_ctr 
-                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h8da7322c__0;
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_lvl 
-                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h8da4641e__0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n_on_discharge = 0U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__k_discharge = 0x00000745U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__k_charge = 0x000004d9U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__floor_lvl = 0U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__charging 
-                = (1U & ((IData)(vlSelfRef.snd_a) >> 5U));
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__counter 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_ctr;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__level 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_lvl;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__rate_val = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__level;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__counter;
-            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__charging) {
-                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l))) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__k_charge))) 
-                            >> 0x0000000cU));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c 
-                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__rate_val));
-                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c)) {
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c), (IData)(0x0000bb80U)));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c 
-                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c 
-                               + ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l 
-                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l) 
-                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n))
-                                ? 0x00007fffU : (0x0000ffffU 
-                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l) 
-                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n)));
-                    }
-                }
-            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l) 
-                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__floor_lvl))) {
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__rate_val 
-                    = (0x0000000fffffffffULL & (((0x0000ffffffffffffULL 
-                                                  & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l)) 
-                                                     - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__floor_lvl)))) 
-                                                 * 
-                                                 (0x0000ffffffffffffULL 
-                                                  & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__k_discharge))) 
-                                                >> 0x0000000cU));
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c 
-                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c 
-                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__rate_val));
-                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c)) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c), (IData)(0x0000bb80U)));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c 
-                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n_on_discharge)
-                               ? ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n)
-                               : 0x0000bb80U));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l 
-                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l) 
-                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__floor_lvl) 
-                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n))
-                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__floor_lvl)
-                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l) 
-                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__n)));
-                }
-            }
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_6__rc_step 
-                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__c)) 
-                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__6__l)));
-            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h1238ff9e__0 
-                = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_6__rc_step 
-                           >> 0x00000010U));
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n_on_discharge = 0U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__k_discharge = 0x00000745U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__k_charge = 0x000004d9U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__floor_lvl = 0U;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__charging 
-                = (1U & ((IData)(vlSelfRef.snd_a) >> 5U));
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__counter 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_ctr;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__level 
-                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_lvl;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__rate_val = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n = 0;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__level;
-            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c 
-                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__counter;
-            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__charging) {
-                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l))) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__k_charge))) 
-                            >> 0x0000000cU));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c 
-                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__rate_val));
-                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c)) {
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c), (IData)(0x0000bb80U)));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c 
-                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c 
-                               + ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l 
-                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l) 
-                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n))
-                                ? 0x00007fffU : (0x0000ffffU 
-                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l) 
-                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n)));
-                    }
-                }
-            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l) 
-                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__floor_lvl))) {
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__rate_val 
-                    = (0x0000000fffffffffULL & (((0x0000ffffffffffffULL 
-                                                  & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l)) 
-                                                     - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__floor_lvl)))) 
-                                                 * 
-                                                 (0x0000ffffffffffffULL 
-                                                  & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__k_discharge))) 
-                                                >> 0x0000000cU));
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c 
-                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c 
-                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__rate_val));
-                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c)) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n 
-                        = ((IData)(1U) + VL_DIV_III(32, 
-                                                    (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c), (IData)(0x0000bb80U)));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c 
-                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n_on_discharge)
-                               ? ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n)
-                               : 0x0000bb80U));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l 
-                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l) 
-                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__floor_lvl) 
-                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n))
-                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__floor_lvl)
-                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l) 
-                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__n)));
-                }
-            }
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_7__rc_step 
-                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__c)) 
-                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__7__l)));
-            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h1246d8db__0 
-                = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_7__rc_step));
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_ctr 
-                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h1238ff9e__0;
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_lvl 
-                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h1246d8db__0;
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl4 
-                = (0x0000ffffU & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__polybit)
-                                   ? ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl) 
-                                      + VL_DIV_III(32, 
-                                                   ((IData)(0x00000014U) 
-                                                    * 
-                                                    ((IData)(0x00007fffU) 
-                                                     - (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl))), (IData)(0x00000043U)))
-                                   : VL_DIV_III(32, 
-                                                ((IData)(0x0000002fU) 
-                                                 * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl)), (IData)(0x00000043U))));
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr 
-                = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr 
-                   - (((IData)(0x00000523U) * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl4)) 
-                      >> 0x0000000fU));
-            if (VL_GTES_III(32, 0U, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr)) {
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n 
-                    = ((IData)(1U) + VL_DIV_III(32, 
-                                                (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr), (IData)(0x0000bb80U)));
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr 
-                    = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr 
-                       + ((IData)(0x0000bb80U) * vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_out 
-                    = (1U & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_out) 
-                             ^ vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
-            }
-            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4 
-                = (0x0003ffffU & (VL_DIV_III(32, ((IData)(0x00000021U) 
-                                                  * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_lvl)), (IData)(0x00000050U)) 
-                                  + VL_DIV_III(32, 
-                                               ((IData)(0x0000002fU) 
-                                                * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_lvl)), (IData)(0x00000050U))));
-            if ((1U & (~ (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_out)))) {
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4 
-                    = (0x0003ffffU & (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4));
-            }
-            if ((0x00000040U & (IData)(vlSelfRef.snd_a))) {
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__k_charge = 0x00561691U;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__counter 
-                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__level 
-                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__rate_val = 0;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__n = 0;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__l 
-                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__level;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c 
-                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__counter;
-                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__l))) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__k_charge))) 
-                            >> 0x0000000cU));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c 
-                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__rate_val));
-                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c)) {
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c), (IData)(0x0000bb80U)));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c 
-                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c 
-                               + ((IData)(0x0000bb80U) 
-                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__n));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__l 
-                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__l) 
-                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__n))
-                                ? 0x00007fffU : (0x0000ffffU 
-                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__l) 
-                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__n)));
-                    }
-                }
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_8__rc_step 
-                    = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__c)) 
-                        << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__8__l)));
-                phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4aa01a38__0 
-                    = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_8__rc_step 
-                               >> 0x00000010U));
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_charge = 0x00561691U;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__counter 
-                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__level 
-                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__rate_val = 0;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n = 0;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l 
-                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__level;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
-                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__counter;
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t23 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCond_5;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n_on_discharge = 1U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_discharge = 0x0002d745U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_charge = 0x0000f26cU;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__floor_lvl = 0x11ebU;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__charging 
+                = (1U & ((IData)(vlSelfRef.snd_c) >> 4U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__counter 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_ctr;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__level 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__delta = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__prod = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__rate_val = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__level;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__counter;
+            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__charging) {
                 if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_charge)))));
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & (0x0000000000007fffULL 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_charge))) 
-                            >> 0x0000000cU));
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__prod 
+                           >> 0x0000000cU);
                     __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
                         = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
                            - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__rate_val));
                     if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__10__Vfuncout;
                         __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c), (IData)(0x0000bb80U)));
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9____VlefCall_0__div_rate);
                         __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
                             = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
                                + ((IData)(0x0000bb80U) 
@@ -1746,128 +1507,966 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                                                     + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n)));
                     }
                 }
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_9__rc_step 
-                    = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c)) 
-                        << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l)));
-                phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4aa10c0a__0 
-                    = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_9__rc_step));
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr 
-                    = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4aa01a38__0;
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl 
-                    = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4aa10c0a__0;
-            } else if (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__polybit) {
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n_on_discharge = 1U;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__k_discharge = 0x0000a000U;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__floor_lvl = 0U;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__counter 
-                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__level 
-                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__rate_val = 0;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n = 0;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__l 
-                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__level;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c 
-                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__counter;
-                if ((0U < (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__l))) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__l)) 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__floor_lvl)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__k_discharge))) 
-                            >> 0x0000000cU));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c 
-                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__rate_val));
-                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c)) {
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c), (IData)(0x0000bb80U)));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c 
-                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c 
-                               + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n_on_discharge)
-                                   ? ((IData)(0x0000bb80U) 
-                                      * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n)
-                                   : 0x0000bb80U));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__l 
-                            = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__l) 
-                                               < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__floor_lvl) 
-                                                  + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n))
-                                               ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__floor_lvl)
-                                               : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__l) 
-                                                  - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__n)));
+            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l) 
+                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__floor_lvl))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__delta 
+                    = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l) 
+                                      - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__floor_lvl)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__prod 
+                    = (0x000000ffffffffffULL & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__delta)) 
+                                                * (QData)((IData)(
+                                                                  (0x00ffffffU 
+                                                                   & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__k_discharge)))));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__rate_val 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__prod 
+                       >> 0x0000000cU);
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
+                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__rate_val));
+                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__x 
+                        = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__x))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__Vfuncout 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__t 
+                                                  >> 0x29U)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9____VlefCall_1__div_rate 
+                        = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__11__Vfuncout;
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n 
+                        = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9____VlefCall_1__div_rate);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c 
+                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n_on_discharge)
+                               ? ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n)
+                               : 0x0000bb80U));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l 
+                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l) 
+                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__floor_lvl) 
+                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n))
+                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__floor_lvl)
+                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l) 
+                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__n)));
+                }
+            }
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_6__rc_step 
+                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__c)) 
+                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__9__l)));
+            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h696dab6c__0 
+                = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_6__rc_step 
+                           >> 0x00000010U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n_on_discharge = 1U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__k_discharge = 0x0002d745U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__k_charge = 0x0000f26cU;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__floor_lvl = 0x11ebU;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__charging 
+                = (1U & ((IData)(vlSelfRef.snd_c) >> 4U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__counter 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_ctr;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__level 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__delta = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__prod = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__rate_val = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__level;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__counter;
+            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__charging) {
+                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__k_charge)))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__rate_val 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__prod 
+                           >> 0x0000000cU);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c 
+                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__rate_val));
+                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__13__Vfuncout;
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n 
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12____VlefCall_0__div_rate);
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c 
+                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c 
+                               + ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l 
+                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l) 
+                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n))
+                                ? 0x00007fffU : (0x0000ffffU 
+                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l) 
+                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n)));
                     }
                 }
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_10__rc_step 
-                    = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__c)) 
-                        << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__10__l)));
-                phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4bd00b05__0 
-                    = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_10__rc_step 
+            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l) 
+                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__floor_lvl))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__delta 
+                    = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l) 
+                                      - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__floor_lvl)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__prod 
+                    = (0x000000ffffffffffULL & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__delta)) 
+                                                * (QData)((IData)(
+                                                                  (0x00ffffffU 
+                                                                   & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__k_discharge)))));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__rate_val 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__prod 
+                       >> 0x0000000cU);
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c 
+                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__rate_val));
+                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__x 
+                        = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__x))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__Vfuncout 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__t 
+                                                  >> 0x29U)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12____VlefCall_1__div_rate 
+                        = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__14__Vfuncout;
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n 
+                        = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12____VlefCall_1__div_rate);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c 
+                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n_on_discharge)
+                               ? ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n)
+                               : 0x0000bb80U));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l 
+                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l) 
+                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__floor_lvl) 
+                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n))
+                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__floor_lvl)
+                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l) 
+                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__n)));
+                }
+            }
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_7__rc_step 
+                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__c)) 
+                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__12__l)));
+            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h696e719a__0 
+                = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_7__rc_step));
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_ctr 
+                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h696dab6c__0;
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl 
+                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h696e719a__0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n_on_discharge = 0U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__k_discharge = 0x0000a000U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__k_charge = 0x0012f07cU;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__floor_lvl = 0U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__charging 
+                = (1U & ((IData)(vlSelfRef.snd_c) >> 5U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__counter 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_ctr;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__level 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_lvl;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__delta = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__prod = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__rate_val = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__level;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__counter;
+            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__charging) {
+                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__k_charge)))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__rate_val 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__prod 
+                           >> 0x0000000cU);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c 
+                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__rate_val));
+                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__16__Vfuncout;
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n 
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15____VlefCall_0__div_rate);
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c 
+                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c 
+                               + ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l 
+                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l) 
+                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n))
+                                ? 0x00007fffU : (0x0000ffffU 
+                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l) 
+                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n)));
+                    }
+                }
+            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l) 
+                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__floor_lvl))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__delta 
+                    = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l) 
+                                      - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__floor_lvl)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__prod 
+                    = (0x000000ffffffffffULL & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__delta)) 
+                                                * (QData)((IData)(
+                                                                  (0x00ffffffU 
+                                                                   & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__k_discharge)))));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__rate_val 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__prod 
+                       >> 0x0000000cU);
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c 
+                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__rate_val));
+                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__x 
+                        = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__x))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__Vfuncout 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__t 
+                                                  >> 0x29U)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15____VlefCall_1__div_rate 
+                        = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__17__Vfuncout;
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n 
+                        = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15____VlefCall_1__div_rate);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c 
+                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n_on_discharge)
+                               ? ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n)
+                               : 0x0000bb80U));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l 
+                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l) 
+                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__floor_lvl) 
+                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n))
+                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__floor_lvl)
+                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l) 
+                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__n)));
+                }
+            }
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_8__rc_step 
+                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__c)) 
+                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__15__l)));
+            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h6b76a3cb__0 
+                = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_8__rc_step 
+                           >> 0x00000010U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n_on_discharge = 0U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__k_discharge = 0x0000a000U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__k_charge = 0x0012f07cU;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__floor_lvl = 0U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__charging 
+                = (1U & ((IData)(vlSelfRef.snd_c) >> 5U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__counter 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_ctr;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__level 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_lvl;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__delta = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__prod = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__rate_val = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__level;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__counter;
+            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__charging) {
+                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__k_charge)))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__rate_val 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__prod 
+                           >> 0x0000000cU);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c 
+                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__rate_val));
+                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__19__Vfuncout;
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n 
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18____VlefCall_0__div_rate);
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c 
+                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c 
+                               + ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l 
+                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l) 
+                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n))
+                                ? 0x00007fffU : (0x0000ffffU 
+                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l) 
+                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n)));
+                    }
+                }
+            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l) 
+                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__floor_lvl))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__delta 
+                    = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l) 
+                                      - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__floor_lvl)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__prod 
+                    = (0x000000ffffffffffULL & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__delta)) 
+                                                * (QData)((IData)(
+                                                                  (0x00ffffffU 
+                                                                   & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__k_discharge)))));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__rate_val 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__prod 
+                       >> 0x0000000cU);
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c 
+                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__rate_val));
+                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__x 
+                        = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__x))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__Vfuncout 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__t 
+                                                  >> 0x29U)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18____VlefCall_1__div_rate 
+                        = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__20__Vfuncout;
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n 
+                        = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18____VlefCall_1__div_rate);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c 
+                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n_on_discharge)
+                               ? ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n)
+                               : 0x0000bb80U));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l 
+                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l) 
+                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__floor_lvl) 
+                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n))
+                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__floor_lvl)
+                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l) 
+                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__n)));
+                }
+            }
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_9__rc_step 
+                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__c)) 
+                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__18__l)));
+            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h6b5d6fb9__0 
+                = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_9__rc_step));
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_ctr 
+                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h6b76a3cb__0;
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_lvl 
+                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h6b5d6fb9__0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n_on_discharge = 0U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__k_discharge = 0x00000745U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__k_charge = 0x000004d9U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__floor_lvl = 0U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__charging 
+                = (1U & ((IData)(vlSelfRef.snd_a) >> 5U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__counter 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_ctr;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__level 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_lvl;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__delta = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__prod = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__rate_val = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__level;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__counter;
+            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__charging) {
+                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__k_charge)))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__rate_val 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__prod 
+                           >> 0x0000000cU);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c 
+                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__rate_val));
+                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__22__Vfuncout;
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n 
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21____VlefCall_0__div_rate);
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c 
+                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c 
+                               + ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l 
+                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l) 
+                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n))
+                                ? 0x00007fffU : (0x0000ffffU 
+                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l) 
+                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n)));
+                    }
+                }
+            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l) 
+                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__floor_lvl))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__delta 
+                    = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l) 
+                                      - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__floor_lvl)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__prod 
+                    = (0x000000ffffffffffULL & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__delta)) 
+                                                * (QData)((IData)(
+                                                                  (0x00ffffffU 
+                                                                   & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__k_discharge)))));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__rate_val 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__prod 
+                       >> 0x0000000cU);
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c 
+                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__rate_val));
+                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__x 
+                        = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__x))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__Vfuncout 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__t 
+                                                  >> 0x29U)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21____VlefCall_1__div_rate 
+                        = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__23__Vfuncout;
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n 
+                        = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21____VlefCall_1__div_rate);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c 
+                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n_on_discharge)
+                               ? ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n)
+                               : 0x0000bb80U));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l 
+                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l) 
+                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__floor_lvl) 
+                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n))
+                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__floor_lvl)
+                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l) 
+                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__n)));
+                }
+            }
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_10__rc_step 
+                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__c)) 
+                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__21__l)));
+            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hfbdbd3f5__0 
+                = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_10__rc_step 
+                           >> 0x00000010U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n_on_discharge = 0U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__k_discharge = 0x00000745U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__k_charge = 0x000004d9U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__floor_lvl = 0U;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__charging 
+                = (1U & ((IData)(vlSelfRef.snd_a) >> 5U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__counter 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_ctr;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__level 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_lvl;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__delta = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__prod = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__rate_val = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n = 0;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__level;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c 
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__counter;
+            if (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__charging) {
+                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__k_charge)))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__rate_val 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__prod 
+                           >> 0x0000000cU);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c 
+                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__rate_val));
+                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__25__Vfuncout;
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n 
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24____VlefCall_0__div_rate);
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c 
+                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c 
+                               + ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l 
+                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l) 
+                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n))
+                                ? 0x00007fffU : (0x0000ffffU 
+                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l) 
+                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n)));
+                    }
+                }
+            } else if (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l) 
+                        > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__floor_lvl))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__delta 
+                    = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l) 
+                                      - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__floor_lvl)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__prod 
+                    = (0x000000ffffffffffULL & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__delta)) 
+                                                * (QData)((IData)(
+                                                                  (0x00ffffffU 
+                                                                   & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__k_discharge)))));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__rate_val 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__prod 
+                       >> 0x0000000cU);
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c 
+                    = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c 
+                       - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__rate_val));
+                if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c)) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__x 
+                        = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__t 
+                        = (0x000fffffffffffffULL & 
+                           (0x0000000002bb0cf9ULL * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__x))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__Vfuncout 
+                        = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__t 
+                                                  >> 0x29U)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24____VlefCall_1__div_rate 
+                        = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__26__Vfuncout;
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n 
+                        = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24____VlefCall_1__div_rate);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c 
+                           + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n_on_discharge)
+                               ? ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n)
+                               : 0x0000bb80U));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l 
+                        = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l) 
+                                           < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__floor_lvl) 
+                                              + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n))
+                                           ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__floor_lvl)
+                                           : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l) 
+                                              - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__n)));
+                }
+            }
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_11__rc_step 
+                = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__c)) 
+                    << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__24__l)));
+            phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hfbe2f1d4__0 
+                = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_11__rc_step));
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_ctr 
+                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hfbdbd3f5__0;
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_lvl 
+                = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hfbe2f1d4__0;
+            if (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__polybit) {
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r67mul 
+                    = (0x000001ffffffffffULL & (0x00000000000f4899ULL 
+                                                * (QData)((IData)(
+                                                                  (0x001fffffU 
+                                                                   & ((IData)(0x00000014U) 
+                                                                      * 
+                                                                      (0x001fffffU 
+                                                                       & ((IData)(0x00007fffU) 
+                                                                          - (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl)))))))));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl4 
+                    = (0x0000ffffU & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl) 
+                                      + (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r67mul 
+                                                 >> 0x0000001aU))));
+            } else {
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r67mul 
+                    = (0x000001ffffffffffULL & (0x00000000000f4899ULL 
+                                                * (QData)((IData)(
+                                                                  (0x001fffffU 
+                                                                   & ((IData)(0x0000002fU) 
+                                                                      * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl)))))));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl4 
+                    = (0x0000ffffU & (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r67mul 
+                                              >> 0x0000001aU)));
+            }
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr 
+                = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr 
+                   - (((IData)(0x00000523U) * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl4)) 
+                      >> 0x0000000fU));
+            if (VL_GTES_III(32, 0U, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr)) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__27__x 
+                    = (0x03ffffffU & (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__27__t 
+                    = (0x000fffffffffffffULL & (0x0000000002bb0cf9ULL 
+                                                * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__27__x))));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_12__div_rate 
+                    = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__27__t 
+                                              >> 0x29U)));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n 
+                    = ((IData)(1U) + vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_12__div_rate);
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr 
+                    = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr 
+                       + ((IData)(0x0000bb80U) * vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_out 
+                    = (1U & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_out) 
+                             ^ vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
+            }
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80a 
+                = (0x000001ffffffffffULL & (0x00000000000ccccdULL 
+                                            * (QData)((IData)(
+                                                              (0x001fffffU 
+                                                               & ((IData)(0x00000021U) 
+                                                                  * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_lvl)))))));
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80b 
+                = (0x000001ffffffffffULL & (0x00000000000ccccdULL 
+                                            * (QData)((IData)(
+                                                              (0x001fffffU 
+                                                               & ((IData)(0x0000002fU) 
+                                                                  * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_lvl)))))));
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4 
+                = (0x0003ffffU & ((IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80a 
+                                           >> 0x0000001aU)) 
+                                  + (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80b 
+                                             >> 0x0000001aU))));
+            if ((1U & (~ (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_out)))) {
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4 
+                    = (0x0003ffffU & (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4));
+            }
+            if ((0x00000040U & (IData)(vlSelfRef.snd_a))) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__k_charge = 0x00561691U;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__counter 
+                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__level 
+                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__delta = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__prod = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__rate_val = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__n = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__l 
+                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__level;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c 
+                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__counter;
+                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__k_charge)))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__rate_val 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__prod 
+                           >> 0x0000000cU);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c 
+                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__rate_val));
+                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__29__Vfuncout;
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__n 
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28____VlefCall_0__div_rate);
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c 
+                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c 
+                               + ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__n));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__l 
+                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__l) 
+                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__n))
+                                ? 0x00007fffU : (0x0000ffffU 
+                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__l) 
+                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__n)));
+                    }
+                }
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_13__rc_step 
+                    = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__c)) 
+                        << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__28__l)));
+                phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hdae9b3bc__0 
+                    = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_13__rc_step 
                                >> 0x00000010U));
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n_on_discharge = 1U;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__k_discharge = 0x0000a000U;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__floor_lvl = 0U;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__counter 
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__k_charge = 0x00561691U;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__counter 
                     = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__level 
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__level 
                     = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__rate_val = 0;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n = 0;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__l 
-                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__level;
-                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c 
-                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__counter;
-                if ((0U < (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__l))) {
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__rate_val 
-                        = (0x0000000fffffffffULL & 
-                           (((0x0000ffffffffffffULL 
-                              & ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__l)) 
-                                 - (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__floor_lvl)))) 
-                             * (0x0000ffffffffffffULL 
-                                & VL_EXTENDS_QI(48,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__k_discharge))) 
-                            >> 0x0000000cU));
-                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c 
-                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c 
-                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__rate_val));
-                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c)) {
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n 
-                            = ((IData)(1U) + VL_DIV_III(32, 
-                                                        (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c), (IData)(0x0000bb80U)));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c 
-                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c 
-                               + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n_on_discharge)
-                                   ? ((IData)(0x0000bb80U) 
-                                      * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n)
-                                   : 0x0000bb80U));
-                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__l 
-                            = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__l) 
-                                               < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__floor_lvl) 
-                                                  + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n))
-                                               ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__floor_lvl)
-                                               : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__l) 
-                                                  - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__n)));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__delta = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__prod = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__rate_val = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__n = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__l 
+                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__level;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c 
+                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__counter;
+                if ((0x7fffU > (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__delta 
+                        = (0x0000ffffU & ((IData)(0x7fffU) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__l)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__k_charge)))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__rate_val 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__prod 
+                           >> 0x0000000cU);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c 
+                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__rate_val));
+                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31____VlefCall_0__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__32__Vfuncout;
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__n 
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31____VlefCall_0__div_rate);
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c 
+                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c 
+                               + ((IData)(0x0000bb80U) 
+                                  * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__n));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__l 
+                            = ((0x00007fffU < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__l) 
+                                               + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__n))
+                                ? 0x00007fffU : (0x0000ffffU 
+                                                 & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__l) 
+                                                    + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__n)));
                     }
                 }
-                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_11__rc_step 
-                    = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__c)) 
-                        << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__11__l)));
-                phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4bd95127__0 
-                    = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_11__rc_step));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_14__rc_step 
+                    = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__c)) 
+                        << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__31__l)));
+                phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hdaf4ddef__0 
+                    = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_14__rc_step));
                 vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr 
-                    = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4bd00b05__0;
+                    = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hdae9b3bc__0;
                 vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl 
-                    = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h4bd95127__0;
+                    = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_hdaf4ddef__0;
+            } else if (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__polybit) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n_on_discharge = 1U;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__k_discharge = 0x0000a000U;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__floor_lvl = 0U;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__counter 
+                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__level 
+                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__delta = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__prod = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__rate_val = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__l 
+                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__level;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c 
+                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__counter;
+                if ((0U < (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__delta 
+                        = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__l) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__floor_lvl)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__k_discharge)))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__rate_val 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__prod 
+                           >> 0x0000000cU);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c 
+                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__rate_val));
+                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34____VlefCall_1__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__36__Vfuncout;
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n 
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34____VlefCall_1__div_rate);
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c 
+                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c 
+                               + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n_on_discharge)
+                                   ? ((IData)(0x0000bb80U) 
+                                      * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n)
+                                   : 0x0000bb80U));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__l 
+                            = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__l) 
+                                               < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__floor_lvl) 
+                                                  + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n))
+                                               ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__floor_lvl)
+                                               : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__l) 
+                                                  - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__n)));
+                    }
+                }
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_15__rc_step 
+                    = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__c)) 
+                        << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__34__l)));
+                phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h52d1fec3__0 
+                    = (IData)((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_15__rc_step 
+                               >> 0x00000010U));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n_on_discharge = 1U;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__k_discharge = 0x0000a000U;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__floor_lvl = 0U;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__counter 
+                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__level 
+                    = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__delta = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__prod = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__rate_val = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n = 0;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__l 
+                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__level;
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c 
+                    = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__counter;
+                if ((0U < (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__l))) {
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__delta 
+                        = (0x0000ffffU & ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__l) 
+                                          - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__floor_lvl)));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__prod 
+                        = (0x000000ffffffffffULL & 
+                           ((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__delta)) 
+                            * (QData)((IData)((0x00ffffffU 
+                                               & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__k_discharge)))));
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__rate_val 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__prod 
+                           >> 0x0000000cU);
+                    __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c 
+                        = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c 
+                           - (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__rate_val));
+                    if (VL_GTES_III(32, 0U, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c)) {
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__x 
+                            = (0x03ffffffU & (- __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__t 
+                            = (0x000fffffffffffffULL 
+                               & (0x0000000002bb0cf9ULL 
+                                  * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__x))));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__Vfuncout 
+                            = (0x000007ffU & (IData)(
+                                                     (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__t 
+                                                      >> 0x29U)));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37____VlefCall_1__div_rate 
+                            = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__39__Vfuncout;
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n 
+                            = ((IData)(1U) + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37____VlefCall_1__div_rate);
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c 
+                            = (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c 
+                               + ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n_on_discharge)
+                                   ? ((IData)(0x0000bb80U) 
+                                      * __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n)
+                                   : 0x0000bb80U));
+                        __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__l 
+                            = (0x0000ffffU & (((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__l) 
+                                               < ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__floor_lvl) 
+                                                  + __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n))
+                                               ? (IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__floor_lvl)
+                                               : ((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__l) 
+                                                  - __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__n)));
+                    }
+                }
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_16__rc_step 
+                    = (((QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__c)) 
+                        << 0x00000010U) | (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__rc_step__37__l)));
+                phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h52d3270a__0 
+                    = (0x0000ffffU & (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_16__rc_step));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr 
+                    = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h52d1fec3__0;
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl 
+                    = phoenix_core__DOT__u_audio__DOT__u_fx__DOT____Vconcswap_1_h52d3270a__0;
             }
             vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__noise_ctr 
                 = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__noise_ctr 
                    - ((0x00000010U & (IData)(vlSelfRef.snd_a))
                        ? 0x000003adU : 0x000001d6U));
             if (VL_GTES_III(32, 0U, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__noise_ctr)) {
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__40__x 
+                    = (0x03ffffffU & (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__noise_ctr));
+                __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__40__t 
+                    = (0x000fffffffffffffULL & (0x0000000002bb0cf9ULL 
+                                                * (QData)((IData)(__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__40__x))));
+                vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_17__div_rate 
+                    = (0x000007ffU & (IData)((__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div_rate__40__t 
+                                              >> 0x29U)));
                 vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n 
-                    = ((IData)(1U) + VL_DIV_III(32, 
-                                                (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__noise_ctr), (IData)(0x0000bb80U)));
+                    = ((IData)(1U) + vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_17__div_rate);
                 vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__noise_ctr 
                     = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__noise_ctr 
                        + ((IData)(0x0000bb80U) * vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
@@ -1916,10 +2515,12 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                                         >> 0x11U)))));
                 }
             }
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__pa6_s 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl;
             vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise 
                 = (0x0003ffffU & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__polybit)
-                                   ? (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl)
-                                   : (- (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl))));
+                                   ? vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__pa6_s
+                                   : (- vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__pa6_s)));
             if ((0x00000080U & (IData)(vlSelfRef.snd_a))) {
                 vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise 
                     = (0x0003ffffU & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__polybit)
@@ -1928,11 +2529,35 @@ void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSe
                                        : (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise 
                                           - (IData)(0x00007fffU))));
             }
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__x 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__y 
+                = (0x0003ffffU & (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__x 
+                                  + ((0x00020000U & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__x)
+                                      ? 1U : 0U)));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__Vfuncout 
+                = (0x0003ffffU & VL_SHIFTRS_III(18,18,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__y, 1U));
             vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise 
-                = (0x0003ffffU & VL_DIVS_III(18, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise, (IData)(2U)));
+                = __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__41__Vfuncout;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__42__x 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t1;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__42__y 
+                = (0x0003ffffU & (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__42__x 
+                                  + ((0x00020000U & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__42__x)
+                                      ? 1U : 0U)));
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_18__div2 
+                = (0x0003ffffU & VL_SHIFTRS_III(18,18,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__42__y, 1U));
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__43__x 
+                = vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t23;
+            __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__43__y 
+                = (0x0003ffffU & (__Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__43__x 
+                                  + ((0x00020000U & __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__43__x)
+                                      ? 1U : 0U)));
+            vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_19__div2 
+                = (0x0003ffffU & VL_SHIFTRS_III(18,18,32, __Vfunc_phoenix_core__DOT__u_audio__DOT__u_fx__DOT__div2__43__y, 1U));
             vlSelfRef.phoenix_core__DOT__u_audio__DOT__fx_sample 
-                = (0x0003ffffU & (((VL_DIVS_III(18, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t1, (IData)(2U)) 
-                                    + VL_DIVS_III(18, vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t23, (IData)(2U))) 
+                = (0x0003ffffU & (((vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_18__div2 
+                                    + vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT____VlemCall_19__div2) 
                                    + vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4) 
                                   + vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise));
         }
@@ -2235,198 +2860,22 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     Vphoenix_core__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Locals
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__v = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__v = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__v = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__v = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__v;
@@ -2435,22 +2884,10 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__v = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__v;
@@ -2463,10 +2900,22 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__v;
@@ -2475,22 +2924,10 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__v = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__v;
@@ -2503,10 +2940,22 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__v;
@@ -2515,22 +2964,10 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__v = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__v;
@@ -2543,10 +2980,22 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__v;
@@ -2555,22 +3004,10 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__v = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__v;
@@ -2583,10 +3020,22 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__v;
@@ -2595,22 +3044,10 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v = 0;
-    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__Vfuncout = 0;
-    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v = 0;
-    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__cin;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__cin = 0;
-    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__v = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__v;
@@ -2623,10 +3060,22 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__v;
@@ -2647,12 +3096,26 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__Vfuncout;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__Vfuncout = 0;
-    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__v;
-    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__v;
@@ -2673,6 +3136,168 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout = 0;
     CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v;
     __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__v = 0;
+    SData/*15:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v = 0;
+    CData/*0:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__cin;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__cin = 0;
+    SData/*8:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__117__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__117__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__v = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__Vfuncout;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__Vfuncout = 0;
+    CData/*7:0*/ __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__v;
+    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__v = 0;
     CData/*6:0*/ __VdfgRegularize_hebeb780c_0_6;
     __VdfgRegularize_hebeb780c_0_6 = 0;
     IData/*23:0*/ __VdlyVal__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__ctr__v12;
@@ -3295,7 +3920,7 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                         = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc;
                                                     vlSelfRef.phoenix_core__DOT__cpu_mreq = 1U;
                                                 } else {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__cin 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__cin 
                                                         = 
                                                         (1U 
                                                          & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
@@ -3304,311 +3929,311 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                         (0x0000ffffU 
                                                          & ((IData)(1U) 
                                                             + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v 
                                                         = vlSelfRef.phoenix_core__DOT__cpu_din;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc 
                                                         = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                                                     vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op 
                                                         = 
                                                         (7U 
                                                          & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                                             >> 3U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res = 0U;
                                                     if (
                                                         (4U 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op))) {
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op))) {
                                                         if (
                                                             (2U 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op))) {
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op))) {
                                                             if (
                                                                 (1U 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op))) {
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op))) {
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q 
                                                                     = 
                                                                     (0x000001ffU 
-                                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc) 
-                                                                         - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v)) 
+                                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc) 
+                                                                         - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v)) 
                                                                         - 
                                                                         ((3U 
-                                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op)) 
-                                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__cin))));
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res 
+                                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op)) 
+                                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__cin))));
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res 
                                                                     = 
                                                                     (0x000000ffU 
-                                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q));
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__v 
-                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res;
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__Vfuncout = 0U;
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__Vfuncout 
+                                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q));
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__v 
+                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res;
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout = 0U;
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout 
                                                                     = 
                                                                     ((0x3fU 
-                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__Vfuncout)) 
+                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout)) 
                                                                      | (((2U 
-                                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__v) 
+                                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__v) 
                                                                              >> 6U)) 
                                                                          | (0U 
-                                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__v))) 
+                                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__v))) 
                                                                         << 6U));
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__Vfuncout 
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout 
                                                                     = 
                                                                     ((0xfbU 
-                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__Vfuncout)) 
+                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout)) 
                                                                      | (4U 
                                                                         & ((~ 
-                                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__v)) 
+                                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__v)) 
                                                                            << 2U)));
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
-                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__13__Vfuncout;
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
+                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout;
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
                                                                     = 
                                                                     ((0xfeU 
-                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f)) 
+                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f)) 
                                                                      | (1U 
-                                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q) 
+                                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q) 
                                                                            >> 8U)));
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
                                                                     = 
                                                                     ((0xefU 
-                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f)) 
+                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f)) 
                                                                      | (0x00000010U 
                                                                         & ((~ 
-                                                                            ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc) 
-                                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res)) 
-                                                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v)) 
+                                                                            ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc) 
+                                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res)) 
+                                                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v)) 
                                                                              >> 4U)) 
                                                                            << 4U)));
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
                                                                     = 
                                                                     (2U 
-                                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f));
+                                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f));
                                                                 if (
                                                                     (7U 
-                                                                     == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op))) {
-                                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res 
-                                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc;
+                                                                     == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op))) {
+                                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res 
+                                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc;
                                                                 }
                                                             } else {
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res 
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res 
                                                                     = 
-                                                                    ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc) 
-                                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v));
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__v 
-                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res;
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__Vfuncout = 0U;
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__Vfuncout 
+                                                                    ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc) 
+                                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v));
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v 
+                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res;
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout = 0U;
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout 
                                                                     = 
                                                                     ((0x3fU 
-                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__Vfuncout)) 
+                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout)) 
                                                                      | (((2U 
-                                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__v) 
+                                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v) 
                                                                              >> 6U)) 
                                                                          | (0U 
-                                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__v))) 
+                                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v))) 
                                                                         << 6U));
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__Vfuncout 
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout 
                                                                     = 
                                                                     ((0xfbU 
-                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__Vfuncout)) 
+                                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout)) 
                                                                      | (4U 
                                                                         & ((~ 
-                                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__v)) 
+                                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v)) 
                                                                            << 2U)));
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
-                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__14__Vfuncout;
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
+                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout;
                                                             }
                                                         } else if (
                                                                    (1U 
-                                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op))) {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res 
+                                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op))) {
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res 
                                                                 = 
-                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc) 
-                                                                 ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__v 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__Vfuncout = 0U;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__Vfuncout 
+                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc) 
+                                                                 ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__v 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__Vfuncout = 0U;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__Vfuncout 
                                                                 = 
                                                                 ((0x3fU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__Vfuncout)) 
                                                                  | (((2U 
-                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__v) 
+                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__v) 
                                                                          >> 6U)) 
                                                                      | (0U 
-                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__v))) 
+                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__v))) 
                                                                     << 6U));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__Vfuncout 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__Vfuncout 
                                                                 = 
                                                                 ((0xfbU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__Vfuncout)) 
                                                                  | (4U 
                                                                     & ((~ 
-                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__v)) 
+                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__v)) 
                                                                        << 2U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__15__Vfuncout;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__47__Vfuncout;
                                                         } else {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res 
                                                                 = 
-                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc) 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__v 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__Vfuncout = 0U;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__Vfuncout 
+                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc) 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__v 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout = 0U;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout 
                                                                 = 
                                                                 ((0x3fU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout)) 
                                                                  | (((2U 
-                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__v) 
+                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__v) 
                                                                          >> 6U)) 
                                                                      | (0U 
-                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__v))) 
+                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__v))) 
                                                                     << 6U));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__Vfuncout 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout 
                                                                 = 
                                                                 ((0xfbU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout)) 
                                                                  | (4U 
                                                                     & ((~ 
-                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__v)) 
+                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__v)) 
                                                                        << 2U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__16__Vfuncout;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
                                                                 = 
                                                                 (0x00000010U 
-                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f));
+                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f));
                                                         }
                                                     } else if (
                                                                (2U 
-                                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q 
+                                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q 
                                                             = 
                                                             (0x000001ffU 
-                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc) 
-                                                                 - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v)) 
+                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc) 
+                                                                 - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v)) 
                                                                 - 
                                                                 ((3U 
-                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op)) 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__cin))));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res 
+                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op)) 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__cin))));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res 
                                                             = 
                                                             (0x000000ffU 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__Vfuncout 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__17__Vfuncout;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
                                                             = 
                                                             ((0xfeU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f)) 
                                                              | (1U 
-                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q) 
+                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q) 
                                                                    >> 8U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
                                                             = 
                                                             ((0xefU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f)) 
                                                              | (0x00000010U 
                                                                 & ((~ 
-                                                                    ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc) 
-                                                                       ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res)) 
-                                                                      ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v)) 
+                                                                    ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc) 
+                                                                       ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res)) 
+                                                                      ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v)) 
                                                                      >> 4U)) 
                                                                    << 4U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
                                                             = 
                                                             (2U 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f));
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f));
                                                         if (
                                                             (7U 
-                                                             == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op))) {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc;
+                                                             == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op))) {
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc;
                                                         }
                                                     } else {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q 
                                                             = 
                                                             (0x000001ffU 
-                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc) 
-                                                                 + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v)) 
+                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc) 
+                                                                 + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v)) 
                                                                 + 
                                                                 ((1U 
-                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__op)) 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__cin))));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res 
+                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__op)) 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__cin))));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res 
                                                             = 
                                                             (0x000000ffU 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__Vfuncout 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__18__Vfuncout;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
                                                             = 
                                                             ((0xfeU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f)) 
                                                              | (1U 
-                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__q) 
+                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__q) 
                                                                    >> 8U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f 
                                                             = 
                                                             ((0xefU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f)) 
                                                              | (0x00000010U 
-                                                                & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__acc) 
-                                                                    ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res)) 
-                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__v))));
+                                                                & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__acc) 
+                                                                    ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res)) 
+                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__v))));
                                                     }
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__Vfuncout 
                                                         = 
-                                                        (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__res) 
+                                                        (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__res) 
                                                           << 8U) 
-                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__f));
+                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__f));
                                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__12__Vfuncout;
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__44__Vfuncout;
                                                     vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                                         = 
                                                         (0x000000ffU 
@@ -3961,7 +4586,7 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc;
                                                 vlSelfRef.phoenix_core__DOT__cpu_mreq = 1U;
                                             } else {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__cin 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__cin 
                                                     = 
                                                     (1U 
                                                      & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
@@ -3970,311 +4595,311 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                     (0x0000ffffU 
                                                      & ((IData)(1U) 
                                                         + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v 
                                                     = vlSelfRef.phoenix_core__DOT__cpu_din;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc 
                                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                                                 vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op 
                                                     = 
                                                     (7U 
                                                      & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                                         >> 3U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res = 0U;
                                                 if (
                                                     (4U 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op))) {
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op))) {
                                                     if (
                                                         (2U 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op))) {
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op))) {
                                                         if (
                                                             (1U 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op))) {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op))) {
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q 
                                                                 = 
                                                                 (0x000001ffU 
-                                                                 & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc) 
-                                                                     - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v)) 
+                                                                 & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc) 
+                                                                     - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v)) 
                                                                     - 
                                                                     ((3U 
-                                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op)) 
-                                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__cin))));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res 
+                                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op)) 
+                                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__cin))));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res 
                                                                 = 
                                                                 (0x000000ffU 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__v 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__Vfuncout = 0U;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__Vfuncout 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__v 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout = 0U;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout 
                                                                 = 
                                                                 ((0x3fU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout)) 
                                                                  | (((2U 
-                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__v) 
+                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__v) 
                                                                          >> 6U)) 
                                                                      | (0U 
-                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__v))) 
+                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__v))) 
                                                                     << 6U));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__Vfuncout 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout 
                                                                 = 
                                                                 ((0xfbU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout)) 
                                                                  | (4U 
                                                                     & ((~ 
-                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__v)) 
+                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__v)) 
                                                                        << 2U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__20__Vfuncout;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
                                                                 = 
                                                                 ((0xfeU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f)) 
                                                                  | (1U 
-                                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q) 
+                                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q) 
                                                                        >> 8U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
                                                                 = 
                                                                 ((0xefU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f)) 
                                                                  | (0x00000010U 
                                                                     & ((~ 
-                                                                        ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc) 
-                                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res)) 
-                                                                          ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v)) 
+                                                                        ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc) 
+                                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res)) 
+                                                                          ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v)) 
                                                                          >> 4U)) 
                                                                        << 4U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
                                                                 = 
                                                                 (2U 
-                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f));
+                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f));
                                                             if (
                                                                 (7U 
-                                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op))) {
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res 
-                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc;
+                                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op))) {
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res 
+                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc;
                                                             }
                                                         } else {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res 
                                                                 = 
-                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc) 
-                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__v 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__Vfuncout = 0U;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__Vfuncout 
+                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc) 
+                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout = 0U;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout 
                                                                 = 
                                                                 ((0x3fU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout)) 
                                                                  | (((2U 
-                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__v) 
+                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v) 
                                                                          >> 6U)) 
                                                                      | (0U 
-                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__v))) 
+                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v))) 
                                                                     << 6U));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__Vfuncout 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout 
                                                                 = 
                                                                 ((0xfbU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout)) 
                                                                  | (4U 
                                                                     & ((~ 
-                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__v)) 
+                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v)) 
                                                                        << 2U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__21__Vfuncout;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout;
                                                         }
                                                     } else if (
                                                                (1U 
-                                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res 
+                                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res 
                                                             = 
-                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc) 
-                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__Vfuncout 
+                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc) 
+                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__22__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__54__Vfuncout;
                                                     } else {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res 
                                                             = 
-                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__Vfuncout 
+                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__23__Vfuncout;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
                                                             = 
                                                             (0x00000010U 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f));
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f));
                                                     }
                                                 } else if (
                                                            (2U 
-                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q 
+                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q 
                                                         = 
                                                         (0x000001ffU 
-                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc) 
-                                                             - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v)) 
+                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc) 
+                                                             - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v)) 
                                                             - 
                                                             ((3U 
-                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op)) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__cin))));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res 
+                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op)) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__cin))));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res 
                                                         = 
                                                         (0x000000ffU 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__Vfuncout 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__24__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
                                                         = 
                                                         ((0xfeU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f)) 
                                                          | (1U 
-                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q) 
+                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q) 
                                                                >> 8U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
                                                         = 
                                                         ((0xefU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f)) 
                                                          | (0x00000010U 
                                                             & ((~ 
-                                                                ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc) 
-                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res)) 
-                                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v)) 
+                                                                ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc) 
+                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res)) 
+                                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v)) 
                                                                  >> 4U)) 
                                                                << 4U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
                                                         = 
                                                         (2U 
-                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f));
+                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f));
                                                     if (
                                                         (7U 
-                                                         == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc;
+                                                         == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc;
                                                     }
                                                 } else {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q 
                                                         = 
                                                         (0x000001ffU 
-                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc) 
-                                                             + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v)) 
+                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc) 
+                                                             + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v)) 
                                                             + 
                                                             ((1U 
-                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__op)) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__cin))));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res 
+                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__op)) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__cin))));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res 
                                                         = 
                                                         (0x000000ffU 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__Vfuncout 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__25__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
                                                         = 
                                                         ((0xfeU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f)) 
                                                          | (1U 
-                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__q) 
+                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__q) 
                                                                >> 8U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f 
                                                         = 
                                                         ((0xefU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f)) 
                                                          | (0x00000010U 
-                                                            & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__acc) 
-                                                                ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res)) 
-                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__v))));
+                                                            & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__acc) 
+                                                                ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res)) 
+                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__v))));
                                                 }
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__Vfuncout 
                                                     = 
-                                                    (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__res) 
+                                                    (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__res) 
                                                       << 8U) 
-                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__f));
+                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__f));
                                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__19__Vfuncout;
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__51__Vfuncout;
                                                 vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                                     = 
                                                     (0x000000ffU 
@@ -4652,7 +5277,7 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc;
                                                 vlSelfRef.phoenix_core__DOT__cpu_mreq = 1U;
                                             } else {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__cin 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__cin 
                                                     = 
                                                     (1U 
                                                      & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
@@ -4661,311 +5286,311 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                     (0x0000ffffU 
                                                      & ((IData)(1U) 
                                                         + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v 
                                                     = vlSelfRef.phoenix_core__DOT__cpu_din;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc 
                                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                                                 vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op 
                                                     = 
                                                     (7U 
                                                      & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                                         >> 3U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res = 0U;
                                                 if (
                                                     (4U 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op))) {
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op))) {
                                                     if (
                                                         (2U 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op))) {
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op))) {
                                                         if (
                                                             (1U 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op))) {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op))) {
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q 
                                                                 = 
                                                                 (0x000001ffU 
-                                                                 & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc) 
-                                                                     - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v)) 
+                                                                 & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc) 
+                                                                     - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v)) 
                                                                     - 
                                                                     ((3U 
-                                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op)) 
-                                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__cin))));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res 
+                                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op)) 
+                                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__cin))));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res 
                                                                 = 
                                                                 (0x000000ffU 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__v 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__Vfuncout = 0U;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__Vfuncout 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__v 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout = 0U;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout 
                                                                 = 
                                                                 ((0x3fU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout)) 
                                                                  | (((2U 
-                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__v) 
+                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__v) 
                                                                          >> 6U)) 
                                                                      | (0U 
-                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__v))) 
+                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__v))) 
                                                                     << 6U));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__Vfuncout 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout 
                                                                 = 
                                                                 ((0xfbU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout)) 
                                                                  | (4U 
                                                                     & ((~ 
-                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__v)) 
+                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__v)) 
                                                                        << 2U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__27__Vfuncout;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
                                                                 = 
                                                                 ((0xfeU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f)) 
                                                                  | (1U 
-                                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q) 
+                                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q) 
                                                                        >> 8U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
                                                                 = 
                                                                 ((0xefU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f)) 
                                                                  | (0x00000010U 
                                                                     & ((~ 
-                                                                        ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc) 
-                                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res)) 
-                                                                          ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v)) 
+                                                                        ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc) 
+                                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res)) 
+                                                                          ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v)) 
                                                                          >> 4U)) 
                                                                        << 4U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
                                                                 = 
                                                                 (2U 
-                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f));
+                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f));
                                                             if (
                                                                 (7U 
-                                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op))) {
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res 
-                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc;
+                                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op))) {
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res 
+                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc;
                                                             }
                                                         } else {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res 
                                                                 = 
-                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc) 
-                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__v 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__Vfuncout = 0U;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__Vfuncout 
+                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc) 
+                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout = 0U;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout 
                                                                 = 
                                                                 ((0x3fU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout)) 
                                                                  | (((2U 
-                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__v) 
+                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v) 
                                                                          >> 6U)) 
                                                                      | (0U 
-                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__v))) 
+                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v))) 
                                                                     << 6U));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__Vfuncout 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout 
                                                                 = 
                                                                 ((0xfbU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout)) 
                                                                  | (4U 
                                                                     & ((~ 
-                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__v)) 
+                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v)) 
                                                                        << 2U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__28__Vfuncout;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout;
                                                         }
                                                     } else if (
                                                                (1U 
-                                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res 
+                                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res 
                                                             = 
-                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc) 
-                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__Vfuncout 
+                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc) 
+                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__29__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__61__Vfuncout;
                                                     } else {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res 
                                                             = 
-                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__Vfuncout 
+                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__30__Vfuncout;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
                                                             = 
                                                             (0x00000010U 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f));
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f));
                                                     }
                                                 } else if (
                                                            (2U 
-                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q 
+                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q 
                                                         = 
                                                         (0x000001ffU 
-                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc) 
-                                                             - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v)) 
+                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc) 
+                                                             - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v)) 
                                                             - 
                                                             ((3U 
-                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op)) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__cin))));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res 
+                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op)) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__cin))));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res 
                                                         = 
                                                         (0x000000ffU 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__Vfuncout 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__31__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
                                                         = 
                                                         ((0xfeU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f)) 
                                                          | (1U 
-                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q) 
+                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q) 
                                                                >> 8U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
                                                         = 
                                                         ((0xefU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f)) 
                                                          | (0x00000010U 
                                                             & ((~ 
-                                                                ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc) 
-                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res)) 
-                                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v)) 
+                                                                ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc) 
+                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res)) 
+                                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v)) 
                                                                  >> 4U)) 
                                                                << 4U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
                                                         = 
                                                         (2U 
-                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f));
+                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f));
                                                     if (
                                                         (7U 
-                                                         == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc;
+                                                         == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc;
                                                     }
                                                 } else {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q 
                                                         = 
                                                         (0x000001ffU 
-                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc) 
-                                                             + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v)) 
+                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc) 
+                                                             + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v)) 
                                                             + 
                                                             ((1U 
-                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__op)) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__cin))));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res 
+                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__op)) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__cin))));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res 
                                                         = 
                                                         (0x000000ffU 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__Vfuncout 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__32__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
                                                         = 
                                                         ((0xfeU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f)) 
                                                          | (1U 
-                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__q) 
+                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__q) 
                                                                >> 8U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f 
                                                         = 
                                                         ((0xefU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f)) 
                                                          | (0x00000010U 
-                                                            & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__acc) 
-                                                                ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res)) 
-                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__v))));
+                                                            & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__acc) 
+                                                                ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res)) 
+                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__v))));
                                                 }
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__Vfuncout 
                                                     = 
-                                                    (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__res) 
+                                                    (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__res) 
                                                       << 8U) 
-                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__f));
+                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__f));
                                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__26__Vfuncout;
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__58__Vfuncout;
                                                 vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                                     = 
                                                     (0x000000ffU 
@@ -5277,316 +5902,316 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                 = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc;
                                             vlSelfRef.phoenix_core__DOT__cpu_mreq = 1U;
                                         } else {
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__cin 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__cin 
                                                 = (1U 
                                                    & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
                                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__pc 
                                                 = (0x0000ffffU 
                                                    & ((IData)(1U) 
                                                       + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v 
                                                 = vlSelfRef.phoenix_core__DOT__cpu_din;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc 
                                                 = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op 
                                                 = (7U 
                                                    & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                                       >> 3U));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res = 0U;
                                             if ((4U 
-                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op))) {
+                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op))) {
                                                 if (
                                                     (2U 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op))) {
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op))) {
                                                     if (
                                                         (1U 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q 
                                                             = 
                                                             (0x000001ffU 
-                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc) 
-                                                                 - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v)) 
+                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc) 
+                                                                 - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v)) 
                                                                 - 
                                                                 ((3U 
-                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op)) 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__cin))));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res 
+                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op)) 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__cin))));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res 
                                                             = 
                                                             (0x000000ffU 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__Vfuncout 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__34__Vfuncout;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
                                                             = 
                                                             ((0xfeU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f)) 
                                                              | (1U 
-                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q) 
+                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q) 
                                                                    >> 8U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
                                                             = 
                                                             ((0xefU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f)) 
                                                              | (0x00000010U 
                                                                 & ((~ 
-                                                                    ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc) 
-                                                                       ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res)) 
-                                                                      ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v)) 
+                                                                    ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc) 
+                                                                       ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res)) 
+                                                                      ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v)) 
                                                                      >> 4U)) 
                                                                    << 4U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
                                                             = 
                                                             (2U 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f));
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f));
                                                         if (
                                                             (7U 
-                                                             == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op))) {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc;
+                                                             == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op))) {
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc;
                                                         }
                                                     } else {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res 
                                                             = 
-                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc) 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__Vfuncout 
+                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc) 
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__35__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout;
                                                     }
                                                 } else if (
                                                            (1U 
-                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res 
+                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res 
                                                         = 
-                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc) 
-                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__Vfuncout 
+                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc) 
+                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__36__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__68__Vfuncout;
                                                 } else {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res 
                                                         = 
-                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc) 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__Vfuncout 
+                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc) 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__37__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
                                                         = 
                                                         (0x00000010U 
-                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f));
+                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f));
                                                 }
                                             } else if (
                                                        (2U 
-                                                        & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op))) {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q 
+                                                        & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op))) {
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q 
                                                     = 
                                                     (0x000001ffU 
-                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc) 
-                                                         - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v)) 
+                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc) 
+                                                         - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v)) 
                                                         - 
                                                         ((3U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op)) 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__cin))));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op)) 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__cin))));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res 
                                                     = 
                                                     (0x000000ffU 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__v 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__Vfuncout = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__Vfuncout 
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__v 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout 
                                                     = 
                                                     ((0x3fU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout)) 
                                                      | (((2U 
-                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__v) 
+                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__v) 
                                                              >> 6U)) 
                                                          | (0U 
-                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__v))) 
+                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__v))) 
                                                         << 6U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout 
                                                     = 
                                                     ((0xfbU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout)) 
                                                      | (4U 
                                                         & ((~ 
-                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__v)) 
+                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__v)) 
                                                            << 2U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__38__Vfuncout;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
                                                     = 
                                                     ((0xfeU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f)) 
                                                      | (1U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q) 
                                                            >> 8U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
                                                     = 
                                                     ((0xefU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f)) 
                                                      | (0x00000010U 
                                                         & ((~ 
-                                                            ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc) 
-                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res)) 
-                                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v)) 
+                                                            ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc) 
+                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res)) 
+                                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v)) 
                                                              >> 4U)) 
                                                            << 4U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
                                                     = 
                                                     (2U 
-                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f));
+                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f));
                                                 if (
                                                     (7U 
-                                                     == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc;
+                                                     == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc;
                                                 }
                                             } else {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q 
                                                     = 
                                                     (0x000001ffU 
-                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc) 
-                                                         + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v)) 
+                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc) 
+                                                         + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v)) 
                                                         + 
                                                         ((1U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__op)) 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__cin))));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__op)) 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__cin))));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res 
                                                     = 
                                                     (0x000000ffU 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__v 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__Vfuncout = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__Vfuncout 
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout 
                                                     = 
                                                     ((0x3fU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout)) 
                                                      | (((2U 
-                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__v) 
+                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v) 
                                                              >> 6U)) 
                                                          | (0U 
-                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__v))) 
+                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v))) 
                                                         << 6U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout 
                                                     = 
                                                     ((0xfbU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout)) 
                                                      | (4U 
                                                         & ((~ 
-                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__v)) 
+                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v)) 
                                                            << 2U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__39__Vfuncout;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
                                                     = 
                                                     ((0xfeU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f)) 
                                                      | (1U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__q) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__q) 
                                                            >> 8U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f 
                                                     = 
                                                     ((0xefU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f)) 
                                                      | (0x00000010U 
-                                                        & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__acc) 
-                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res)) 
-                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__v))));
+                                                        & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__acc) 
+                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res)) 
+                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__v))));
                                             }
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__Vfuncout 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__Vfuncout 
                                                 = (
-                                                   ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__res) 
+                                                   ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__res) 
                                                     << 8U) 
-                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__f));
+                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__f));
                                             vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__33__Vfuncout;
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__65__Vfuncout;
                                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                                 = (0x000000ffU 
                                                    & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out) 
@@ -5998,7 +6623,7 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc;
                                                 vlSelfRef.phoenix_core__DOT__cpu_mreq = 1U;
                                             } else {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__cin 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__cin 
                                                     = 
                                                     (1U 
                                                      & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
@@ -6007,311 +6632,311 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                     (0x0000ffffU 
                                                      & ((IData)(1U) 
                                                         + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v 
                                                     = vlSelfRef.phoenix_core__DOT__cpu_din;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc 
                                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                                                 vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op 
                                                     = 
                                                     (7U 
                                                      & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                                         >> 3U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res = 0U;
                                                 if (
                                                     (4U 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op))) {
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op))) {
                                                     if (
                                                         (2U 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op))) {
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op))) {
                                                         if (
                                                             (1U 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op))) {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op))) {
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q 
                                                                 = 
                                                                 (0x000001ffU 
-                                                                 & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc) 
-                                                                     - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v)) 
+                                                                 & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc) 
+                                                                     - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v)) 
                                                                     - 
                                                                     ((3U 
-                                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op)) 
-                                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__cin))));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res 
+                                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op)) 
+                                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__cin))));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res 
                                                                 = 
                                                                 (0x000000ffU 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__v 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__Vfuncout = 0U;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__Vfuncout 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__v 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout = 0U;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout 
                                                                 = 
                                                                 ((0x3fU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout)) 
                                                                  | (((2U 
-                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__v) 
+                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__v) 
                                                                          >> 6U)) 
                                                                      | (0U 
-                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__v))) 
+                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__v))) 
                                                                     << 6U));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__Vfuncout 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout 
                                                                 = 
                                                                 ((0xfbU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout)) 
                                                                  | (4U 
                                                                     & ((~ 
-                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__v)) 
+                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__v)) 
                                                                        << 2U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__41__Vfuncout;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
                                                                 = 
                                                                 ((0xfeU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f)) 
                                                                  | (1U 
-                                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q) 
+                                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q) 
                                                                        >> 8U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
                                                                 = 
                                                                 ((0xefU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f)) 
                                                                  | (0x00000010U 
                                                                     & ((~ 
-                                                                        ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc) 
-                                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res)) 
-                                                                          ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v)) 
+                                                                        ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc) 
+                                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res)) 
+                                                                          ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v)) 
                                                                          >> 4U)) 
                                                                        << 4U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
                                                                 = 
                                                                 (2U 
-                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f));
+                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f));
                                                             if (
                                                                 (7U 
-                                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op))) {
-                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res 
-                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc;
+                                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op))) {
+                                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res 
+                                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc;
                                                             }
                                                         } else {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res 
                                                                 = 
-                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc) 
-                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__v 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__Vfuncout = 0U;
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__Vfuncout 
+                                                                ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc) 
+                                                                 | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v));
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout = 0U;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout 
                                                                 = 
                                                                 ((0x3fU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout)) 
                                                                  | (((2U 
-                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__v) 
+                                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v) 
                                                                          >> 6U)) 
                                                                      | (0U 
-                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__v))) 
+                                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v))) 
                                                                     << 6U));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__Vfuncout 
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout 
                                                                 = 
                                                                 ((0xfbU 
-                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__Vfuncout)) 
+                                                                  & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout)) 
                                                                  | (4U 
                                                                     & ((~ 
-                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__v)) 
+                                                                        VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v)) 
                                                                        << 2U)));
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__42__Vfuncout;
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout;
                                                         }
                                                     } else if (
                                                                (1U 
-                                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res 
+                                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res 
                                                             = 
-                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc) 
-                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__Vfuncout 
+                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc) 
+                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__43__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__75__Vfuncout;
                                                     } else {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res 
                                                             = 
-                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__Vfuncout 
+                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__44__Vfuncout;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
                                                             = 
                                                             (0x00000010U 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f));
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f));
                                                     }
                                                 } else if (
                                                            (2U 
-                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q 
+                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q 
                                                         = 
                                                         (0x000001ffU 
-                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc) 
-                                                             - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v)) 
+                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc) 
+                                                             - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v)) 
                                                             - 
                                                             ((3U 
-                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op)) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__cin))));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res 
+                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op)) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__cin))));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res 
                                                         = 
                                                         (0x000000ffU 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__45__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
                                                         = 
                                                         ((0xfeU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f)) 
                                                          | (1U 
-                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q) 
+                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q) 
                                                                >> 8U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
                                                         = 
                                                         ((0xefU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f)) 
                                                          | (0x00000010U 
                                                             & ((~ 
-                                                                ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc) 
-                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res)) 
-                                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v)) 
+                                                                ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc) 
+                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res)) 
+                                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v)) 
                                                                  >> 4U)) 
                                                                << 4U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
                                                         = 
                                                         (2U 
-                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f));
+                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f));
                                                     if (
                                                         (7U 
-                                                         == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc;
+                                                         == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc;
                                                     }
                                                 } else {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q 
                                                         = 
                                                         (0x000001ffU 
-                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc) 
-                                                             + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v)) 
+                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc) 
+                                                             + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v)) 
                                                             + 
                                                             ((1U 
-                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__op)) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__cin))));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res 
+                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__op)) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__cin))));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res 
                                                         = 
                                                         (0x000000ffU 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__46__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
                                                         = 
                                                         ((0xfeU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f)) 
                                                          | (1U 
-                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__q) 
+                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__q) 
                                                                >> 8U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f 
                                                         = 
                                                         ((0xefU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f)) 
                                                          | (0x00000010U 
-                                                            & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__acc) 
-                                                                ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res)) 
-                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__v))));
+                                                            & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__acc) 
+                                                                ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res)) 
+                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__v))));
                                                 }
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__Vfuncout 
                                                     = 
-                                                    (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__res) 
+                                                    (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__res) 
                                                       << 8U) 
-                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__f));
+                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__f));
                                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__40__Vfuncout;
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__72__Vfuncout;
                                                 vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                                     = 
                                                     (0x000000ffU 
@@ -6691,316 +7316,316 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                 = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc;
                                             vlSelfRef.phoenix_core__DOT__cpu_mreq = 1U;
                                         } else {
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__cin 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__cin 
                                                 = (1U 
                                                    & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
                                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__pc 
                                                 = (0x0000ffffU 
                                                    & ((IData)(1U) 
                                                       + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v 
                                                 = vlSelfRef.phoenix_core__DOT__cpu_din;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc 
                                                 = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op 
                                                 = (7U 
                                                    & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                                       >> 3U));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res = 0U;
                                             if ((4U 
-                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op))) {
+                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op))) {
                                                 if (
                                                     (2U 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op))) {
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op))) {
                                                     if (
                                                         (1U 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q 
                                                             = 
                                                             (0x000001ffU 
-                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc) 
-                                                                 - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v)) 
+                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc) 
+                                                                 - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v)) 
                                                                 - 
                                                                 ((3U 
-                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op)) 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__cin))));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res 
+                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op)) 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__cin))));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res 
                                                             = 
                                                             (0x000000ffU 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__48__Vfuncout;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
                                                             = 
                                                             ((0xfeU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f)) 
                                                              | (1U 
-                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q) 
+                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q) 
                                                                    >> 8U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
                                                             = 
                                                             ((0xefU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f)) 
                                                              | (0x00000010U 
                                                                 & ((~ 
-                                                                    ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc) 
-                                                                       ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res)) 
-                                                                      ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v)) 
+                                                                    ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc) 
+                                                                       ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res)) 
+                                                                      ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v)) 
                                                                      >> 4U)) 
                                                                    << 4U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
                                                             = 
                                                             (2U 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f));
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f));
                                                         if (
                                                             (7U 
-                                                             == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op))) {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc;
+                                                             == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op))) {
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc;
                                                         }
                                                     } else {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res 
                                                             = 
-                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc) 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout 
+                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc) 
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__49__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout;
                                                     }
                                                 } else if (
                                                            (1U 
-                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res 
+                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res 
                                                         = 
-                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc) 
-                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout 
+                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc) 
+                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__50__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout;
                                                 } else {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res 
                                                         = 
-                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc) 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__Vfuncout 
+                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc) 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__51__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
                                                         = 
                                                         (0x00000010U 
-                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f));
+                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f));
                                                 }
                                             } else if (
                                                        (2U 
-                                                        & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op))) {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q 
+                                                        & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op))) {
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q 
                                                     = 
                                                     (0x000001ffU 
-                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc) 
-                                                         - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v)) 
+                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc) 
+                                                         - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v)) 
                                                         - 
                                                         ((3U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op)) 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__cin))));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op)) 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__cin))));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res 
                                                     = 
                                                     (0x000000ffU 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__v 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout 
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout 
                                                     = 
                                                     ((0x3fU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout)) 
                                                      | (((2U 
-                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__v) 
+                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v) 
                                                              >> 6U)) 
                                                          | (0U 
-                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__v))) 
+                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v))) 
                                                         << 6U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout 
                                                     = 
                                                     ((0xfbU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout)) 
                                                      | (4U 
                                                         & ((~ 
-                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__v)) 
+                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v)) 
                                                            << 2U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__52__Vfuncout;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
                                                     = 
                                                     ((0xfeU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f)) 
                                                      | (1U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q) 
                                                            >> 8U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
                                                     = 
                                                     ((0xefU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f)) 
                                                      | (0x00000010U 
                                                         & ((~ 
-                                                            ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc) 
-                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res)) 
-                                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v)) 
+                                                            ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc) 
+                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res)) 
+                                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v)) 
                                                              >> 4U)) 
                                                            << 4U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
                                                     = 
                                                     (2U 
-                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f));
+                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f));
                                                 if (
                                                     (7U 
-                                                     == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc;
+                                                     == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc;
                                                 }
                                             } else {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q 
                                                     = 
                                                     (0x000001ffU 
-                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc) 
-                                                         + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v)) 
+                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc) 
+                                                         + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v)) 
                                                         + 
                                                         ((1U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__op)) 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__cin))));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__op)) 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__cin))));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res 
                                                     = 
                                                     (0x000000ffU 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout 
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__Vfuncout = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__Vfuncout 
                                                     = 
                                                     ((0x3fU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__Vfuncout)) 
                                                      | (((2U 
-                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v) 
+                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v) 
                                                              >> 6U)) 
                                                          | (0U 
-                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v))) 
+                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v))) 
                                                         << 6U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__Vfuncout 
                                                     = 
                                                     ((0xfbU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__Vfuncout)) 
                                                      | (4U 
                                                         & ((~ 
-                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__v)) 
+                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v)) 
                                                            << 2U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__53__Vfuncout;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__Vfuncout;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
                                                     = 
                                                     ((0xfeU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f)) 
                                                      | (1U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__q) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__q) 
                                                            >> 8U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f 
                                                     = 
                                                     ((0xefU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f)) 
                                                      | (0x00000010U 
-                                                        & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__acc) 
-                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res)) 
-                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__v))));
+                                                        & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__acc) 
+                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res)) 
+                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__v))));
                                             }
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__Vfuncout 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__Vfuncout 
                                                 = (
-                                                   ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__res) 
+                                                   ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__res) 
                                                     << 8U) 
-                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__f));
+                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__f));
                                             vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__47__Vfuncout;
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__79__Vfuncout;
                                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                                 = (0x000000ffU 
                                                    & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out) 
@@ -7366,316 +7991,316 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                 = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc;
                                             vlSelfRef.phoenix_core__DOT__cpu_mreq = 1U;
                                         } else {
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__cin 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__cin 
                                                 = (1U 
                                                    & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
                                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__pc 
                                                 = (0x0000ffffU 
                                                    & ((IData)(1U) 
                                                       + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v 
                                                 = vlSelfRef.phoenix_core__DOT__cpu_din;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc 
                                                 = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op 
                                                 = (7U 
                                                    & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                                       >> 3U));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res = 0U;
                                             if ((4U 
-                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op))) {
+                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op))) {
                                                 if (
                                                     (2U 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op))) {
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op))) {
                                                     if (
                                                         (1U 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q 
                                                             = 
                                                             (0x000001ffU 
-                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc) 
-                                                                 - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v)) 
+                                                             & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc) 
+                                                                 - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v)) 
                                                                 - 
                                                                 ((3U 
-                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op)) 
-                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__cin))));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res 
+                                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op)) 
+                                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__cin))));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res 
                                                             = 
                                                             (0x000000ffU 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__55__Vfuncout;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
                                                             = 
                                                             ((0xfeU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f)) 
                                                              | (1U 
-                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q) 
+                                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q) 
                                                                    >> 8U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
                                                             = 
                                                             ((0xefU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f)) 
                                                              | (0x00000010U 
                                                                 & ((~ 
-                                                                    ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc) 
-                                                                       ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res)) 
-                                                                      ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v)) 
+                                                                    ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc) 
+                                                                       ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res)) 
+                                                                      ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v)) 
                                                                      >> 4U)) 
                                                                    << 4U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
                                                             = 
                                                             (2U 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f));
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f));
                                                         if (
                                                             (7U 
-                                                             == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op))) {
-                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res 
-                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc;
+                                                             == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op))) {
+                                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res 
+                                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc;
                                                         }
                                                     } else {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res 
                                                             = 
-                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc) 
-                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__v 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout = 0U;
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout 
+                                                            ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc) 
+                                                             | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v));
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__v 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout = 0U;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout 
                                                             = 
                                                             ((0x3fU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout)) 
                                                              | (((2U 
-                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__v) 
+                                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__v) 
                                                                      >> 6U)) 
                                                                  | (0U 
-                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__v))) 
+                                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__v))) 
                                                                 << 6U));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout 
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout 
                                                             = 
                                                             ((0xfbU 
-                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout)) 
+                                                              & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout)) 
                                                              | (4U 
                                                                 & ((~ 
-                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__v)) 
+                                                                    VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__v)) 
                                                                    << 2U)));
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__56__Vfuncout;
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout;
                                                     }
                                                 } else if (
                                                            (1U 
-                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res 
+                                                            & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res 
                                                         = 
-                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc) 
-                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout 
+                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc) 
+                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__57__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout;
                                                 } else {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res 
                                                         = 
-                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc) 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__Vfuncout 
+                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc) 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__58__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
                                                         = 
                                                         (0x00000010U 
-                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f));
+                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f));
                                                 }
                                             } else if (
                                                        (2U 
-                                                        & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op))) {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q 
+                                                        & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op))) {
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q 
                                                     = 
                                                     (0x000001ffU 
-                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc) 
-                                                         - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v)) 
+                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc) 
+                                                         - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v)) 
                                                         - 
                                                         ((3U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op)) 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__cin))));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op)) 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__cin))));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res 
                                                     = 
                                                     (0x000000ffU 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__v 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout 
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout 
                                                     = 
                                                     ((0x3fU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout)) 
                                                      | (((2U 
-                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__v) 
+                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v) 
                                                              >> 6U)) 
                                                          | (0U 
-                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__v))) 
+                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v))) 
                                                         << 6U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout 
                                                     = 
                                                     ((0xfbU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout)) 
                                                      | (4U 
                                                         & ((~ 
-                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__v)) 
+                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v)) 
                                                            << 2U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__59__Vfuncout;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
                                                     = 
                                                     ((0xfeU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f)) 
                                                      | (1U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q) 
                                                            >> 8U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
                                                     = 
                                                     ((0xefU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f)) 
                                                      | (0x00000010U 
                                                         & ((~ 
-                                                            ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc) 
-                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res)) 
-                                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v)) 
+                                                            ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc) 
+                                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res)) 
+                                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v)) 
                                                              >> 4U)) 
                                                            << 4U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
                                                     = 
                                                     (2U 
-                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f));
+                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f));
                                                 if (
                                                     (7U 
-                                                     == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc;
+                                                     == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc;
                                                 }
                                             } else {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q 
                                                     = 
                                                     (0x000001ffU 
-                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc) 
-                                                         + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v)) 
+                                                     & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc) 
+                                                         + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v)) 
                                                         + 
                                                         ((1U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__op)) 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__cin))));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__op)) 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__cin))));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res 
                                                     = 
                                                     (0x000000ffU 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout 
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__v 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__Vfuncout = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__Vfuncout 
                                                     = 
                                                     ((0x3fU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__Vfuncout)) 
                                                      | (((2U 
-                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v) 
+                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__v) 
                                                              >> 6U)) 
                                                          | (0U 
-                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v))) 
+                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__v))) 
                                                         << 6U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__Vfuncout 
                                                     = 
                                                     ((0xfbU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__Vfuncout)) 
                                                      | (4U 
                                                         & ((~ 
-                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__v)) 
+                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__v)) 
                                                            << 2U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__60__Vfuncout;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__92__Vfuncout;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
                                                     = 
                                                     ((0xfeU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f)) 
                                                      | (1U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__q) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__q) 
                                                            >> 8U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f 
                                                     = 
                                                     ((0xefU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f)) 
                                                      | (0x00000010U 
-                                                        & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__acc) 
-                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res)) 
-                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__v))));
+                                                        & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__acc) 
+                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res)) 
+                                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__v))));
                                             }
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__Vfuncout 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__Vfuncout 
                                                 = (
-                                                   ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__res) 
+                                                   ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__res) 
                                                     << 8U) 
-                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__f));
+                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__f));
                                             vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__54__Vfuncout;
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__86__Vfuncout;
                                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                                 = (0x000000ffU 
                                                    & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out) 
@@ -8079,306 +8704,306 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                             = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc;
                                         vlSelfRef.phoenix_core__DOT__cpu_mreq = 1U;
                                     } else {
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__cin 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__cin 
                                             = (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
                                         vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__pc 
                                             = (0x0000ffffU 
                                                & ((IData)(1U) 
                                                   + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__pc)));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v 
                                             = vlSelfRef.phoenix_core__DOT__cpu_din;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc 
                                             = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                                         vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op 
                                             = (7U & 
                                                ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                                 >> 3U));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q = 0U;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f = 0U;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res = 0U;
-                                        if ((4U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op))) {
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q = 0U;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f = 0U;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res = 0U;
+                                        if ((4U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op))) {
                                             if ((2U 
-                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op))) {
+                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op))) {
                                                 if (
                                                     (1U 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op))) {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q 
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op))) {
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q 
                                                         = 
                                                         (0x000001ffU 
-                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc) 
-                                                             - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v)) 
+                                                         & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc) 
+                                                             - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v)) 
                                                             - 
                                                             ((3U 
-                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op)) 
-                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__cin))));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res 
+                                                              == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op)) 
+                                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__cin))));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res 
                                                         = 
                                                         (0x000000ffU 
-                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout 
+                                                         & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__62__Vfuncout;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__94__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
                                                         = 
                                                         ((0xfeU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f)) 
                                                          | (1U 
-                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q) 
+                                                            & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q) 
                                                                >> 8U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
                                                         = 
                                                         ((0xefU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f)) 
                                                          | (0x00000010U 
                                                             & ((~ 
-                                                                ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc) 
-                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res)) 
-                                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v)) 
+                                                                ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc) 
+                                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res)) 
+                                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v)) 
                                                                  >> 4U)) 
                                                                << 4U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
                                                         = 
                                                         (2U 
-                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f));
+                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f));
                                                     if (
                                                         (7U 
-                                                         == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op))) {
-                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res 
-                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc;
+                                                         == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op))) {
+                                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res 
+                                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc;
                                                     }
                                                 } else {
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res 
                                                         = 
-                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc) 
-                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__v 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout = 0U;
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout 
+                                                        ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc) 
+                                                         | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v));
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__v 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__Vfuncout = 0U;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__Vfuncout 
                                                         = 
                                                         ((0x3fU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__Vfuncout)) 
                                                          | (((2U 
-                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__v) 
+                                                              & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__v) 
                                                                  >> 6U)) 
                                                              | (0U 
-                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__v))) 
+                                                                == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__v))) 
                                                             << 6U));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout 
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__Vfuncout 
                                                         = 
                                                         ((0xfbU 
-                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout)) 
+                                                          & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__Vfuncout)) 
                                                          | (4U 
                                                             & ((~ 
-                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__v)) 
+                                                                VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__v)) 
                                                                << 2U)));
-                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
-                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__63__Vfuncout;
+                                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
+                                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__95__Vfuncout;
                                                 }
                                             } else if (
                                                        (1U 
-                                                        & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op))) {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res 
+                                                        & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op))) {
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res 
                                                     = 
-                                                    ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc) 
-                                                     ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout 
+                                                    ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc) 
+                                                     ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__v 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__Vfuncout = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__Vfuncout 
                                                     = 
                                                     ((0x3fU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__Vfuncout)) 
                                                      | (((2U 
-                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v) 
+                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__v) 
                                                              >> 6U)) 
                                                          | (0U 
-                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v))) 
+                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__v))) 
                                                         << 6U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__Vfuncout 
                                                     = 
                                                     ((0xfbU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__Vfuncout)) 
                                                      | (4U 
                                                         & ((~ 
-                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__v)) 
+                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__v)) 
                                                            << 2U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__64__Vfuncout;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__96__Vfuncout;
                                             } else {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res 
                                                     = 
-                                                    ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc) 
-                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__v 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__Vfuncout = 0U;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__Vfuncout 
+                                                    ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc) 
+                                                     & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v));
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__v 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__Vfuncout = 0U;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__Vfuncout 
                                                     = 
                                                     ((0x3fU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__Vfuncout)) 
                                                      | (((2U 
-                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__v) 
+                                                          & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__v) 
                                                              >> 6U)) 
                                                          | (0U 
-                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__v))) 
+                                                            == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__v))) 
                                                         << 6U));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__Vfuncout 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__Vfuncout 
                                                     = 
                                                     ((0xfbU 
-                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__Vfuncout)) 
+                                                      & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__Vfuncout)) 
                                                      | (4U 
                                                         & ((~ 
-                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__v)) 
+                                                            VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__v)) 
                                                            << 2U)));
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__65__Vfuncout;
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__97__Vfuncout;
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
                                                     = 
                                                     (0x00000010U 
-                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f));
+                                                     | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f));
                                             }
                                         } else if (
                                                    (2U 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op))) {
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op))) {
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q 
                                                 = (0x000001ffU 
-                                                   & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc) 
-                                                       - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v)) 
+                                                   & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc) 
+                                                       - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v)) 
                                                       - 
                                                       ((3U 
-                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op)) 
-                                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__cin))));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res 
+                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op)) 
+                                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__cin))));
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res 
                                                 = (0x000000ffU 
-                                                   & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__v 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout 
+                                                   & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q));
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__v 
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__Vfuncout = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__Vfuncout 
                                                 = (
                                                    (0x3fU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__Vfuncout)) 
                                                    | (((2U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__v) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__v) 
                                                            >> 6U)) 
                                                        | (0U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__v))) 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__v))) 
                                                       << 6U));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__Vfuncout 
                                                 = (
                                                    (0xfbU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__Vfuncout)) 
                                                    | (4U 
                                                       & ((~ 
-                                                          VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__v)) 
+                                                          VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__v)) 
                                                          << 2U)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__66__Vfuncout;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__98__Vfuncout;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
                                                 = (
                                                    (0xfeU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f)) 
                                                    | (1U 
-                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q) 
+                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q) 
                                                          >> 8U)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
                                                 = (
                                                    (0xefU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f)) 
                                                    | (0x00000010U 
                                                       & ((~ 
-                                                          ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc) 
-                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res)) 
-                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v)) 
+                                                          ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc) 
+                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res)) 
+                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v)) 
                                                            >> 4U)) 
                                                          << 4U)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
                                                 = (2U 
-                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f));
+                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f));
                                             if ((7U 
-                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op))) {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc;
+                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op))) {
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc;
                                             }
                                         } else {
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q 
                                                 = (0x000001ffU 
-                                                   & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc) 
-                                                       + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v)) 
+                                                   & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc) 
+                                                       + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v)) 
                                                       + 
                                                       ((1U 
-                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__op)) 
-                                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__cin))));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res 
+                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__op)) 
+                                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__cin))));
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res 
                                                 = (0x000000ffU 
-                                                   & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout 
+                                                   & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q));
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__v 
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__Vfuncout = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__Vfuncout 
                                                 = (
                                                    (0x3fU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__Vfuncout)) 
                                                    | (((2U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__v) 
                                                            >> 6U)) 
                                                        | (0U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v))) 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__v))) 
                                                       << 6U));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__Vfuncout 
                                                 = (
                                                    (0xfbU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__Vfuncout)) 
                                                    | (4U 
                                                       & ((~ 
-                                                          VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__v)) 
+                                                          VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__v)) 
                                                          << 2U)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__67__Vfuncout;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__99__Vfuncout;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
                                                 = (
                                                    (0xfeU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f)) 
                                                    | (1U 
-                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__q) 
+                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__q) 
                                                          >> 8U)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f 
                                                 = (
                                                    (0xefU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f)) 
                                                    | (0x00000010U 
-                                                      & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__acc) 
-                                                          ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res)) 
-                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__v))));
+                                                      & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__acc) 
+                                                          ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res)) 
+                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__v))));
                                         }
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__Vfuncout 
-                                            = (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__res) 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__Vfuncout 
+                                            = (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__res) 
                                                 << 8U) 
-                                               | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__f));
+                                               | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__f));
                                         vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__61__Vfuncout;
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__93__Vfuncout;
                                         vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                             = (0x000000ffU 
                                                & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out) 
@@ -8708,260 +9333,260 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__hl;
                                 vlSelfRef.phoenix_core__DOT__cpu_mreq = 1U;
                             } else {
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__cin 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__cin 
                                     = (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v 
                                     = vlSelfRef.phoenix_core__DOT__cpu_din;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc 
                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                                 vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op 
                                     = (7U & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                              >> 3U));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q = 0U;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f = 0U;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res = 0U;
-                                if ((4U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op))) {
-                                    if ((2U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op))) {
-                                        if ((1U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op))) {
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q = 0U;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f = 0U;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res = 0U;
+                                if ((4U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op))) {
+                                    if ((2U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op))) {
+                                        if ((1U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op))) {
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q 
                                                 = (0x000001ffU 
-                                                   & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc) 
-                                                       - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v)) 
+                                                   & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc) 
+                                                       - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v)) 
                                                       - 
                                                       ((3U 
-                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op)) 
-                                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__cin))));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res 
+                                                        == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op)) 
+                                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__cin))));
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res 
                                                 = (0x000000ffU 
-                                                   & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__v 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout 
+                                                   & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q));
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__v 
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__Vfuncout = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__Vfuncout 
                                                 = (
                                                    (0x3fU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__Vfuncout)) 
                                                    | (((2U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__v) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__v) 
                                                            >> 6U)) 
                                                        | (0U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__v))) 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__v))) 
                                                       << 6U));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__Vfuncout 
                                                 = (
                                                    (0xfbU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__Vfuncout)) 
                                                    | (4U 
                                                       & ((~ 
-                                                          VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__v)) 
+                                                          VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__v)) 
                                                          << 2U)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__69__Vfuncout;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__101__Vfuncout;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
                                                 = (
                                                    (0xfeU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f)) 
                                                    | (1U 
-                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q) 
+                                                      & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q) 
                                                          >> 8U)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
                                                 = (
                                                    (0xefU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f)) 
                                                    | (0x00000010U 
                                                       & ((~ 
-                                                          ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc) 
-                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res)) 
-                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v)) 
+                                                          ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc) 
+                                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res)) 
+                                                            ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v)) 
                                                            >> 4U)) 
                                                          << 4U)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
                                                 = (2U 
-                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f));
+                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f));
                                             if ((7U 
-                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op))) {
-                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res 
-                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc;
+                                                 == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op))) {
+                                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res 
+                                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc;
                                             }
                                         } else {
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res 
-                                                = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc) 
-                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__v 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout = 0U;
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res 
+                                                = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc) 
+                                                   | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v));
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__v 
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__Vfuncout = 0U;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__Vfuncout 
                                                 = (
                                                    (0x3fU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__Vfuncout)) 
                                                    | (((2U 
-                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__v) 
+                                                        & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__v) 
                                                            >> 6U)) 
                                                        | (0U 
-                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__v))) 
+                                                          == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__v))) 
                                                       << 6U));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout 
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__Vfuncout 
                                                 = (
                                                    (0xfbU 
-                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout)) 
+                                                    & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__Vfuncout)) 
                                                    | (4U 
                                                       & ((~ 
-                                                          VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__v)) 
+                                                          VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__v)) 
                                                          << 2U)));
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__70__Vfuncout;
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__102__Vfuncout;
                                         }
                                     } else if ((1U 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op))) {
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res 
-                                            = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc) 
-                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout = 0U;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op))) {
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res 
+                                            = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc) 
+                                               ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v));
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__v 
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__Vfuncout = 0U;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__Vfuncout 
                                             = ((0x3fU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__Vfuncout)) 
                                                | (((2U 
-                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v) 
+                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__v) 
                                                        >> 6U)) 
                                                    | (0U 
-                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v))) 
+                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__v))) 
                                                   << 6U));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__Vfuncout 
                                             = ((0xfbU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__Vfuncout)) 
                                                | (4U 
                                                   & ((~ 
-                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__v)) 
+                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__v)) 
                                                      << 2U)));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__71__Vfuncout;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__103__Vfuncout;
                                     } else {
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res 
-                                            = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc) 
-                                               & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__v 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__Vfuncout = 0U;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__Vfuncout 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res 
+                                            = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc) 
+                                               & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v));
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__v 
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__Vfuncout = 0U;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__Vfuncout 
                                             = ((0x3fU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__Vfuncout)) 
                                                | (((2U 
-                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__v) 
+                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__v) 
                                                        >> 6U)) 
                                                    | (0U 
-                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__v))) 
+                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__v))) 
                                                   << 6U));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__Vfuncout 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__Vfuncout 
                                             = ((0xfbU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__Vfuncout)) 
                                                | (4U 
                                                   & ((~ 
-                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__v)) 
+                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__v)) 
                                                      << 2U)));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__72__Vfuncout;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__104__Vfuncout;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
                                             = (0x00000010U 
-                                               | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f));
+                                               | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f));
                                     }
-                                } else if ((2U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op))) {
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q 
+                                } else if ((2U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op))) {
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q 
                                         = (0x000001ffU 
-                                           & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc) 
-                                               - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v)) 
+                                           & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc) 
+                                               - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v)) 
                                               - ((3U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op)) 
-                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__cin))));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op)) 
+                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__cin))));
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res 
                                         = (0x000000ffU 
-                                           & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__v 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout = 0U;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout 
-                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout)) 
+                                           & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q));
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__v 
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__Vfuncout = 0U;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__Vfuncout 
+                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__Vfuncout)) 
                                            | (((2U 
-                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__v) 
+                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__v) 
                                                    >> 6U)) 
                                                | (0U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__v))) 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__v))) 
                                               << 6U));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout 
-                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__Vfuncout 
+                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__Vfuncout)) 
                                            | (4U & 
-                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__v)) 
+                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__v)) 
                                                << 2U)));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__73__Vfuncout;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                        = ((0xfeU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__105__Vfuncout;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                        = ((0xfeU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f)) 
                                            | (1U & 
-                                              ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q) 
+                                              ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q) 
                                                >> 8U)));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                        = ((0xefU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                        = ((0xefU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f)) 
                                            | (0x00000010U 
                                               & ((~ 
-                                                  ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc) 
-                                                     ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res)) 
-                                                    ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v)) 
+                                                  ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc) 
+                                                     ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res)) 
+                                                    ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v)) 
                                                    >> 4U)) 
                                                  << 4U)));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                        = (2U | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f));
-                                    if ((7U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op))) {
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                        = (2U | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f));
+                                    if ((7U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op))) {
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res 
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc;
                                     }
                                 } else {
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q 
                                         = (0x000001ffU 
-                                           & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc) 
-                                               + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v)) 
+                                           & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc) 
+                                               + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v)) 
                                               + ((1U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__op)) 
-                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__cin))));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__op)) 
+                                                 & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__cin))));
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res 
                                         = (0x000000ffU 
-                                           & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout = 0U;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout 
-                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout)) 
+                                           & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q));
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__v 
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__Vfuncout = 0U;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__Vfuncout 
+                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__Vfuncout)) 
                                            | (((2U 
-                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v) 
+                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__v) 
                                                    >> 6U)) 
                                                | (0U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v))) 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__v))) 
                                               << 6U));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout 
-                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__Vfuncout 
+                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__Vfuncout)) 
                                            | (4U & 
-                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__v)) 
+                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__v)) 
                                                << 2U)));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__74__Vfuncout;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                        = ((0xfeU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__106__Vfuncout;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                        = ((0xfeU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f)) 
                                            | (1U & 
-                                              ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__q) 
+                                              ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__q) 
                                                >> 8U)));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f 
-                                        = ((0xefU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f 
+                                        = ((0xefU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f)) 
                                            | (0x00000010U 
-                                              & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__acc) 
-                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res)) 
-                                                 ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__v))));
+                                              & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__acc) 
+                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res)) 
+                                                 ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__v))));
                                 }
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__Vfuncout 
-                                    = (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__res) 
-                                        << 8U) | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__f));
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__Vfuncout 
+                                    = (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__res) 
+                                        << 8U) | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__f));
                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__68__Vfuncout;
+                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__100__Vfuncout;
                                 vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                     = (0x000000ffU 
                                        & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out) 
@@ -8971,236 +9596,236 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                        & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out));
                             }
                         } else {
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__cin 
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__cin 
                                 = (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl));
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v 
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v 
                                 = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__src_reg;
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc 
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc 
                                 = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ra;
                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 3U;
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op 
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op 
                                 = (7U & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__ir) 
                                          >> 3U));
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q = 0U;
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f = 0U;
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res = 0U;
-                            if ((4U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op))) {
-                                if ((2U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op))) {
-                                    if ((1U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op))) {
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q 
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q = 0U;
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f = 0U;
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res = 0U;
+                            if ((4U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op))) {
+                                if ((2U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op))) {
+                                    if ((1U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op))) {
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q 
                                             = (0x000001ffU 
-                                               & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc) 
-                                                   - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v)) 
+                                               & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc) 
+                                                   - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v)) 
                                                   - 
                                                   ((3U 
-                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op)) 
-                                                   & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__cin))));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res 
+                                                    == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op)) 
+                                                   & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__cin))));
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res 
                                             = (0x000000ffU 
-                                               & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__v 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout = 0U;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout 
+                                               & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q));
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__v 
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__Vfuncout = 0U;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__Vfuncout 
                                             = ((0x3fU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__Vfuncout)) 
                                                | (((2U 
-                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__v) 
+                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__v) 
                                                        >> 6U)) 
                                                    | (0U 
-                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__v))) 
+                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__v))) 
                                                   << 6U));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__Vfuncout 
                                             = ((0xfbU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__Vfuncout)) 
                                                | (4U 
                                                   & ((~ 
-                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__v)) 
+                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__v)) 
                                                      << 2U)));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__76__Vfuncout;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__108__Vfuncout;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
                                             = ((0xfeU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f)) 
                                                | (1U 
-                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q) 
+                                                  & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q) 
                                                      >> 8U)));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
                                             = ((0xefU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f)) 
                                                | (0x00000010U 
                                                   & ((~ 
-                                                      ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc) 
-                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res)) 
-                                                        ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v)) 
+                                                      ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc) 
+                                                         ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res)) 
+                                                        ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v)) 
                                                        >> 4U)) 
                                                      << 4U)));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                            = (2U | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f));
-                                        if ((7U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op))) {
-                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res 
-                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                            = (2U | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f));
+                                        if ((7U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op))) {
+                                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res 
+                                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc;
                                         }
                                     } else {
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res 
-                                            = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc) 
-                                               | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__v 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout = 0U;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res 
+                                            = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc) 
+                                               | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v));
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__v 
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__Vfuncout = 0U;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__Vfuncout 
                                             = ((0x3fU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__Vfuncout)) 
                                                | (((2U 
-                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__v) 
+                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__v) 
                                                        >> 6U)) 
                                                    | (0U 
-                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__v))) 
+                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__v))) 
                                                   << 6U));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__Vfuncout 
                                             = ((0xfbU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__Vfuncout)) 
                                                | (4U 
                                                   & ((~ 
-                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__v)) 
+                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__v)) 
                                                      << 2U)));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__77__Vfuncout;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__109__Vfuncout;
                                     }
-                                } else if ((1U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op))) {
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res 
-                                        = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc) 
-                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout = 0U;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout 
-                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout)) 
+                                } else if ((1U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op))) {
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res 
+                                        = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc) 
+                                           ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v));
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__v 
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__Vfuncout = 0U;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__Vfuncout 
+                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__Vfuncout)) 
                                            | (((2U 
-                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v) 
+                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__v) 
                                                    >> 6U)) 
                                                | (0U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v))) 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__v))) 
                                               << 6U));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout 
-                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__Vfuncout 
+                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__Vfuncout)) 
                                            | (4U & 
-                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__v)) 
+                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__v)) 
                                                << 2U)));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__78__Vfuncout;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__110__Vfuncout;
                                 } else {
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res 
-                                        = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc) 
-                                           & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__v 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__Vfuncout = 0U;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__Vfuncout 
-                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res 
+                                        = ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc) 
+                                           & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v));
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__v 
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__Vfuncout = 0U;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__Vfuncout 
+                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__Vfuncout)) 
                                            | (((2U 
-                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__v) 
+                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__v) 
                                                    >> 6U)) 
                                                | (0U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__v))) 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__v))) 
                                               << 6U));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__Vfuncout 
-                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__Vfuncout 
+                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__Vfuncout)) 
                                            | (4U & 
-                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__v)) 
+                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__v)) 
                                                << 2U)));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__79__Vfuncout;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__111__Vfuncout;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
                                         = (0x00000010U 
-                                           | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f));
+                                           | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f));
                                 }
-                            } else if ((2U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op))) {
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q 
+                            } else if ((2U & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op))) {
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q 
                                     = (0x000001ffU 
-                                       & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc) 
-                                           - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v)) 
-                                          - ((3U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op)) 
-                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__cin))));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res 
+                                       & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc) 
+                                           - (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v)) 
+                                          - ((3U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op)) 
+                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__cin))));
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res 
                                     = (0x000000ffU 
-                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__v 
-                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout = 0U;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout 
-                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout)) 
-                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__v) 
+                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q));
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__v 
+                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__Vfuncout = 0U;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__Vfuncout 
+                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__Vfuncout)) 
+                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__v) 
                                                   >> 6U)) 
-                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__v))) 
+                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__v))) 
                                           << 6U));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout 
-                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout)) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__Vfuncout 
+                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__Vfuncout)) 
                                        | (4U & ((~ 
-                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__v)) 
+                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__v)) 
                                                 << 2U)));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__80__Vfuncout;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                    = ((0xfeU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f)) 
-                                       | (1U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__112__Vfuncout;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                    = ((0xfeU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f)) 
+                                       | (1U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q) 
                                                 >> 8U)));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                    = ((0xefU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f)) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                    = ((0xefU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f)) 
                                        | (0x00000010U 
-                                          & ((~ ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc) 
-                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res)) 
-                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v)) 
+                                          & ((~ ((((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc) 
+                                                   ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res)) 
+                                                  ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v)) 
                                                  >> 4U)) 
                                              << 4U)));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                    = (2U | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f));
-                                if ((7U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op))) {
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                    = (2U | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f));
+                                if ((7U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op))) {
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res 
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc;
                                 }
                             } else {
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q 
                                     = (0x000001ffU 
-                                       & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc) 
-                                           + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v)) 
-                                          + ((1U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__op)) 
-                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__cin))));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res 
+                                       & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc) 
+                                           + (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v)) 
+                                          + ((1U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__op)) 
+                                             & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__cin))));
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res 
                                     = (0x000000ffU 
-                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__v 
-                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout = 0U;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout 
-                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout)) 
-                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__v) 
+                                       & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q));
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__v 
+                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__Vfuncout = 0U;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__Vfuncout 
+                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__Vfuncout)) 
+                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__v) 
                                                   >> 6U)) 
-                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__v))) 
+                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__v))) 
                                           << 6U));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout 
-                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout)) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__Vfuncout 
+                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__Vfuncout)) 
                                        | (4U & ((~ 
-                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__v)) 
+                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__v)) 
                                                 << 2U)));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__81__Vfuncout;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                    = ((0xfeU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f)) 
-                                       | (1U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__q) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__113__Vfuncout;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                    = ((0xfeU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f)) 
+                                       | (1U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__q) 
                                                 >> 8U)));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f 
-                                    = ((0xefU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f)) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f 
+                                    = ((0xefU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f)) 
                                        | (0x00000010U 
-                                          & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__acc) 
-                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res)) 
-                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__v))));
+                                          & (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__acc) 
+                                              ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res)) 
+                                             ^ (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__v))));
                             }
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__Vfuncout 
-                                = (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__res) 
-                                    << 8U) | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__f));
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__Vfuncout 
+                                = (((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__res) 
+                                    << 8U) | (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__f));
                             vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out 
-                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__75__Vfuncout;
+                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__alu__107__Vfuncout;
                             vlSelfRef.__Vdly__phoenix_core__DOT__u_cpu__DOT__ra 
                                 = (0x000000ffU & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__alu_out) 
                                                   >> 8U));
@@ -9729,27 +10354,27 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                    : 
                                                   ((IData)(1U) 
                                                    + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__s))));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__v 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__v 
                                             = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__v;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout = 0U;
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__Vfuncout = 0U;
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__Vfuncout 
                                             = ((0x3fU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__Vfuncout)) 
                                                | (((2U 
-                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__v) 
+                                                    & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__v) 
                                                        >> 6U)) 
                                                    | (0U 
-                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__v))) 
+                                                      == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__v))) 
                                                   << 6U));
-                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout 
+                                        __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__Vfuncout 
                                             = ((0xfbU 
-                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout)) 
+                                                & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__Vfuncout)) 
                                                | (4U 
                                                   & ((~ 
-                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__v)) 
+                                                      VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__v)) 
                                                      << 2U)));
                                         vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
-                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__82__Vfuncout;
+                                            = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__114__Vfuncout;
                                         vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
                                             = ((0xfeU 
                                                 & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf)) 
@@ -10087,24 +10712,24 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                   - (IData)(1U))
                                                : ((IData)(1U) 
                                                   + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__s))));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__v 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__v 
                                         = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__v;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout = 0U;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout 
-                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__Vfuncout = 0U;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__Vfuncout 
+                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__Vfuncout)) 
                                            | (((2U 
-                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__v) 
+                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__v) 
                                                    >> 6U)) 
                                                | (0U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__v))) 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__v))) 
                                               << 6U));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout 
-                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__Vfuncout 
+                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__Vfuncout)) 
                                            | (4U & 
-                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__v)) 
+                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__v)) 
                                                << 2U)));
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__83__Vfuncout;
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__115__Vfuncout;
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
                                         = ((0xfeU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf)) 
                                            | (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl)));
@@ -10444,24 +11069,24 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                   - (IData)(1U))
                                                : ((IData)(1U) 
                                                   + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__s))));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__v 
                                         = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__v;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout = 0U;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout 
-                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__Vfuncout = 0U;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__Vfuncout 
+                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__Vfuncout)) 
                                            | (((2U 
-                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v) 
+                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__v) 
                                                    >> 6U)) 
                                                | (0U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v))) 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__v))) 
                                               << 6U));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout 
-                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__Vfuncout 
+                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__Vfuncout)) 
                                            | (4U & 
-                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__v)) 
+                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__v)) 
                                                << 2U)));
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__84__Vfuncout;
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__116__Vfuncout;
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
                                         = ((0xfeU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf)) 
                                            | (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl)));
@@ -10733,21 +11358,21 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                & ((IData)(0x60U) 
                                                   + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk1__DOT__t)));
                                     }
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__117__v 
                                         = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk1__DOT__t;
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT____VlemCall_0__zsp = 0U;
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT____VlemCall_0__zsp 
                                         = ((0x3fU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT____VlemCall_0__zsp)) 
                                            | (((2U 
-                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v) 
+                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__117__v) 
                                                    >> 6U)) 
                                                | (0U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v))) 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__117__v))) 
                                               << 6U));
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT____VlemCall_0__zsp 
                                         = ((0xfbU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT____VlemCall_0__zsp)) 
                                            | (4U & 
-                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__85__v)) 
+                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__117__v)) 
                                                << 2U)));
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk1__DOT__nf 
                                         = ((0x23U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl)) 
@@ -10846,22 +11471,22 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                               - (IData)(1U))
                                            : ((IData)(1U) 
                                               + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__s))));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__v 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__v 
                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__v;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__Vfuncout = 0U;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__Vfuncout 
-                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__Vfuncout)) 
-                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__v) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__Vfuncout = 0U;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__Vfuncout 
+                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__Vfuncout)) 
+                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__v) 
                                                   >> 6U)) 
-                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__v))) 
+                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__v))) 
                                           << 6U));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__Vfuncout 
-                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__Vfuncout)) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__Vfuncout 
+                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__Vfuncout)) 
                                        | (4U & ((~ 
-                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__v)) 
+                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__v)) 
                                                 << 2U)));
                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
-                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__86__Vfuncout;
+                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__118__Vfuncout;
                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
                                     = ((0xfeU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf)) 
                                        | (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl)));
@@ -11213,24 +11838,24 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                   - (IData)(1U))
                                                : ((IData)(1U) 
                                                   + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__s))));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__v 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__v 
                                         = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__v;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout = 0U;
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout 
-                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__Vfuncout = 0U;
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__Vfuncout 
+                                        = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__Vfuncout)) 
                                            | (((2U 
-                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__v) 
+                                                & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__v) 
                                                    >> 6U)) 
                                                | (0U 
-                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__v))) 
+                                                  == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__v))) 
                                               << 6U));
-                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout 
-                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout)) 
+                                    __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__Vfuncout 
+                                        = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__Vfuncout)) 
                                            | (4U & 
-                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__v)) 
+                                              ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__v)) 
                                                << 2U)));
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
-                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__87__Vfuncout;
+                                        = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__119__Vfuncout;
                                     vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
                                         = ((0xfeU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf)) 
                                            | (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl)));
@@ -11521,22 +12146,22 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                               - (IData)(1U))
                                            : ((IData)(1U) 
                                               + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__s))));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__v 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__v 
                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__v;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout = 0U;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout 
-                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout)) 
-                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__v) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__Vfuncout = 0U;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__Vfuncout 
+                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__Vfuncout)) 
+                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__v) 
                                                   >> 6U)) 
-                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__v))) 
+                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__v))) 
                                           << 6U));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout 
-                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout)) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__Vfuncout 
+                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__Vfuncout)) 
                                        | (4U & ((~ 
-                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__v)) 
+                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__v)) 
                                                 << 2U)));
                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
-                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__88__Vfuncout;
+                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__120__Vfuncout;
                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
                                     = ((0xfeU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf)) 
                                        | (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl)));
@@ -11842,22 +12467,22 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                               - (IData)(1U))
                                            : ((IData)(1U) 
                                               + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__s))));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__v 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__v 
                                     = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__v;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout = 0U;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout 
-                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout)) 
-                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__v) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__Vfuncout = 0U;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__Vfuncout 
+                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__Vfuncout)) 
+                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__v) 
                                                   >> 6U)) 
-                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__v))) 
+                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__v))) 
                                           << 6U));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout 
-                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout)) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__Vfuncout 
+                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__Vfuncout)) 
                                        | (4U & ((~ 
-                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__v)) 
+                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__v)) 
                                                 << 2U)));
                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
-                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__89__Vfuncout;
+                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__121__Vfuncout;
                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
                                     = ((0xfeU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf)) 
                                        | (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl)));
@@ -12020,23 +12645,23 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                     = (0x0001ffffU 
                                        & ((IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__hl) 
                                           - (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__bc)));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__v 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__v 
                                     = (0x000000ffU 
                                        & vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk2__DOT__q);
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout = 0U;
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout 
-                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout)) 
-                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__v) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__Vfuncout = 0U;
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__Vfuncout 
+                                    = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__Vfuncout)) 
+                                       | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__v) 
                                                   >> 6U)) 
-                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__v))) 
+                                           | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__v))) 
                                           << 6U));
-                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout 
-                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout)) 
+                                __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__Vfuncout 
+                                    = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__Vfuncout)) 
                                        | (4U & ((~ 
-                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__v)) 
+                                                 VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__v)) 
                                                 << 2U)));
                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk2__DOT__nf 
-                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__90__Vfuncout;
+                                    = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__122__Vfuncout;
                                 vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk2__DOT__nf 
                                     = ((0xbfU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk2__DOT__nf)) 
                                        | ((0U == (0x0000ffffU 
@@ -12158,21 +12783,21 @@ void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSe
                                                    : 
                                                   ((IData)(1U) 
                                                    + (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__s))));
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v 
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__v 
                                 = vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__v;
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout = 0U;
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout 
-                                = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout)) 
-                                   | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v) 
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__Vfuncout = 0U;
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__Vfuncout 
+                                = ((0x3fU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__Vfuncout)) 
+                                   | (((2U & ((IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__v) 
                                               >> 6U)) 
-                                       | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v))) 
+                                       | (0U == (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__v))) 
                                       << 6U));
-                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout 
-                                = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout)) 
-                                   | (4U & ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__v)) 
+                            __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__Vfuncout 
+                                = ((0xfbU & (IData)(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__Vfuncout)) 
+                                   | (4U & ((~ VL_REDXOR_8(__Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__v)) 
                                             << 2U)));
                             vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
-                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__91__Vfuncout;
+                                = __Vfunc_phoenix_core__DOT__u_cpu__DOT__zsp__123__Vfuncout;
                             vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf 
                                 = ((0xfeU & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk7__DOT__nf)) 
                                    | (1U & (IData)(vlSelfRef.phoenix_core__DOT__u_cpu__DOT__fl)));

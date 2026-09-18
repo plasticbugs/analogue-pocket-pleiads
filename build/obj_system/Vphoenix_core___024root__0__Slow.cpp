@@ -20,6 +20,11 @@ VL_ATTR_COLD void Vphoenix_core___024root___eval_static(Vphoenix_core___024root*
         vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t23 = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 3403108926413151071ull);
         vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4 = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 15339486548036600147ull);
         vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 10315125000595205225ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__pa6_s = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 7530975924681787315ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__t3mul = VL_SCOPED_RAND_RESET_Q(48, __VscopeHash, 10175186629169005445ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r67mul = VL_SCOPED_RAND_RESET_Q(41, __VscopeHash, 7401530092706914220ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80a = VL_SCOPED_RAND_RESET_Q(41, __VscopeHash, 13384427895511395371ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80b = VL_SCOPED_RAND_RESET_Q(41, __VscopeHash, 3859754119493024506ull);
         vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23 = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 7445346686003654403ull);
         vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl4 = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 15545207622716176149ull);
         vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 17663579978103439379ull);

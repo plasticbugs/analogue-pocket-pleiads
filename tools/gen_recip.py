@@ -45,7 +45,43 @@ def find(D, bits, max_s=56):
 DEFAULT = [(48000, 26, 'RATE'), (33768, 24, 'T3DIV'), (67, 21, 'R67'), (80, 21, 'R80')]
 
 
+def check_rtl(path):
+    """Verify the constants actually in the RTL, exhaustively.
+
+    Not a formality. An earlier /80 pair came from a sparse search and was
+    wrong for every operand above 699 119, where the real ones reach 1 540 049.
+    The audio bench did not catch it, because the envelopes that division
+    serves were idle through most of the captured command stream -- a test
+    passing is not the same as a substitution being correct.
+    """
+    import re
+    src = open(path).read()
+    pairs = re.findall(r'(\w+)_S\s*=\s*(\d+),\s*\1_M\s*=\s*(\d+)', src)
+    ranges = {name: (D, bits) for D, bits, name in DEFAULT}
+    if not pairs:
+        sys.exit(f'{path}: found no reciprocal constants to check')
+    bad = 0
+    for name, S, M in pairs:
+        if name not in ranges:
+            print(f'{name:8} not in the known set, skipped')
+            continue
+        D, bits = ranges[name]
+        S, M = int(S), int(M)
+        xmax = (1 << bits) - 1
+        first = next((x for x in range(xmax + 1) if (x * M) >> S != x // D), None)
+        if first is None:
+            print(f'{name:8} /{D:<6} S={S:<3} M={M:<10} exact over x < 2^{bits}')
+        else:
+            print(f'{name:8} /{D:<6} S={S:<3} M={M:<10} WRONG from x={first}')
+            bad += 1
+    return bad
+
+
 def main():
+    if '--check' in sys.argv:
+        import os
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        sys.exit(1 if check_rtl(os.path.join(root, 'rtl/pleiads_sound.sv')) else 0)
     items = DEFAULT
     if len(sys.argv) > 1:
         items = []

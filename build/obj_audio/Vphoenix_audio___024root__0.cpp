@@ -1655,22 +1655,22 @@ void Vphoenix_audio___024root___nba_sequent__TOP__0(Vphoenix_audio___024root* vl
                              ^ vlSelfRef.phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n));
             }
             vlSelfRef.phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80a 
-                = (0x000001ffffffffffULL & (0x0000000000066667ULL 
+                = (0x000001ffffffffffULL & (0x00000000000ccccdULL 
                                             * (QData)((IData)(
                                                               (0x001fffffU 
                                                                & ((IData)(0x00000021U) 
                                                                   * (IData)(vlSelfRef.phoenix_audio__DOT__u_fx__DOT__pc5_lvl)))))));
             vlSelfRef.phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80b 
-                = (0x000001ffffffffffULL & (0x0000000000066667ULL 
+                = (0x000001ffffffffffULL & (0x00000000000ccccdULL 
                                             * (QData)((IData)(
                                                               (0x001fffffU 
                                                                & ((IData)(0x0000002fU) 
                                                                   * (IData)(vlSelfRef.phoenix_audio__DOT__u_fx__DOT__pa5_lvl)))))));
             vlSelfRef.phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4 
                 = (0x0003ffffU & ((IData)((vlSelfRef.phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80a 
-                                           >> 0x00000019U)) 
+                                           >> 0x0000001aU)) 
                                   + (IData)((vlSelfRef.phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80b 
-                                             >> 0x00000019U))));
+                                             >> 0x0000001aU))));
             if ((1U & (~ (IData)(vlSelfRef.phoenix_audio__DOT__u_fx__DOT__t4_out)))) {
                 vlSelfRef.phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4 
                     = (0x0003ffffU & (- vlSelfRef.phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4));

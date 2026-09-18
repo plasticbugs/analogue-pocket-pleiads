@@ -11,7 +11,7 @@ Vphoenix_core__Syms::Vphoenix_core__Syms(VerilatedContext* contextp, const char*
     , TOP{this, namep}
 {
     // Check resources
-    Verilated::stackCheck(1808);
+    Verilated::stackCheck(3016);
     // Setup sub module instances
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-12);
