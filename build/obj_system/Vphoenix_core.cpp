@@ -10,6 +10,7 @@ Vphoenix_core::Vphoenix_core(VerilatedContext* _vcontextp__, const char* _vcname
     : VerilatedModel{*_vcontextp__}
     , vlSymsp{new Vphoenix_core__Syms(contextp(), _vcname__, this)}
     , clk{vlSymsp->TOP.clk}
+    , clk_audio{vlSymsp->TOP.clk_audio}
     , reset{vlSymsp->TOP.reset}
     , dl_data{vlSymsp->TOP.dl_data}
     , dl_wr{vlSymsp->TOP.dl_wr}
@@ -43,6 +44,8 @@ Vphoenix_core::Vphoenix_core(VerilatedContext* _vcontextp__, const char* _vcname
     , dbg_stb{vlSymsp->TOP.dbg_stb}
     , dbg_fetch{vlSymsp->TOP.dbg_fetch}
     , dbg_vcnt{vlSymsp->TOP.dbg_vcnt}
+    , audio{vlSymsp->TOP.audio}
+    , audio_sync{vlSymsp->TOP.audio_sync}
     , dbg_addr{vlSymsp->TOP.dbg_addr}
     , dbg_hcnt{vlSymsp->TOP.dbg_hcnt}
     , dl_addr{vlSymsp->TOP.dl_addr}

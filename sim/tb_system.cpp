@@ -84,6 +84,7 @@ static void reset_inputs(Vphoenix_core *d) {
     // switch off, demo sounds on. Measured as DSW0 = E0 outside vblank.
     d->dsw = 0x60;
     d->cab_cocktail = 0;
+    d->clk_audio = 0;
 }
 
 int main(int argc, char **argv) {

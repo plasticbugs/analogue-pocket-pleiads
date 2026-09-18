@@ -3,6 +3,12 @@
 
 #include "verilated.h"
 
+extern const VlWide<12>/*383:0*/ Vphoenix_core__ConstPool__CONST_h31ebeb16_0 = VlWide<12>{{
+        0xffffffff, 0x00000000, 0xffffffff, 0x00000001,
+        0xffffffff, 0x00000002, 0xffffffff, 0x00000003,
+        0xffffffff, 0x00000004, 0x00000000, 0x00000000
+}};
+
 extern const VlUnpacked<CData/*7:0*/, 512> Vphoenix_core__ConstPool__TABLE_h043dfa72_0 = {{
     0U, 0U, 8U, 8U, 0x10U, 0x10U, 0x18U, 0x18U,
     1U, 1U, 9U, 9U, 0x11U, 0x11U, 0x19U, 0x19U,
@@ -68,6 +74,12 @@ extern const VlUnpacked<CData/*7:0*/, 512> Vphoenix_core__ConstPool__TABLE_h043d
     0xe5U, 0x65U, 0xedU, 0x6dU, 0xf5U, 0x75U, 0xfdU, 0x7dU,
     0xe6U, 0x66U, 0xeeU, 0x6eU, 0xf6U, 0x76U, 0xfeU, 0x7eU,
     0xe7U, 0x67U, 0xefU, 0x6fU, 0xf7U, 0x77U, 0xffU, 0x7fU
+}};
+
+extern const VlUnpacked<QData/*51:0*/, 6> Vphoenix_core__ConstPool__TABLE_h4f0555cb_0 = {{
+    0x0000115d00000006ULL, 0x0000115d00000006ULL,
+    0ULL, 0x0000115d00000006ULL,
+    0ULL, 0x0000115d00000006ULL
 }};
 
 extern const VlUnpacked<CData/*0:0*/, 2048> Vphoenix_core__ConstPool__TABLE_hf931b36c_0 = {{

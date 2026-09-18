@@ -24,7 +24,7 @@ tidied. Each one is marked.
 Usage:
     sound_model.py <trace.txt> <out.wav> [seconds]
 """
-import sys, struct, wave
+import os, sys, struct, wave
 
 VMAX = 32767
 VMIN = 0
@@ -191,6 +191,14 @@ def _trunc(x):
     return int(x)
 
 
+def _div2(x):
+    """C's `x / 2` on a signed int: truncates toward zero, where Python's //
+    floors. It matters -- MAME's `sum / 2` on -32767 gives -16383, Python's
+    `// 2` gives -16384, and that one-count difference is a DC offset on every
+    sample the effects board produces."""
+    return -((-x) // 2) if x < 0 else x // 2
+
+
 class PleiadsEffects:
     """The analogue effects board, at MAME's machine sample rate."""
 
@@ -281,7 +289,7 @@ class PleiadsEffects:
                 self.t3_counter += self.rate
                 self.t3_output = (self.t3_output + n) & 1
         s = (VMAX if self.t2_output else -VMAX) + (VMAX if self.t3_output else -VMAX)
-        return s // 2
+        return _div2(s)
 
     # -- tone 4: the lower 556, gated by the polynomial bit ------------------
     def tone4(self):
@@ -346,10 +354,10 @@ class PleiadsEffects:
             s -= level
             if self.a & 0x80:
                 s -= VMAX
-        return s // 2
+        return _div2(s)
 
     def sample(self):
-        s = self.tone1() // 2 + self.tone23() // 2 + self.tone4() + self.noise()
+        s = _div2(self.tone1()) + _div2(self.tone23()) + self.tone4() + self.noise()
         return max(-1.0, min(1.0, s / 32768.0))
 
 
@@ -414,9 +422,56 @@ def render(trace, seconds):
     return out
 
 
+def render_dump(trace, seconds, path):
+    """Per-sample text dump of the two sources, to diff against the RTL's."""
+    tms = TMS36XX()
+    fx = PleiadsEffects()
+    n = int(seconds * EFFECT_RATE)
+    acc = 0.0
+    step = TMS_RATE / EFFECT_RATE
+    prev = nxt = 0.0
+    ei = 0
+    last = {'A': None, 'B': None, 'C': None}
+    with open(path, 'w') as f:
+        for i in range(n):
+            t = i / EFFECT_RATE
+            while ei < len(trace) and trace[ei][0] <= t:
+                _, latch, val = trace[ei]
+                ei += 1
+                if last[latch] == val:
+                    continue
+                last[latch] = val
+                if latch == 'A':
+                    fx.a = val
+                elif latch == 'C':
+                    fx.c = val
+                else:
+                    p = (val >> 6) & 3
+                    if p == 3:
+                        p = 2
+                    tms.note_w(p, val & 15)
+                    fx.b = val
+            acc += step
+            while acc >= 1.0:
+                acc -= 1.0
+                prev = nxt
+                nxt = tms.sample()
+            v = prev + (nxt - prev) * acc
+            e = fx.sample()
+            mixed = max(-32768, min(32767, int((0.75 * v + 0.40 * e) * 32768)))
+            f.write(f'{round(nxt*32768)} {round(e*32768)} {mixed} '
+                    f'{fx.a:02X} {fx.b:02X} {fx.c:02X} '
+                    f'{fx.polybit} {fx.pa6[0]} {fx.pc5[0]} {fx.pa5[0]} {fx.pb4[0]}\n')
+
+
 def main():
     if len(sys.argv) < 3:
         sys.exit(__doc__)
+    if os.environ.get('PL_DUMP'):
+        render_dump(load_trace(sys.argv[1]), float(sys.argv[3]) if len(sys.argv) > 3 else 20.0,
+                    os.environ['PL_DUMP'])
+        print('wrote ' + os.environ['PL_DUMP'])
+        return
     seconds = float(sys.argv[3]) if len(sys.argv) > 3 else 20.0
     samples = render(load_trace(sys.argv[1]), seconds)
     with wave.open(sys.argv[2], 'wb') as w:

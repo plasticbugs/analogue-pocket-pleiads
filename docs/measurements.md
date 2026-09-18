@@ -214,3 +214,59 @@ MAME is what we are matching, so the port reproduces them and marks each one:
 - `update_c_pa6`'s discharge path uses a hard-coded 0.1 s constant rather than
   the `discharge_time` in its own struct, and only runs while the polynomial
   bit is high.
+
+## Sound in gateware
+
+`sim/run_audio.sh` replays MAME's own sound command stream into the RTL and
+compares what comes out against MAME's recording of the same twenty seconds:
+
+| measure | RTL / MAME |
+|---|---|
+| peak | 1.00 |
+| overall RMS | 0.91 |
+| RMS per 4 s window | 0.83 – 1.00 |
+| 20–200 Hz | 0.99 |
+| 200–600 Hz | 1.005 |
+| 600–1500 Hz | 0.98 |
+| 1500–4000 Hz | 0.97 |
+| 4000–12000 Hz | 1.48 |
+| **waveform correlation, first 4 s** | **+0.9991** |
+
+A correlation of 0.9991 is not "the same kind of noise at the same level" — it
+is the same waveform. The gateware tracks MAME's model essentially sample for
+sample, which is more than the bar set above and more than an analogue board
+with unknown component values strictly deserves.
+
+The RTL matches MAME *better* than the Python reference does (+0.9991 against
++0.89). That is not a contradiction: the reference applies each sound command
+at a 48 kHz sample boundary, while the RTL sees the same command stream at
+clock resolution, which is much closer to when MAME actually applied it. The
+reference remains the readable spec; the gateware is the faithful one.
+
+The 4–12 kHz band is the melody chip's resampling, unchanged from the earlier
+measurement and documented above.
+
+### Three bugs the audio bench caught, none of which any tool warned about
+
+**A 32-bit constant overflow.** The RC time constants are written as
+`(4096 * 1000000) / microseconds`. That numerator is 4 096 000 000, and a bare
+integer expression in SystemVerilog is 32-bit *signed*, so it wraps negative
+and every time constant came out wrong. PB4 never charged, tones 2 and 3 never
+swept, and the effects board sat at a constant −16383 — which reads like a dead
+module rather than arithmetic. Fixed by making the literals 64-bit.
+
+**Operator precedence in the interpolator.** `a + b * c >>> 8` parses as
+`(a + b * c) >>> 8`, because `>>>` binds looser than `+`. The melody's
+interpolator became a differentiator and contributed nothing to the mix. The
+tell was that the output peaked at exactly 13107, which is 0.4 × 32767 — the
+effects gain alone, to the count.
+
+**A task that silently dropped its results.** The envelope step was a task with
+`inout` arguments; it never wrote them back. Returning `{counter, level}`
+packed from a function fixed it and leaves nothing to interpret.
+
+There is also one in the *reference model*, worth recording because it ran the
+other way: `s // 2` in Python floors where C's `s / 2` truncates toward zero,
+so on −32767 the two differ by one count — a DC offset on every sample. The
+RTL was right and the reference was wrong, which is exactly why the two are
+compared against MAME separately rather than only against each other.

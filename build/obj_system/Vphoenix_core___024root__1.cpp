@@ -28,9 +28,14 @@ bool Vphoenix_core___024root___eval_phase__act(Vphoenix_core___024root* vlSelf) 
     {
         // Inlined CFunc: _eval_triggers_vec__act
         vlSelfRef.__VactTriggered[0U] = (QData)((IData)(
-                                                        ((IData)(vlSelfRef.clk) 
-                                                         & (~ (IData)(vlSelfRef.__Vtrigprevexpr___TOP__clk__1)))));
+                                                        ((((IData)(vlSelfRef.clk_audio) 
+                                                           & (~ (IData)(vlSelfRef.__Vtrigprevexpr___TOP__clk_audio__1))) 
+                                                          << 1U) 
+                                                         | ((IData)(vlSelfRef.clk) 
+                                                            & (~ (IData)(vlSelfRef.__Vtrigprevexpr___TOP__clk__1))))));
         vlSelfRef.__Vtrigprevexpr___TOP__clk__1 = vlSelfRef.clk;
+        vlSelfRef.__Vtrigprevexpr___TOP__clk_audio__1 
+            = vlSelfRef.clk_audio;
     }
 #ifdef VL_DEBUG
     if (VL_UNLIKELY(vlSymsp->_vm_contextp__->debug())) {
@@ -55,6 +60,7 @@ void Vphoenix_core___024root___trigger_clear__act(VlUnpacked<QData/*63:0*/, 1> &
 
 bool Vphoenix_core___024root___trigger_anySet__act(const VlUnpacked<QData/*63:0*/, 1> &in);
 void Vphoenix_core___024root___nba_sequent__TOP__0(Vphoenix_core___024root* vlSelf);
+void Vphoenix_core___024root___nba_sequent__TOP__2(Vphoenix_core___024root* vlSelf);
 
 bool Vphoenix_core___024root___eval_phase__nba(Vphoenix_core___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vphoenix_core___024root___eval_phase__nba\n"); );
@@ -69,6 +75,28 @@ bool Vphoenix_core___024root___eval_phase__nba(Vphoenix_core___024root* vlSelf) 
             // Inlined CFunc: _eval_nba
             if ((1ULL & vlSelfRef.__VnbaTriggered[0U])) {
                 Vphoenix_core___024root___nba_sequent__TOP__0(vlSelf);
+            }
+            if ((2ULL & vlSelfRef.__VnbaTriggered[0U])) {
+                {
+                    // Inlined CFunc: _nba_sequent__TOP__1
+                    CData/*2:0*/ __Vinline_0__eval_nba___Vinline_0__nba_sequent__TOP__1___Vdly__phoenix_core__DOT__u_audio__DOT__tog_sync;
+                    __Vinline_0__eval_nba___Vinline_0__nba_sequent__TOP__1___Vdly__phoenix_core__DOT__u_audio__DOT__tog_sync = 0;
+                    __Vinline_0__eval_nba___Vinline_0__nba_sequent__TOP__1___Vdly__phoenix_core__DOT__u_audio__DOT__tog_sync 
+                        = vlSelfRef.phoenix_core__DOT__u_audio__DOT__tog_sync;
+                    __Vinline_0__eval_nba___Vinline_0__nba_sequent__TOP__1___Vdly__phoenix_core__DOT__u_audio__DOT__tog_sync 
+                        = ((6U & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__tog_sync) 
+                                  << 1U)) | (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__snd_tog));
+                    if (((1U & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__tog_sync) 
+                                >> 2U)) != (1U & ((IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__tog_sync) 
+                                                  >> 1U)))) {
+                        vlSelfRef.audio_sync = vlSelfRef.phoenix_core__DOT__u_audio__DOT__snd_hold;
+                    }
+                    vlSelfRef.phoenix_core__DOT__u_audio__DOT__tog_sync 
+                        = __Vinline_0__eval_nba___Vinline_0__nba_sequent__TOP__1___Vdly__phoenix_core__DOT__u_audio__DOT__tog_sync;
+                }
+            }
+            if ((1ULL & vlSelfRef.__VnbaTriggered[0U])) {
+                Vphoenix_core___024root___nba_sequent__TOP__2(vlSelf);
             }
         }
         Vphoenix_core___024root___trigger_clear__act(vlSelfRef.__VnbaTriggered);
@@ -184,6 +212,9 @@ void Vphoenix_core___024root___eval_debug_assertions(Vphoenix_core___024root* vl
     }
     if (VL_UNLIKELY(((vlSelfRef.cab_cocktail & 0xfeU)))) {
         Verilated::overWidthError("cab_cocktail");
+    }
+    if (VL_UNLIKELY(((vlSelfRef.clk_audio & 0xfeU)))) {
+        Verilated::overWidthError("clk_audio");
     }
 }
 #endif  // VL_DEBUG

@@ -62,10 +62,15 @@ module phoenix_core (
     output logic        de,
     output logic        cen_pix,
 
-    // Sound control latches, for the sound sections to consume
+    // Sound control latches, exposed for benches
     output logic [7:0]  snd_a,
     output logic [7:0]  snd_b,
     output logic [7:0]  snd_c,
+
+    // Audio, in the core's own clock domain and in the platform's
+    input  logic        clk_audio,
+    output logic signed [15:0] audio,
+    output logic signed [15:0] audio_sync,
 
     // Observation port for the benches; unused in synthesis
     output logic [15:0] dbg_addr,
@@ -214,6 +219,17 @@ module phoenix_core (
         .hcnt(dbg_hcnt), .vcnt(dbg_vcnt), .vblank_raw(vblank_raw),
         .rgb(rgb), .hsync(hsync), .vsync(vsync),
         .hblank(hblank), .vblank(vblank), .de(de)
+    );
+
+    // ------------------------------------------------------------------ audio
+    phoenix_audio #(.CLK_HZ(44_000_000), .RATE(48_000)) u_audio (
+        .clk(clk), .reset(reset),
+        .is_phoenix(game_phoenix),
+        .snd_a(snd_a), .snd_b(snd_b), .snd_c(snd_c),
+        .sample(audio), .sample_tick(),
+        .clk_audio(clk_audio), .audio_out(audio_sync),
+        .dbg_tms(), .dbg_fx(), .dbg_freq0(), .dbg_vol0(),
+        .dbg_pb4(), .dbg_notes(), .dbg_poly(), .dbg_pa6(), .dbg_pc5(), .dbg_pa5()
     );
 
     // ------------------------------------------------------------ bench port

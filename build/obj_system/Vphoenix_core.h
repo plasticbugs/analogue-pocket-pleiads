@@ -29,6 +29,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vphoenix_core VL_NOT_FINAL : public Verilated
     // The application code writes and reads these signals to
     // propagate new values into/out from the Verilated model.
     VL_IN8(&clk,0,0);
+    VL_IN8(&clk_audio,0,0);
     VL_IN8(&reset,0,0);
     VL_IN8(&dl_data,7,0);
     VL_IN8(&dl_wr,0,0);
@@ -62,6 +63,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vphoenix_core VL_NOT_FINAL : public Verilated
     VL_OUT8(&dbg_stb,0,0);
     VL_OUT8(&dbg_fetch,0,0);
     VL_OUT8(&dbg_vcnt,7,0);
+    VL_OUT16(&audio,15,0);
+    VL_OUT16(&audio_sync,15,0);
     VL_OUT16(&dbg_addr,15,0);
     VL_OUT16(&dbg_hcnt,8,0);
     VL_IN(&dl_addr,16,0);

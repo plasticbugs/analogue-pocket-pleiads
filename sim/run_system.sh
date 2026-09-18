@@ -12,10 +12,10 @@ if [ ! -x "$OBJ/Vphoenix_core" ] || [ -n "$(find rtl sim -newer "$OBJ/Vphoenix_c
     echo "building..."
     verilator --cc --exe --build -j 0 -O2 \
         -Wall -Wno-DECLFILENAME -Wno-UNUSEDSIGNAL -Wno-PINCONNECTEMPTY \
-        -Wno-WIDTHTRUNC -Wno-WIDTHEXPAND -Wno-BLKSEQ -Wno-CASEOVERLAP \
+        -Wno-WIDTHTRUNC -Wno-WIDTHEXPAND -Wno-BLKSEQ -Wno-CASEOVERLAP -Wno-UNUSEDPARAM -Wno-MULTIDRIVEN \
         -Irtl --Mdir "$OBJ" -CFLAGS "-O2" -LDFLAGS "-lz" --top-module phoenix_core \
         rtl/phoenix_dpram.sv rtl/phoenix_mem.sv rtl/phoenix_video.sv \
-        rtl/i8085.sv rtl/phoenix_core.sv sim/tb_system.cpp >/dev/null
+        rtl/i8085.sv rtl/tms36xx.sv rtl/pleiads_sound.sv rtl/phoenix_audio.sv rtl/phoenix_core.sv sim/tb_system.cpp >/dev/null
 fi
 
 if [ ! -f "build/mame_bus_$GAME.txt" ] || [ "${REGEN:-0}" = "1" ]; then

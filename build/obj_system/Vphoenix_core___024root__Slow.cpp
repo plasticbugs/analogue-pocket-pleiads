@@ -5,6 +5,7 @@
 #include "Vphoenix_core__pch.h"
 
 // Parameter definitions for Vphoenix_core___024root
+constexpr VlUnpacked<SData/*15:0*/, 78> Vphoenix_core___024root::phoenix_core__DOT__u_audio__DOT__u_tms__DOT__TMS_TUNE4;
 constexpr VlUnpacked<IData/*23:0*/, 64> Vphoenix_core___024root::phoenix_core__DOT__u_video__DOT__PAL_LUT;
 
 

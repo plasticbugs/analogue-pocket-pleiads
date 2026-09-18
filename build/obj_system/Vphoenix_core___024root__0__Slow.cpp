@@ -13,8 +13,24 @@ VL_ATTR_COLD void Vphoenix_core___024root___eval_static(Vphoenix_core___024root*
         // Inlined CFunc: _eval_static__TOP
         IData/*31:0*/ __Vinline_0__eval_static__TOP_phoenix_core__DOT__u_cpu__DOT__cycles__DOT__i;
         __Vinline_0__eval_static__TOP_phoenix_core__DOT__u_cpu__DOT__cycles__DOT__i = 0;
-        __Vinline_0__eval_static__TOP_phoenix_core__DOT__u_cpu__DOT__cycles__DOT__i = 0;
         const uint64_t __VscopeHash = VL_MURMUR64_HASH(vlSelf->vlNamep);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__unnamedblk1__DOT__interp = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4557604057446304278ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__unnamedblk1__DOT__mixed = VL_SCOPED_RAND_RESET_Q(48, __VscopeHash, 3917831547363406354ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t1 = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 2917621632529141324ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t23 = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 3403108926413151071ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4 = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 15339486548036600147ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 10315125000595205225ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl23 = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 7445346686003654403ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__lvl4 = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 15545207622716176149ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 17663579978103439379ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_fx__DOT__unnamedblk1__DOT__step = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 18230342643205577856ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__unnamedblk1__DOT__vc = VL_SCOPED_RAND_RESET_I(24, __VscopeHash, 5091755781851756497ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__unnamedblk1__DOT__k = VL_SCOPED_RAND_RESET_I(20, __VscopeHash, 5105078728384580010ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__unnamedblk2__DOT__tc = VL_SCOPED_RAND_RESET_I(24, __VscopeHash, 11185775224228463594ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__unnamedblk2__DOT__n = VL_SCOPED_RAND_RESET_I(3, __VscopeHash, 14201630085700544684ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__unnamedblk3__DOT__c = VL_SCOPED_RAND_RESET_I(24, __VscopeHash, 8858830806894625073ull);
+        vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__unnamedblk3__DOT__ob = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 8994329884323514647ull);
+        __Vinline_0__eval_static__TOP_phoenix_core__DOT__u_cpu__DOT__cycles__DOT__i = 0;
         vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk1__DOT__t = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 17344968143457508189ull);
         vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk1__DOT__nf = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 10652788490285645414ull);
         vlSelfRef.phoenix_core__DOT__u_cpu__DOT__unnamedblk2__DOT__q = VL_SCOPED_RAND_RESET_I(17, __VscopeHash, 12588690427337595300ull);
@@ -48,7 +64,9 @@ VL_ATTR_COLD void Vphoenix_core___024root___eval_static(Vphoenix_core___024root*
     vlSelfRef.__Vtrigprevexpr___TOP__dsw__0 = vlSelfRef.dsw;
     vlSelfRef.__Vtrigprevexpr___TOP__cab_cocktail__0 
         = vlSelfRef.cab_cocktail;
+    vlSelfRef.__Vtrigprevexpr___TOP__clk_audio__0 = vlSelfRef.clk_audio;
     vlSelfRef.__Vtrigprevexpr___TOP__clk__1 = vlSelfRef.clk;
+    vlSelfRef.__Vtrigprevexpr___TOP__clk_audio__1 = vlSelfRef.clk_audio;
 }
 
 VL_ATTR_COLD void Vphoenix_core___024root___eval_initial__TOP(Vphoenix_core___024root* vlSelf);
@@ -426,6 +444,9 @@ VL_ATTR_COLD bool Vphoenix_core___024root___trigger_anySet__stl(const VlUnpacked
     return (0U);
 }
 
+extern const VlWide<12>/*383:0*/ Vphoenix_core__ConstPool__CONST_h31ebeb16_0;
+extern const VlUnpacked<QData/*51:0*/, 6> Vphoenix_core__ConstPool__TABLE_h4f0555cb_0;
+
 VL_ATTR_COLD void Vphoenix_core___024root___stl_sequent__TOP__0(Vphoenix_core___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vphoenix_core___024root___stl_sequent__TOP__0\n"); );
     Vphoenix_core__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
@@ -435,6 +456,9 @@ VL_ATTR_COLD void Vphoenix_core___024root___stl_sequent__TOP__0(Vphoenix_core___
     phoenix_core__DOT__u_video__DOT__sx = 0;
     CData/*7:0*/ phoenix_core__DOT__u_video__DOT__sy;
     phoenix_core__DOT__u_video__DOT__sy = 0;
+    CData/*6:0*/ __VdfgRegularize_hebeb780c_0_6;
+    __VdfgRegularize_hebeb780c_0_6 = 0;
+    IData/*31:0*/ __Vtemp_1;
     // Body
     vlSelfRef.cen_pix = (0U == (IData)(vlSelfRef.phoenix_core__DOT__u_video__DOT__phase));
     vlSelfRef.dbg_addr = vlSelfRef.phoenix_core__DOT__cpu_addr;
@@ -458,6 +482,13 @@ VL_ATTR_COLD void Vphoenix_core___024root___stl_sequent__TOP__0(Vphoenix_core___
                                              & ((IData)(vlSelfRef.phoenix_core__DOT__cpu_we) 
                                                 & (1U 
                                                    == (IData)(vlSelfRef.phoenix_core__DOT__div))));
+    __Vtemp_1 = VL_MATCHMASKED_I(32, VL_MODDIV_III(32, (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vi), (IData)(6U)), Vphoenix_core__ConstPool__CONST_h31ebeb16_0);
+    vlSelfRef.__VdfgRegularize_hebeb780c_0_5 = Vphoenix_core__ConstPool__TABLE_h4f0555cb_0
+        [__Vtemp_1];
+    __VdfgRegularize_hebeb780c_0_6 = (0x0000007fU & 
+                                      (((IData)(6U) 
+                                        * (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tune_ofs)) 
+                                       + (IData)(vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vi)));
     vlSelfRef.phoenix_core__DOT__u_mem__DOT__sel_prog 
         = ((IData)(vlSelfRef.dl_wr) & (0x00004000U 
                                        > vlSelfRef.dl_addr));
@@ -511,6 +542,11 @@ VL_ATTR_COLD void Vphoenix_core___024root___stl_sequent__TOP__0(Vphoenix_core___
                                                          & (IData)(vlSelfRef.phoenix_core__DOT__cpu_addr))));
     vlSelfRef.phoenix_core__DOT__u_video__DOT__cocktail 
         = ((IData)(vlSelfRef.cab_cocktail) & (IData)(vlSelfRef.phoenix_core__DOT__videoreg));
+    vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tune_entry 
+        = (vlSelfRef.phoenix_core__DOT__u_audio__DOT__u_tms__DOT__TMS_TUNE4
+           [__VdfgRegularize_hebeb780c_0_6] & (- (IData)(
+                                                         (0x4dU 
+                                                          >= (IData)(__VdfgRegularize_hebeb780c_0_6)))));
     vlSelfRef.phoenix_core__DOT__u_mem__DOT____Vcellinp__u_prog__a_addr 
         = (0x00003fffU & ((IData)(vlSelfRef.phoenix_core__DOT__u_mem__DOT__sel_prog)
                            ? vlSelfRef.dl_addr : (IData)(vlSelfRef.phoenix_core__DOT__cpu_addr)));
@@ -770,6 +806,9 @@ VL_ATTR_COLD void Vphoenix_core___024root___dump_triggers__ico(const VlUnpacked<
     if ((1U & (IData)((triggers[0U] >> 0x00000012U)))) {
         VL_DBG_MSGS("         '" + tag + "' region trigger index 18 is active: @( cab_cocktail)\n");
     }
+    if ((1U & (IData)((triggers[0U] >> 0x00000013U)))) {
+        VL_DBG_MSGS("         '" + tag + "' region trigger index 19 is active: @( clk_audio)\n");
+    }
     if ((1U & (IData)(triggers[1U]))) {
         VL_DBG_MSGS("         '" + tag + "' region trigger index 64 is active: Internal 'ico' trigger - first iteration\n");
     }
@@ -787,6 +826,9 @@ VL_ATTR_COLD void Vphoenix_core___024root___dump_triggers__act(const VlUnpacked<
     }
     if ((1U & (IData)(triggers[0U]))) {
         VL_DBG_MSGS("         '" + tag + "' region trigger index 0 is active: @(posedge clk)\n");
+    }
+    if ((1U & (IData)((triggers[0U] >> 1U)))) {
+        VL_DBG_MSGS("         '" + tag + "' region trigger index 1 is active: @(posedge clk_audio)\n");
     }
 }
 #endif  // VL_DEBUG
@@ -828,6 +870,9 @@ VL_ATTR_COLD void Vphoenix_core___024root___ctor_var_reset(Vphoenix_core___024ro
     vlSelf->snd_a = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 16130822892161450432ull);
     vlSelf->snd_b = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 5848752275648079737ull);
     vlSelf->snd_c = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 7316865929743495349ull);
+    vlSelf->clk_audio = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 3590482352682242802ull);
+    vlSelf->audio = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 15808669430542691865ull);
+    vlSelf->audio_sync = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 9393394461573825354ull);
     vlSelf->dbg_addr = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 10106814393097140953ull);
     vlSelf->dbg_data = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 10213329243391659403ull);
     vlSelf->dbg_we = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 5806864404134174129ull);
@@ -887,6 +932,74 @@ VL_ATTR_COLD void Vphoenix_core___024root___ctor_var_reset(Vphoenix_core___024ro
     for (int __Vi0 = 0; __Vi0 < 16384; ++__Vi0) {
         vlSelf->phoenix_core__DOT__u_mem__DOT__u_prog__DOT__mem[__Vi0] = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 4324622969500868180ull);
     }
+    vlSelf->phoenix_core__DOT__u_audio__DOT__sample_tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 10895661522553781145ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__dbg_notes = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 10066292305390435944ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__tms_sample = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 7979416897198035223ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__tms_tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 8577040979848378737ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__note_we = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 17087109817287425632ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__note_octave = VL_SCOPED_RAND_RESET_I(2, __VscopeHash, 16025994973257328699ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__note_value = VL_SCOPED_RAND_RESET_I(4, __VscopeHash, 10795060082427072053ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__snd_b_q = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 9668132139941885741ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__fx_sample = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 15455296757172678783ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__fx_tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 2229682075487791888ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__tms_prev = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 1010810190876706091ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__tms_cur = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 13972438827720043319ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__snd_tog = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 10372124348922575109ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__snd_hold = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 15644757267824317079ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__tog_sync = VL_SCOPED_RAND_RESET_I(3, __VscopeHash, 16069633256490086570ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__acc = VL_SCOPED_RAND_RESET_I(27, __VscopeHash, 12581436286563943603ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 8353098406234792072ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t1_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 446412424838358984ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 10193773176723317558ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 8394065833883799553ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 4243629441265963907ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__noise_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 11761657739201904756ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t1_div = VL_SCOPED_RAND_RESET_I(4, __VscopeHash, 2352568204040613172ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t1_out = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 9489407474831872242ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t2_out = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 4422559788807060903ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t3_out = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 10493521642327252251ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__t4_out = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 234282831510175849ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_lvl = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 13988568826028109354ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_lvl = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 16619949985238919697ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_lvl = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 15955434384010945633ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_lvl = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 10887269044117619309ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_lvl = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 44090695682278379ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa5_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 629165283254556773ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pa6_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 18098101016668624268ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pb4_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 6880448840704530776ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc4_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 17351148576552732874ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__pc5_ctr = VL_SCOPED_RAND_RESET_I(32, __VscopeHash, 12920968571969271246ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__lfsr = VL_SCOPED_RAND_RESET_I(18, __VscopeHash, 15405209196229902305ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_fx__DOT__polybit = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 1322531003799027369ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__acc = VL_SCOPED_RAND_RESET_I(27, __VscopeHash, 9377752337125304595ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tick = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 18056373521567421971ull);
+    for (int __Vi0 = 0; __Vi0 < 12; ++__Vi0) {
+        vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol[__Vi0] = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 376711374486061897ull);
+    }
+    for (int __Vi0 = 0; __Vi0 < 12; ++__Vi0) {
+        vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol_ctr[__Vi0] = VL_SCOPED_RAND_RESET_I(24, __VscopeHash, 7419145723460917824ull);
+    }
+    for (int __Vi0 = 0; __Vi0 < 12; ++__Vi0) {
+        vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__ctr[__Vi0] = VL_SCOPED_RAND_RESET_I(24, __VscopeHash, 7751243192259135685ull);
+    }
+    for (int __Vi0 = 0; __Vi0 < 12; ++__Vi0) {
+        vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__freq[__Vi0] = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 13471979509466527296ull);
+    }
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__outbit = VL_SCOPED_RAND_RESET_I(12, __VscopeHash, 12607232135745912904ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tune_ctr = VL_SCOPED_RAND_RESET_I(24, __VscopeHash, 4453362346234120318ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__note_ctr = VL_SCOPED_RAND_RESET_I(24, __VscopeHash, 7890204521470319150ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__shift = VL_SCOPED_RAND_RESET_I(3, __VscopeHash, 10843751875923448325ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tune_ofs = VL_SCOPED_RAND_RESET_I(5, __VscopeHash, 17948548948454430725ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tune_max = VL_SCOPED_RAND_RESET_I(5, __VscopeHash, 4924880479129269887ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__octave = VL_SCOPED_RAND_RESET_I(2, __VscopeHash, 8725521154381905437ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__playing = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 8055257536634592164ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__state = VL_SCOPED_RAND_RESET_I(3, __VscopeHash, 7631984365348677471ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vi = VL_SCOPED_RAND_RESET_I(4, __VscopeHash, 9519080720487616951ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__sum = VL_SCOPED_RAND_RESET_I(20, __VscopeHash, 5300538012261261847ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__note_pend = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 11140118270150476917ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__note_oct_l = VL_SCOPED_RAND_RESET_I(2, __VscopeHash, 990804488132412574ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__note_val_l = VL_SCOPED_RAND_RESET_I(4, __VscopeHash, 8118406353708554607ull);
+    vlSelf->phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tune_entry = VL_SCOPED_RAND_RESET_I(16, __VscopeHash, 7046809316233874155ull);
     vlSelf->phoenix_core__DOT__u_video__DOT__phase = VL_SCOPED_RAND_RESET_I(3, __VscopeHash, 6536773850311057546ull);
     vlSelf->phoenix_core__DOT__u_video__DOT__cocktail = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 8124868806285582191ull);
     vlSelf->phoenix_core__DOT__u_video__DOT__bx = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 8049441070046481022ull);
@@ -928,6 +1041,48 @@ VL_ATTR_COLD void Vphoenix_core___024root___ctor_var_reset(Vphoenix_core___024ro
     vlSelf->phoenix_core__DOT__u_cpu__DOT__src_reg_from_ddd = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 10478240413280496162ull);
     vlSelf->__VdfgRegularize_hebeb780c_0_1 = 0;
     vlSelf->__VdfgRegularize_hebeb780c_0_4 = 0;
+    vlSelf->__VdfgRegularize_hebeb780c_0_5 = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__div = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__snd_b_q = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__snd_tog = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__acc = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__outbit = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tune_ctr = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__note_ctr = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__shift = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tune_ofs = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__tune_max = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__octave = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__playing = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__state = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vi = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__sum = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__note_pend = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__state = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__pc = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__sp = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__ustep = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__tleft = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__ra = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__rc = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__rh = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__rl = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__wz = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__tmp = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__ir = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__im = 0;
+    vlSelf->__Vdly__phoenix_core__DOT__u_cpu__DOT__fl = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol__v0 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol__v1 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__ctr__v12 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__freq__v12 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol__v12 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol_ctr__v12 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol__v13 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__freq__v13 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol__v14 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol_ctr__v13 = 0;
+    vlSelf->__VdlySet__phoenix_core__DOT__u_audio__DOT__u_tms__DOT__vol_ctr__v14 = 0;
     for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
         vlSelf->__VstlTriggered[__Vi0] = 0;
     }
@@ -953,11 +1108,13 @@ VL_ATTR_COLD void Vphoenix_core___024root___ctor_var_reset(Vphoenix_core___024ro
     vlSelf->__Vtrigprevexpr___TOP__p2_fire2__0 = 0;
     vlSelf->__Vtrigprevexpr___TOP__dsw__0 = 0;
     vlSelf->__Vtrigprevexpr___TOP__cab_cocktail__0 = 0;
+    vlSelf->__Vtrigprevexpr___TOP__clk_audio__0 = 0;
     vlSelf->__VicoDidInit = 0;
     for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
         vlSelf->__VactTriggered[__Vi0] = 0;
     }
     vlSelf->__Vtrigprevexpr___TOP__clk__1 = 0;
+    vlSelf->__Vtrigprevexpr___TOP__clk_audio__1 = 0;
     for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
         vlSelf->__VnbaTriggered[__Vi0] = 0;
     }
