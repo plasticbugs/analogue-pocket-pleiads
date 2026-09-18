@@ -24,3 +24,10 @@ projects/output_files/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Quartus scratch
+projects/output_files/
+projects/db/
+projects/incremental_db/
+projects/*.qws
+build/

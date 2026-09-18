@@ -79,6 +79,48 @@ module pleiads_sound #(
     localparam int KC5_D = `KRECIP(100000);    // 0.1 s
 
     localparam int T2_MAX = 351, T3_MAX = 582, T4_MAX = 1315;
+
+    // Division by a constant, as a multiply and a shift.
+    //
+    // Written as `x / 48000` Quartus instantiates a real divider: a general
+    // lpm_divide costs about 670 logic elements, and this module has enough of
+    // them that it synthesised to 14 335 -- most of the device, for the sound
+    // section alone. Each multiplier below is exact over the range the operand
+    // can actually take, checked by tools/gen_recip.py, not approximate.
+    localparam int RATE_S  = 41, RATE_M  = 45812985;  // /48000, x < 2^26
+    localparam int T3DIV_S = 39, T3DIV_M = 16280379;  // /33768, x < 2^24
+    localparam int R67_S   = 26, R67_M   = 1001625;   // /67,    x < 2^21
+    localparam int R80_S   = 25, R80_M   = 419431;    // /80,    x < 2^21
+
+    // How many whole sample periods an accumulated rate has crossed.
+    //
+    // The operand widths are load-bearing. Declared 68 bits wide -- which is
+    // what a careless cast asks for -- Quartus builds a 68x68 multiplier and
+    // the design needs 83 DSP blocks on a device that has 66. The largest
+    // value that can reach here is the fastest envelope's rate, 45 128 984,
+    // which is 26 bits, so a 26x26 multiply is the whole of it and fits one
+    // DSP block.
+    function automatic logic [25:0] div_rate(input logic [25:0] x);
+        logic [51:0] t;
+        begin
+            t = x * 26'(RATE_M);
+            div_rate = t[51:RATE_S];
+        end
+    endfunction
+
+    // C's `x / 2` on a signed value: truncates toward zero, where an
+    // arithmetic shift floors. Adding the sign bit first fixes it -- but the
+    // addend has to stay signed. Written as `x + {17'd0, x[17]}` the unsigned
+    // concatenation makes the whole expression unsigned and `>>>` becomes a
+    // logical shift, which inverts every negative sample. The symptom was a
+    // correlation of -0.997 against MAME: the right spectrum, upside down.
+    function automatic logic signed [17:0] div2(input logic signed [17:0] x);
+        logic signed [17:0] y;
+        begin
+            y = x + (x[17] ? 18'sd1 : 18'sd0);
+            div2 = y >>> 1;
+        end
+    endfunction
     localparam int NOISE_FREQ = 1412;
     localparam int PA5_R = 33, PC5_R = 47, POLY_R = 47, OPAMP_R = 20;
 
@@ -116,7 +158,11 @@ module pleiads_sound #(
             input logic [15:0] level, input logic signed [31:0] counter,
             input logic charging, input logic [15:0] floor_lvl,
             input int k_charge, input int k_discharge, input logic n_on_discharge);
-        logic [47:0]        rate_val;
+        // delta is 16 bits and the widest reciprocal 24, so this is a
+        // 16x24 multiply, not the 48x48 one a careless cast would ask for.
+        logic [15:0]        delta;
+        logic [39:0]        prod;       // 16x24 is the whole multiply
+        logic [39:0]        rate_val;
         logic [31:0]        n;
         logic [15:0]        l;
         logic signed [31:0] c;
@@ -124,20 +170,29 @@ module pleiads_sound #(
             l = level; c = counter;
             if (charging) begin
                 if (l < 16'(VMAX)) begin
-                    rate_val = (48'(16'(VMAX) - l) * 48'(k_charge)) >> 12;
+                    delta    = 16'(VMAX) - l;
+                    // The product must be given a wide home *before* the
+                    // shift. In `(a * b) >> s` the multiply's width is
+                    // max(width(a), width(b)), so a 16x24 product written
+                    // inline is truncated to 24 bits and the shift then
+                    // discards what is left.
+                    prod     = delta * 24'(k_charge);
+                    rate_val = prod >> 12;
                     c = c - $signed(rate_val[31:0]);
                     if (c <= 0) begin
-                        n = (32'(-c) / RATE) + 32'd1;
+                        n = 32'(div_rate(26'(-c))) + 32'd1;
                         c = c + $signed(n * RATE);
                         l = ({16'd0, l} + n > 32'(VMAX)) ? 16'(VMAX) : l + n[15:0];
                     end
                 end
             end else begin
                 if (l > floor_lvl) begin
-                    rate_val = (48'(l - floor_lvl) * 48'(k_discharge)) >> 12;
+                    delta    = l - floor_lvl;
+                    prod     = delta * 24'(k_discharge);
+                    rate_val = prod >> 12;
                     c = c - $signed(rate_val[31:0]);
                     if (c <= 0) begin
-                        n = (32'(-c) / RATE) + 32'd1;
+                        n = 32'(div_rate(26'(-c))) + 32'd1;
                         c = c + $signed(n_on_discharge ? (n * RATE) : 32'(RATE));
                         l = ({16'd0, l} < {16'd0, floor_lvl} + n) ? floor_lvl : l - n[15:0];
                     end
@@ -171,7 +226,9 @@ module pleiads_sound #(
         end else begin
             sample_tick = 1'b0;
             if (tick) begin
-                logic signed [17:0] s_t1, s_t23, s_t4, s_noise;
+                logic signed [17:0] s_t1, s_t23, s_t4, s_noise, pa6_s;
+                logic [47:0]        t3mul;
+                logic [40:0]        r67mul, r80a, r80b;
                 logic [15:0]        lvl23, lvl4;
                 logic [31:0]        n, step;
                 logic signed [31:0] c;
@@ -200,26 +257,27 @@ module pleiads_sound #(
                 lvl23 = 16'(VMAX) - pb4_lvl;
 
                 if (latch_b[5] && lvl23 < 16'(VMAX)) begin
-                    t2_ctr = t2_ctr - $signed(32'((T2_MAX * 32'(lvl23)) / 32768));
+                    t2_ctr = t2_ctr - $signed(32'((T2_MAX * 32'(lvl23)) >> 15));
                     if (t2_ctr <= 0) begin
-                        n = (32'(-t2_ctr) / RATE) + 32'd1;
+                        n = 32'(div_rate(26'(-t2_ctr))) + 32'd1;
                         t2_ctr = t2_ctr + $signed(n * RATE);
                         t2_out = t2_out ^ n[0];
                     end
                     // MAME divides by 33768 here, not 32768, and takes its step
                     // count from tone2's counter rather than tone3's. Both look
                     // like slips; both are what we are matching.
-                    step = 32'(T3_MAX / 3) + (32'(T3_MAX * 2 / 3) * 32'(lvl23)) / 33768;
+                    t3mul = 24'(16'(T3_MAX * 2 / 3) * lvl23) * 24'(T3DIV_M);
+                    step   = 32'(T3_MAX / 3) + 32'(t3mul >> T3DIV_S);
                     t3_ctr = t3_ctr - $signed(step);
                     if (t3_ctr <= 0) begin
-                        n = (32'(-t2_ctr) / RATE) + 32'd1;
+                        n = 32'(div_rate(26'(-t2_ctr))) + 32'd1;
                         t3_ctr = t3_ctr + RATE;
                         t3_out = t3_out ^ n[0];
                     end
                 end
                 s_t23 = latch_b[5]
-                      ? (((t2_out ? 18'sd32767 : -18'sd32767)
-                        + (t3_out ? 18'sd32767 : -18'sd32767)) / 18'sd2)
+                      ? div2((t2_out ? 18'sd32767 : -18'sd32767)
+                           + (t3_out ? 18'sd32767 : -18'sd32767))
                       : 18'sd0;
 
                 // ---- tone 4: the lower 556, gated by the polynomial bit ----
@@ -232,18 +290,20 @@ module pleiads_sound #(
 
                 // Two resistors divide the op-amp output between 0 V and the
                 // level, or the level and 5 V, depending on the noise bit.
-                lvl4 = polybit
-                     ? pc4_lvl + 16'((32'(16'(VMAX) - pc4_lvl) * OPAMP_R) / (OPAMP_R + POLY_R))
-                     : 16'((32'(pc4_lvl) * POLY_R) / (OPAMP_R + POLY_R));
+                r67mul = polybit ? (21'((16'(VMAX) - pc4_lvl) * 6'(OPAMP_R)) * 20'(R67_M))
+                                 : (21'(pc4_lvl * 6'(POLY_R))              * 20'(R67_M));
+                lvl4   = polybit ? pc4_lvl + 16'(r67mul >> R67_S)
+                                 :           16'(r67mul >> R67_S);
 
-                t4_ctr = t4_ctr - $signed(32'((T4_MAX * 32'(lvl4)) / 32768));
+                t4_ctr = t4_ctr - $signed(32'((T4_MAX * 32'(lvl4)) >> 15));
                 if (t4_ctr <= 0) begin
-                    n = (32'(-t4_ctr) / RATE) + 32'd1;
+                    n = 32'(div_rate(26'(-t4_ctr))) + 32'd1;
                     t4_ctr = t4_ctr + $signed(n * RATE);
                     t4_out = t4_out ^ n[0];
                 end
-                s_t4 = 18'((32'(pc5_lvl) * PA5_R) / (PA5_R + PC5_R)
-                         + (32'(pa5_lvl) * PC5_R) / (PA5_R + PC5_R));
+                r80a = 21'(pc5_lvl * 6'(PA5_R)) * 19'(R80_M);
+                r80b = 21'(pa5_lvl * 6'(PC5_R)) * 19'(R80_M);
+                s_t4 = 18'((r80a >> R80_S) + (r80b >> R80_S));
                 if (!t4_out) s_t4 = -s_t4;
 
                 // ---- noise: the 4006 shift register ------------------------
@@ -261,7 +321,7 @@ module pleiads_sound #(
                 noise_ctr = noise_ctr - $signed(32'(latch_a[4] ? (NOISE_FREQ * 2 / 3)
                                                                : (NOISE_FREQ * 1 / 3)));
                 if (noise_ctr <= 0) begin
-                    n = (32'(-noise_ctr) / RATE) + 32'd1;
+                    n = 32'(div_rate(26'(-noise_ctr))) + 32'd1;
                     noise_ctr = noise_ctr + $signed(n * RATE);
                     // MAME precomputes the sequence into a table and indexes
                     // it; clocking the register itself gives the same bits and
@@ -276,12 +336,16 @@ module pleiads_sound #(
                     end
                 end
 
-                s_noise = polybit ? 18'(pa6_lvl) : -18'(pa6_lvl);
+                // Widened first, then negated. `-18'(pa6_lvl)` is a unary
+                // minus applied to a size cast, which Quartus 18.1 will not
+                // parse even though the simulator accepts it.
+                pa6_s   = $signed({2'b00, pa6_lvl});
+                s_noise = polybit ? pa6_s : -pa6_s;
                 if (latch_a[7]) s_noise = polybit ? (s_noise + 18'sd32767)
                                                   : (s_noise - 18'sd32767);
-                s_noise = s_noise / 18'sd2;
+                s_noise = div2(s_noise);
 
-                sample      = (s_t1 / 18'sd2) + (s_t23 / 18'sd2) + s_t4 + s_noise;
+                sample      = div2(s_t1) + div2(s_t23) + s_t4 + s_noise;
                 sample_tick = 1'b1;
             end
         end

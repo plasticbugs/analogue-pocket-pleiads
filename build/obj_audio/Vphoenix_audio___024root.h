@@ -109,6 +109,14 @@ class alignas(VL_CACHE_LINE_BYTES) Vphoenix_audio___024root final {
         VL_OUT(dbg_fx,17,0);
         IData/*17:0*/ phoenix_audio__DOT__fx_sample;
         IData/*31:0*/ phoenix_audio__DOT__unnamedblk1__DOT__interp;
+        IData/*17:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_19__div2;
+        IData/*17:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_18__div2;
+        IData/*25:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_17__div_rate;
+        IData/*25:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_12__div_rate;
+        IData/*17:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCond_5;
+        IData/*17:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_4__div2;
+        IData/*25:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_3__div_rate;
+        IData/*25:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_2__div_rate;
         IData/*26:0*/ phoenix_audio__DOT__u_fx__DOT__acc;
         IData/*31:0*/ phoenix_audio__DOT__u_fx__DOT__t1_ctr;
         IData/*31:0*/ phoenix_audio__DOT__u_fx__DOT__t2_ctr;
@@ -125,6 +133,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vphoenix_audio___024root final {
         IData/*17:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t23;
         IData/*17:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_t4;
         IData/*17:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__s_noise;
+        IData/*17:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__pa6_s;
         IData/*31:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__n;
         IData/*31:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__step;
         IData/*26:0*/ phoenix_audio__DOT__u_tms__DOT__acc;
@@ -137,24 +146,28 @@ class alignas(VL_CACHE_LINE_BYTES) Vphoenix_audio___024root final {
         IData/*23:0*/ phoenix_audio__DOT__u_tms__DOT__unnamedblk3__DOT__c;
         IData/*26:0*/ __Vdly__phoenix_audio__DOT__u_tms__DOT__acc;
         IData/*23:0*/ __Vdly__phoenix_audio__DOT__u_tms__DOT__tune_ctr;
+    };
+    struct {
         IData/*23:0*/ __Vdly__phoenix_audio__DOT__u_tms__DOT__note_ctr;
         IData/*19:0*/ __Vdly__phoenix_audio__DOT__u_tms__DOT__sum;
         IData/*31:0*/ __VactIterCount;
         QData/*47:0*/ phoenix_audio__DOT__unnamedblk1__DOT__mixed;
+        QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_16__rc_step;
+        QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_15__rc_step;
+        QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_14__rc_step;
+        QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_13__rc_step;
         QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_11__rc_step;
         QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_10__rc_step;
         QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_9__rc_step;
         QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_8__rc_step;
         QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_7__rc_step;
-    };
-    struct {
         QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_6__rc_step;
-        QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_5__rc_step;
-        QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_4__rc_step;
-        QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_3__rc_step;
-        QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_2__rc_step;
         QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_1__rc_step;
         QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT____VlemCall_0__rc_step;
+        QData/*47:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__t3mul;
+        QData/*40:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r67mul;
+        QData/*40:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80a;
+        QData/*40:0*/ phoenix_audio__DOT__u_fx__DOT__unnamedblk1__DOT__r80b;
         QData/*51:0*/ __VdfgRegularize_hebeb780c_0_0;
         VlUnpacked<SData/*15:0*/, 12> phoenix_audio__DOT__u_tms__DOT__vol;
         VlUnpacked<IData/*23:0*/, 12> phoenix_audio__DOT__u_tms__DOT__vol_ctr;

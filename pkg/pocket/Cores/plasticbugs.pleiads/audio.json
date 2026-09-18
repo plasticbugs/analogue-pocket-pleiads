@@ -1,0 +1,9 @@
+{
+    "audio": {
+        "magic": "APF_VER_1",
+        "hardware": {
+            "i2s_master": true,
+            "mclk_hz": 12288000
+        }
+    }
+}

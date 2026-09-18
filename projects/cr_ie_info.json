@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "Debian GNU/Linux",
+		"os_version" : "9"
+	},
+	"error" : {
+		"executable" : "quartus_map",
+		"comment" : "not_applicable",
+		"error_message" : "Segment Violation at (nil)",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ffffbdced94: synth_sgn + 0x62d94 (_ZNK17SGN_NETLIST_ENTRY24retrieve_sgate_hierarchyEP16SGN_PROCESS_INFO + 0x14)\n\t0x7ffffbf469e0: synth_sgn + 0x1da9e0\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "18.1.1",
+		"build" : "646",
+		"edition" : "Lite Edition"
+	}
+}

@@ -11,7 +11,7 @@ Vphoenix_audio__Syms::Vphoenix_audio__Syms(VerilatedContext* contextp, const cha
     , TOP{this, namep}
 {
     // Check resources
-    Verilated::stackCheck(1140);
+    Verilated::stackCheck(2348);
     // Setup sub module instances
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-12);

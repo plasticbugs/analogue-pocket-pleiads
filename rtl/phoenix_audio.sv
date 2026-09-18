@@ -116,7 +116,7 @@ module phoenix_audio #(
     logic signed [15:0] fx_clamped;
     always_comb begin
         if      (fx_sample >  18'sd32767) fx_clamped =  16'sd32767;
-        else if (fx_sample < -18'sd32768) fx_clamped = -16'sd32768;
+        else if (fx_sample < -18'sd32768) fx_clamped =  16'sh8000;
         else                              fx_clamped =  16'(fx_sample);
     end
 
@@ -142,7 +142,7 @@ module phoenix_audio #(
                        + ((delta * $signed({24'd0, tms_phase})) >>> 8);
                 mixed = (interp * G_TMS + 48'($signed(fx_clamped)) * G_FX) >>> 16;
                 if      (mixed >  48'sd32767) sample <=  16'sd32767;
-                else if (mixed < -48'sd32768) sample <= -16'sd32768;
+                else if (mixed < -48'sd32768) sample <=  16'sh8000;
                 else                          sample <= 16'(mixed);
                 sample_tick <= 1'b1;
             end

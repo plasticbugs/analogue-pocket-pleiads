@@ -1,0 +1,31 @@
+Pleiads / Phoenix
+
+Phoenix hardware (Amstar, 1980): an Intel
+8085A, two 8x8 tilemaps, no sprite engine
+and no interrupts at all. The game paces
+itself by polling vblank.
+
+One core runs both games. They are the
+same board with different sound, so the
+gateware sums the program region as the
+ROM loads and recognises which it has.
+
+* Pleiads (Tehkan, 1981)
+* Phoenix (Amstar, 1980)
+
+Controls
+* B      Fire
+* A      Barrier (Phoenix only)
+* Select Coin
+* Start  1 Player
+* Y      2 Players
+
+Notes
+The stick is two way: no up or down.
+
+Pleiads' melody chip is an Epson 7910E
+whose ROM has never been dumped. MAME
+substitutes a TMS3615, and so does this.
+
+No ROMs are included. Build the image with
+tools/mra_build.py from the source repo.
