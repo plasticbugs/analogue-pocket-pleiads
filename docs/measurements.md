@@ -270,3 +270,29 @@ other way: `s // 2` in Python floors where C's `s / 2` truncates toward zero,
 so on −32767 the two differ by one count — a DC offset on every sample. The
 RTL was right and the reference was wrong, which is exactly why the two are
 compared against MAME separately rather than only against each other.
+
+## What is not verified
+
+**The cocktail flip.** MAME flips the whole 32×32 tilemap, which is 256×256 —
+not the 256×208 visible window — so a flipped screen row 0 shows tilemap row
+255 and the normally-unused rows below the picture come into view. The core
+implements it that way, and the reference renderer agrees with the core, but
+neither has been checked against MAME because **no capture reaches the path**.
+
+The flip is `page_bit AND cabinet_link`, and Pleiads writes the video register
+1580 times in a 40-second run with the page bit set exactly **once**, at
+initialisation. Forcing the cabinet link from Lua does not help: with the page
+bit clear the flip cannot engage whatever the link says. So the two halves of
+the condition never coincide in anything the game does on its own.
+
+This is stated rather than papered over. The path is reachable only in a real
+two-player cocktail game, and it is the one part of the video hardware that
+rests on reading MAME's source correctly rather than on a measurement.
+
+**Phoenix's sound.** Phoenix is the same board with a different sound section:
+its own custom analogue board, an MM6221AA melody chip playing built-in tunes
+rather than single notes, and a discrete netlist that MAME models as a separate
+device. The core currently gives Phoenix Pleiads' sound section, which is
+wrong. Its video, CPU and timing are verified; its audio is not implemented.
+
+**Hardware.** Nothing here has been run on a Pocket.

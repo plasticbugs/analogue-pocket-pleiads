@@ -23,8 +23,19 @@ local TAG     = os.getenv("PL_TAG")   or string.format("%04d", TARGET)
 local GAME    = os.getenv("PL_GAME")  or "pleiads"
 local PLAY    = os.getenv("PL_PLAY")  == "1"
 
+local COCKTAIL = os.getenv("PL_COCKTAIL") == "1"
+
 local mach = manager.machine
 local sp   = mach.devices[":maincpu"].spaces["program"]
+
+-- Cabinet type is a physical link on the PCB, not part of DSW0, so MAME keeps
+-- it in a fake port. Forcing it here is the only way to reach the cocktail
+-- flip, which the game only applies when the video register's page bit is also
+-- set -- that is, during player 2's turn in a two-player game.
+if COCKTAIL then
+    local cab = mach.ioport.ports[":CAB"]
+    if cab and cab.fields["Cabinet"] then cab.fields["Cabinet"]:set_value(1) end
+end
 
 -- Live values of the two write-only video registers.
 local live = { vreg = 0, scroll = 0 }
@@ -56,6 +67,7 @@ local function field(p, n)
 end
 local coin  = field(":IN0", "Coin 1")
 local st1   = field(":IN0", "1 Player Start")
+local st2   = field(":IN0", "2 Players Start")
 local fire  = field(":CTRL", "P1 Button 1")
 local left  = field(":CTRL", "P1 Left")
 local right = field(":CTRL", "P1 Right")
@@ -98,6 +110,7 @@ emu.register_frame_done(function()
         -- and every "gameplay" capture silently stayed in attract mode.
         hold(coin, frame >= 120 and frame < 150)
         hold(st1,  frame >= 200 and frame < 230)
+        if COCKTAIL then hold(st2, frame >= 260 and frame < 290) end
         if frame > 260 then
             -- Sweep the stick so the capture lands somewhere with real action
             -- rather than the player sitting in one corner.

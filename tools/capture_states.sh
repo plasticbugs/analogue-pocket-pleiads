@@ -14,6 +14,7 @@ for f in $FRAMES; do
     # frozen render, plus slack.
     secs=$(awk "BEGIN{printf \"%d\", ($f+8)/61.035 + 2}")
     PL_OUT="$OUT" PL_FRAME="$f" PL_TAG="$tag" PL_GAME="$GAME" PL_PLAY="$PLAY" \
+    PL_COCKTAIL="${COCKTAIL:-0}" \
     tools/mame.sh "$GAME" -autoboot_script tools/dumpstate.lua \
         -snapshot_directory "$OUT/snap_$tag" -seconds_to_run "$secs" \
         >"$OUT/mame_$tag.log" 2>&1
