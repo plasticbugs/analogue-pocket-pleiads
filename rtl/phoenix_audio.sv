@@ -69,9 +69,17 @@ module phoenix_audio #(
     // path that starts one level up, in phoenix_core, and so matches neither
     // end of a multicycle scoped to this module. Doing it at the boundary
     // instead of in each block is what stops it happening a third time.
+    // `is_phoenix` crosses the same boundary and gets the same treatment. It
+    // comes from the ROM checksum in phoenix_mem and is static from the end of
+    // the download onwards -- the core is held in reset while that runs -- but
+    // the timing analyser cannot know that, and it fans out into the melody
+    // chip's rate, tune speed and decay constants, so untreated it is a 30 ns
+    // path that starts outside anything the multicycle names.
     logic [7:0] a_r, b_r, c_r;
+    logic       is_phoenix_r;
     always_ff @(posedge clk) begin
         a_r <= snd_a; b_r <= snd_b; c_r <= snd_c;
+        is_phoenix_r <= is_phoenix;
     end
 
     // ------------------------------------------------------------- melody chip
@@ -83,7 +91,7 @@ module phoenix_audio #(
     logic [3:0]  note_value;
 
     tms36xx #(.CLK_HZ(CLK_HZ)) u_tms (
-        .clk(clk), .reset(reset), .is_phoenix(is_phoenix),
+        .clk(clk), .reset(reset), .is_phoenix(is_phoenix_r),
         .note_we(note_we), .note_octave(note_octave), .note_value(note_value),
         .tune_we(tune_we), .tune_num_in(tune_num),
         .sample(tms_sample), .sample_tick(tms_tick), .phase8(tms_phase),
@@ -113,8 +121,8 @@ module phoenix_audio #(
                 note_value  <= snd_b_r[3:0];
                 note_octave <= (snd_b_r[7:6] == 2'd3) ? 2'd2 : snd_b_r[7:6];
                 tune_num    <= snd_b_r[7:6];
-                note_we     <= ~is_phoenix;
-                tune_we     <=  is_phoenix;
+                note_we     <= ~is_phoenix_r;
+                tune_we     <=  is_phoenix_r;
                 dbg_notes   <= ~dbg_notes;
             end
         end
@@ -187,7 +195,7 @@ module phoenix_audio #(
             sample <= '0; sample_tick <= 1'b0;
         end else begin
             sample_tick <= 1'b0;
-            if (is_phoenix ? nz_tick : fx_tick) begin
+            if (is_phoenix_r ? nz_tick : fx_tick) begin
                 logic signed [31:0] interp, delta;
                 logic signed [47:0] mixed;
                 // prev + (cur - prev) * phase / 256.
@@ -202,7 +210,7 @@ module phoenix_audio #(
                 delta  = $signed({16'd0, tms_cur}) - $signed({16'd0, tms_prev});
                 interp = $signed({16'd0, tms_prev})
                        + ((delta * $signed({24'd0, tms_phase})) >>> 8);
-                mixed = is_phoenix
+                mixed = is_phoenix_r
                       ? ((interp * G_TMS_X
                           + 48'($signed(nz_clamped)) * G_NZ_X
                           + 48'($signed(px_clamped)) * G_PX_X) >>> 16)
