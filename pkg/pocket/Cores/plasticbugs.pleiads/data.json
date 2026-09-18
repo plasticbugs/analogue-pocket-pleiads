@@ -3,11 +3,10 @@
         "magic": "APF_VER_1",
         "data_slots": [
             {
-                "name": "ROM Set",
+                "name": "ROM Image",
                 "id": 0,
                 "required": true,
-                "parameters": "0x8",
-                "filename": "pleiads.rom",
+                "parameters": "0x108",
                 "extensions": [
                     "rom"
                 ],

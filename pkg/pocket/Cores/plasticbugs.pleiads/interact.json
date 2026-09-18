@@ -1,0 +1,101 @@
+{
+  "interact": {
+    "magic": "APF_VER_1",
+    "variables": [
+      {
+        "name": "Reset Core",
+        "id": 0,
+        "type": "action",
+        "enabled": true,
+        "address": "0xF0000000",
+        "value": 1
+      },
+      {
+        "name": "Screen Shape",
+        "id": 30,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xF2000000",
+        "defaultval": 0,
+        "mask": "0xFFFFFFF9",
+        "options": [
+          { "name": "Arcade",      "value": "0x00000000" },
+          { "name": "Fill Screen", "value": "0x00000002" }
+        ]
+      },
+      {
+        "name": "Lives",
+        "id": 31,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xF1000000",
+        "defaultval": 0,
+        "mask": "0xFFFFFFFC",
+        "options": [
+          { "name": "3 (factory)", "value": "0x00000000" },
+          { "name": "4",           "value": "0x00000001" },
+          { "name": "5",           "value": "0x00000002" },
+          { "name": "6",           "value": "0x00000003" }
+        ]
+      },
+      {
+        "name": "Bonus Life",
+        "id": 32,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xF1000000",
+        "defaultval": 0,
+        "mask": "0xFFFFFFF3",
+        "options": [
+          { "name": "3K then 30K (factory)", "value": "0x00000000" },
+          { "name": "4K then 40K",           "value": "0x00000004" },
+          { "name": "5K then 50K",           "value": "0x00000008" },
+          { "name": "6K then 60K",           "value": "0x0000000C" }
+        ]
+      },
+      {
+        "name": "Coinage",
+        "id": 33,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xF1000000",
+        "defaultval": 0,
+        "mask": "0xFFFFFFEF",
+        "options": [
+          { "name": "1 Coin 1 Credit (factory)", "value": "0x00000000" },
+          { "name": "2 Coins 1 Credit",          "value": "0x00000010" }
+        ]
+      },
+      {
+        "name": "Demo Sounds",
+        "id": 34,
+        "type": "list",
+        "enabled": true,
+        "persist": true,
+        "address": "0xF1000000",
+        "defaultval": 0,
+        "mask": "0xFFFFFFBF",
+        "options": [
+          { "name": "On (factory)", "value": "0x00000000" },
+          { "name": "Off",          "value": "0x00000040" }
+        ]
+      },
+      {
+        "name": "Cocktail Cabinet",
+        "id": 35,
+        "type": "check",
+        "enabled": true,
+        "persist": true,
+        "address": "0xF1000000",
+        "defaultval": 0,
+        "mask": "0xFFFFFEFF",
+        "value": "0x00000100"
+      }
+    ],
+    "messages": []
+  }
+}

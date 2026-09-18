@@ -5,8 +5,8 @@
             {
                 "width": 256,
                 "height": 208,
-                "aspect_w": 13,
-                "aspect_h": 10,
+                "aspect_w": 6,
+                "aspect_h": 5,
                 "rotation": 90,
                 "mirror": 0
             },
