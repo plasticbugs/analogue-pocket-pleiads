@@ -74,11 +74,32 @@ module phoenix_mem (
     assign sel_ph   = dl_wr && (dl_addr >= 17'h06100) && (dl_addr < 17'h06200);
 
     // ---------------------------------------------------------- game detect
+    //
+    // A byte is counted ONCE, however long its write strobe lasts. The Pocket's
+    // data_io holds the enable high for DIO_HOLD clocks per byte -- four, in
+    // core_top -- with address and data stable underneath. A RAM write repeated
+    // four times is harmless, which is why the image always loaded and the
+    // picture was always right; a sum repeated four times is four times the
+    // sum, which matches neither game. So on hardware nothing was ever
+    // recognised, the core fell through to Pleiads, and Phoenix ran on
+    // Pleiads' sound board -- which ignores its tune commands and beeps --
+    // while every bench, strobing for exactly one clock, saw it work.
+    //
+    // A new byte is a strobe that has just risen or whose address has moved,
+    // so this holds whether the platform leaves a gap between bytes or not.
     logic [31:0] prog_sum;
+    logic        dl_wr_q;
+    logic [16:0] dl_addr_q;
+    logic        dl_new;
+
+    assign dl_new = dl_wr && (!dl_wr_q || dl_addr != dl_addr_q);
 
     always_ff @(posedge clk) begin
-        if (dl_wr && dl_addr == 17'd0) prog_sum <= 32'd0 + 32'(dl_data);
-        else if (sel_prog)             prog_sum <= prog_sum + 32'(dl_data);
+        dl_wr_q   <= dl_wr;
+        dl_addr_q <= dl_addr;
+
+        if (dl_new && dl_addr == 17'd0)             prog_sum <= 32'(dl_data);
+        else if (dl_new && dl_addr < 17'h04000)     prog_sum <= prog_sum + 32'(dl_data);
 
         if (dl_done) begin
             game_phoenix <= (prog_sum == SUM_PHOENIX);

@@ -13,8 +13,10 @@ as the image loads and recognises which game it has.
 
 > **Status: alpha.** Both games boot, play, and produce MAME's exact picture.
 > Pleiads has been played on a Pocket and looks and sounds right. Phoenix looks
-> right on hardware; its in-game sound was wrong in v0.1.0-alpha and has been
-> reworked since, and that rework has not been heard on hardware yet.
+> right on hardware. Through v0.1.0-alpha it was never *recognised* on hardware
+> and ran on Pleiads' sound board — no tunes, only beeps; v0.1.1-alpha fixes the
+> detection, and its Phoenix sound has been heard in simulation but not yet on
+> a Pocket.
 
 ## How it is being built
 

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phoenix audio waves</title>
+<style>
+  :root { --bg:#faf9f7; --fg:#1b1a18; --mut:#6b6762; --line:#e2ded8; --card:#fff;
+          --bad:#a8271c; --badbg:#fdeceb; --ok:#1c7c4a; --okbg:#e8f5ed; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme=light]) {
+    --bg:#14130f; --fg:#f2efe9; --mut:#9a948b; --line:#2f2c27; --card:#1c1a16;
+    --bad:#f08a80; --badbg:#2e1714; --ok:#6ed79f; --okbg:#152a1f; } }
+  :root[data-theme=dark] { --bg:#14130f; --fg:#f2efe9; --mut:#9a948b; --line:#2f2c27;
+    --card:#1c1a16; --bad:#f08a80; --badbg:#2e1714; --ok:#6ed79f; --okbg:#152a1f; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); padding:0 16px 64px;
+         font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:1040px; margin:0 auto; }
+  header { padding:40px 0 20px; border-bottom:1px solid var(--line); margin-bottom:24px; }
+  h1 { font-size:24px; margin:0 0 6px; letter-spacing:-.02em; }
+  p { margin:0 0 12px; } .mut { color:var(--mut); font-size:14px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:12px;
+            padding:16px 18px 18px; margin-bottom:18px; }
+  h2 { font-size:16px; margin:0 0 4px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  .badge { font-size:12px; font-weight:600; padding:3px 9px; border-radius:99px; }
+  .ok .badge { background:var(--okbg); color:var(--ok); }
+  .bad .badge { background:var(--badbg); color:var(--bad); }
+  .scroll { overflow-x:auto; border-radius:6px; border:1px solid var(--line); margin:10px 0; }
+  img { display:block; width:1000px; height:290px; image-rendering:pixelated; }
+  audio { width:100%; max-width:420px; display:block; }
+  code { font:12px ui-monospace,Menlo,monospace; }
+</style></head><body><div class="wrap">
+<header>
+  <h1>Phoenix &mdash; what the simulator plays, and what the Pocket was playing</h1>
+  <p class="mut">Twenty seconds, the same sound commands into each. Waveform on top,
+  spectrogram 0&ndash;4&nbsp;kHz below, one dotted line per second. The green line at
+  3.38&nbsp;s is where the game selects its tune.</p>
+</header>
+
+<section class="ok"><h2>1 &middot; MAME <span class="badge">the reference</span></h2>
+  <p class="mut">The ladder of short horizontal bars is the melody, one bar per note.
+  The dense block from about 10 to 17&nbsp;s is a bird on screen.</p>
+  <div class="scroll"><img src="waves/phoenix_1_mame.png" alt="MAME"></div>
+  <audio controls src="audio/phoenix_mame.wav"></audio></section>
+
+<section class="ok"><h2>2 &middot; The simulator, knowing it is Phoenix <span class="badge">matches</span></h2>
+  <p class="mut">The gateware's own output, from <code>sim/run_audio.sh</code>. This is what
+  the core plays once it recognises the game.</p>
+  <div class="scroll"><img src="waves/phoenix_2_simulator.png" alt="simulator"></div>
+  <audio controls src="audio/phoenix_rtl.wav"></audio></section>
+
+<section class="bad"><h2>3 &middot; The same gateware, not knowing <span class="badge">what the Pocket played</span></h2>
+  <p class="mut">Identical commands, game select left at Pleiads. No melody at all &mdash;
+  silence where the tune should begin, then held beeps during play. On hardware the
+  game was never recognised: the Pocket holds each ROM byte's write strobe for four
+  clocks, and the checksum that identifies the game counted every byte four times.</p>
+  <div class="scroll"><img src="waves/phoenix_3_as_on_pocket.png" alt="as on the Pocket"></div>
+  <audio controls src="audio/phoenix_as_on_pocket.wav"></audio></section>
+</div></body></html>

@@ -646,3 +646,46 @@ The first 82 ms — the power-on blip, before both latches settle at 0x0f — ha
 the RTL's noise board louder than the model's, peak 23084 against 16543. It
 predates this work (the 20 s trace-replay bench puts RTL and model at 1.004 on
 peak), it is confined to that one burst, and it is not diagnosed.
+
+
+## Phoenix never ran as Phoenix on hardware
+
+After all of the above the Pocket still played no intro tune and only beeps in
+play, while the simulator's recording of the same gateware was, by ear, the
+right music. So the sound section was right and was not being used.
+
+Game detection sums the program region as the image loads. `phoenix_mem` added
+`dl_data` on every clock that `dl_wr` was high, and every bench strobed each
+byte for exactly one clock. The Pocket does not: `data_io` holds the write
+enable for `DIO_HOLD` clocks per byte — four, in `core_top` — with address and
+data stable underneath. A RAM write repeated four times is harmless, which is
+why the image always loaded and the picture was always right. A sum repeated
+four times is four times the sum, and matches neither game.
+
+```
+phoenix  hold=1  ->  game detected: phoenix (known=1)
+phoenix  hold=4  ->  game detected: pleiads (known=0)
+pleiads  hold=4  ->  game detected: pleiads (known=0)
+```
+
+Nothing was ever recognised on hardware. Pleiads worked because unrecognised
+falls through to Pleiads. Phoenix ran its program on Pleiads' sound board,
+which ignores the tune select — latch B's low nibble is 15, not a note — and
+turns the effect commands into held tones. `artifacts/waves.html` has the
+picture: the simulator told it is Phoenix, and the same gateware not told.
+
+It also means every Phoenix-on-hardware report before this one, including the
+two that sent the sound work off in the first place, was a report about
+Pleiads' sound board. The modelling faults found on the way were real — they
+were measured against MAME — but none of them was what was being heard.
+
+The fix counts a byte once: a strobe that has just risen, or whose address has
+moved, so it holds with or without a gap between bytes. Detection is now right
+at holds of 1, 2, 4 and 7 for both games. The bench's `load_rom` defaults to
+the Pocket's four-clock hold with a gap, so the bus and end-to-end regressions
+now load the image the way the hardware does; `PL_DL_HOLD` overrides it.
+
+The general point is the one METHODOLOGY makes about the platform boundary:
+the benches were exact about the machine and approximate about how the Pocket
+talks to it, and the approximation was idempotent for everything except the
+one thing that was not.

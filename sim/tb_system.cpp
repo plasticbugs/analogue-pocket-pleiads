@@ -65,9 +65,18 @@ static void tick() {
 }
 
 static void load_rom(Vphoenix_core *d, const std::vector<uint8_t> &rom) {
+    // The Pocket does not strobe a byte for one clock. data_io holds the write
+    // enable high for DIO_HOLD clocks -- four, in core_top -- with the address
+    // and data stable under it, then drops it before the next byte. A bench
+    // that pulses for exactly one clock cannot see anything that depends on
+    // the difference, and game detection did: a RAM write repeated four times
+    // is harmless, a checksum repeated four times is four times the sum.
+    // PL_DL_HOLD sets the hold; the default is the Pocket's.
+    int hold = getenv("PL_DL_HOLD") ? atoi(getenv("PL_DL_HOLD")) : 4;
     for (size_t i = 0; i < rom.size(); i++) {
         d->dl_addr = (uint32_t)i; d->dl_data = rom[i]; d->dl_wr = 1;
-        tick();
+        for (int h = 0; h < hold; h++) tick();
+        d->dl_wr = 0; tick(); tick();
     }
     d->dl_wr = 0;
     d->dl_done = 1; tick(); tick();
