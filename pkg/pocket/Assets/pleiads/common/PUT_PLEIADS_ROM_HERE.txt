@@ -1,0 +1,18 @@
+Put the ROM images this core loads in this directory.
+
+The core is FPGA gateware: it cannot unzip a romset or run a script, so the
+image has to be assembled on a computer first. From a checkout of the core:
+
+    python3 tools/mra_build.py pleiads.mra /path/to/pleiads.zip
+    python3 tools/mra_build.py phoenix.mra /path/to/phoenix.zip
+
+Each produces a 25,088-byte .rom file. Copy both here. The core asks which one
+to open when it starts, and works out which game it is by summing the program
+region as the image loads -- so the file can be called anything, and both games
+can sit here at once.
+
+Every part is CRC-checked on the way in and the finished image is verified
+against a checksum recorded in the .mra, so a wrong or damaged romset is
+reported rather than silently producing a core that does not run.
+
+No ROMs are distributed with this core.
