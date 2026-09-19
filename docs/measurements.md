@@ -351,8 +351,10 @@ width, at 0 °C and 85 °C.
 ## The Pocket's two image formats
 
 Recorded because neither is what you would assume, and both were established by
-decoding files already on a card rather than from documentation. The core ships
-**no artwork**; this is here so whoever draws it knows what to produce.
+decoding files already on a card rather than from documentation. The core's
+artwork was supplied by its owner rather than generated: the platform banner is
+a Pleiades / Phoenix marquee, and the icon is shared with the Time Pilot core.
+This is here so whoever next draws one knows what to produce.
 
 | | icon | platform banner |
 |---|---|---|

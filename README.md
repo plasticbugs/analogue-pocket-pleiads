@@ -56,8 +56,8 @@ Following `METHODOLOGY.md`, which is the write-up from a previous core:
 | Pocket integration | compiles, timing met | compiles, timing met |
 | Run on hardware | **yes, looks and sounds right** | **yes, looks and sounds right** (v0.1.1) |
 
-On a Cyclone V 5CEBA4: 13,138 of 18,480 ALMs (71%), 49 of 66 DSP blocks, and no
-negative slack on any clock at any corner — +9.3 ns on the core clock, +3.2 ns
+On a Cyclone V 5CEBA4: 13,477 of 18,480 ALMs (73%), 49 of 66 DSP blocks, and no
+negative slack on any clock at any corner — +9.0 ns on the core clock, +2.8 ns
 worst case, which is the platform's own 74 MHz domain.
 
 "End to end" means the core is given nothing but the ROM image, boots it, runs
