@@ -190,6 +190,56 @@ def _div2(x):
     return -((-x) // 2) if x < 0 else x // 2
 
 
+class Astable555:
+    """A free-running 555 astable, carried as capacitor state the way MAME's
+    dsd_555_astbl carries it rather than as a phase accumulator.
+
+    The distinction is not cosmetic here. The game switches C16/C17/C18 under
+    IC44 while it is oscillating, and MAME keeps the capacitor voltage across
+    the change so the oscillator continues from wherever it had got to with a
+    new time constant. A phase accumulator instead preserves the *fraction* of
+    a cycle, which is a different waveform every time the select changes -- and
+    the game toggles it about ten times a second while a bird is on screen.
+
+    Carrying the capacitor also gets the duty cycle for free: charging is
+    through R1+R2 and discharging through R2 alone, so the output is high for
+    (R1+R2)/(R1+2*R2) of the cycle, never half.
+    """
+
+    def __init__(self, r1, r2, c, dt, v_pos=5.0, v_high=4.0):
+        self.r1, self.r2, self.dt = r1, r2, dt
+        self.v_charge = v_pos
+        self.v_high = v_high
+        self.threshold = v_pos * 2.0 / 3.0
+        self.trigger = v_pos / 3.0
+        self.c = None
+        self._set_c(c)
+        self.flip_flop = 1          # MAME resets charging, with an empty cap
+        self.v_cap = 0.0
+
+    def _set_c(self, c):
+        if c == self.c:
+            return
+        self.c = c
+        self.exp_charge = 1.0 - math.exp(-self.dt / ((self.r1 + self.r2) * c))
+        self.exp_discharge = 1.0 - math.exp(-self.dt / (self.r2 * c))
+
+    def step(self, c=None):
+        if c is not None:
+            self._set_c(c)
+        if self.flip_flop:
+            self.v_cap += (self.v_charge - self.v_cap) * self.exp_charge
+            if self.v_cap >= self.threshold:
+                self.v_cap = self.threshold
+                self.flip_flop = 0
+        else:
+            self.v_cap -= self.v_cap * self.exp_discharge
+            if self.v_cap <= self.trigger:
+                self.v_cap = self.trigger
+                self.flip_flop = 1
+        return self.v_high if self.flip_flop else 0.0
+
+
 class PhoenixEffects:
     """The discrete netlist's two 555-based effect generators.
 
@@ -252,20 +302,28 @@ class PhoenixEffects:
 
         # --- effect 2 control voltage --------------------------------------
         # IC51: a 510k/510k/1uF astable -- about 1 Hz, the slow wobble.
-        self.f34 = 1.0 / (self.LN2 * 1e-6 * (510e3 + 2 * 510e3))
-        self.ph34 = 0.0
-        self.ph33 = 0.0                                # IC44, its own oscillator
-        self.c22 = 2.5                                 # 100uF, starts mid-rail
+        # IC44's capacitor is selected by the two frequency bits; IC51 is
+        # fixed at 510k/510k/1uF, about 1 Hz -- the slow wobble under
+        # everything. C20 is confirmed on real boards as 1uF, not the 10uF the
+        # schematic shows.
+        self.ic44 = Astable555(47e3, 100e3, 0.01e-6, self.dt)   # R40, R41
+        self.ic51 = Astable555(510e3, 510e3, 1e-6, self.dt)     # R23, R24
+        self.c22 = 0.0                                 # MAME resets the cap empty
         # C22 charges through R45 || (R46 + R42||R5k||R10k)
         rc22 = 1.0 / (1.0 / 5.1e3 + 1.0 / (5.1e3 + 1.0 / (1.0/10e3 + 1.0/5e3 + 1.0/10e3)))
         self.c22_exp = 1.0 - math.exp(-self.dt / (rc22 * 100e-6))
-        self.dc = 0.0                                  # output DC blocker
-        # Calibrated against MAME by spectral fit, not derived: the netlist's
-        # own 40000 final gain into MAME's discrete output does not survive
-        # being reasoned about. 0.25 minimises the mean |log| band-energy ratio
-        # over 600 Hz-12 kHz across four windows where the effect is armed,
-        # taking it from 1.254 to 0.815.
-        self.gain = 0.25
+        # --- final mixer ---------------------------------------------------
+        # phoenix_mixer, with MAME's own numbers rather than a fitted gain.
+        # r_total is every leg in parallel *including* VR1, which is what
+        # dst_mixer's Millman sum divides by; each input is high-passed by its
+        # coupling cap into (r || rF); C32 high-passes the sum, and MAME
+        # assumes a flat 100k final-stage impedance for it.
+        self.r_total = 1.0 / (1/57e3 + 1/30e3 + 1/20e3 + 1/20e3 + 1/10e3)
+        self.hp1 = self.hp2 = 0.0
+        self.hp1_exp = 1.0 - math.exp(-self.dt / ((1/(1/57e3 + 1/10e3)) * 10e-6))
+        self.hp2_exp = 1.0 - math.exp(-self.dt / ((1/(1/30e3 + 1/10e3)) * 10e-6))
+        self.dc = 0.0
+        self.dc_exp = 1.0 - math.exp(-self.dt / (100e3 * 10e-6))
 
     @staticmethod
     def _f555_cv(r1, r2, c, v_cv, v_charge=5.0):
@@ -321,15 +379,12 @@ class PhoenixEffects:
         # ---- effect 2 -----------------------------------------------------
         # IC44: its capacitor is selected by the two frequency bits, so this
         # oscillator's rate is what the game changes when it picks an effect.
+        # DISCRETE_COMP_ADDER sums the selected capacitors in parallel on top
+        # of C18, which is always in circuit.
         cap = 0.01e-6 + (0.47e-6 if (self.e2_freq & 1) else 0.0) \
                       + (1.0e-6 if (self.e2_freq & 2) else 0.0)
-        f33 = 1.0 / (self.LN2 * cap * (47e3 + 2 * 100e3))
-        self.ph33 = (self.ph33 + f33 * self.dt) % 1.0
-        v33 = 4.0 if self.ph33 < 0.5 else 0.0
-
-        # IC51: 510k/510k/1uF, about 1 Hz -- the slow wobble under everything.
-        self.ph34 = (self.ph34 + self.f34 * self.dt) % 1.0
-        v34 = 4.0 if self.ph34 < 0.5 else 0.0
+        v33 = self.ic44.step(cap)
+        v34 = self.ic51.step()
 
         # The two outputs and B+ mix onto C22, which is 100uF and therefore
         # the slowest thing in the circuit.
@@ -346,19 +401,26 @@ class PhoenixEffects:
             f39 = self._f555_cv(20e3, 20e3, 0.001e-6, cv2)
             div2 = (16 - self.e2_data) * 2
             self.ph2, e2 = self._square_energy(self.ph2, f39 / div2 * self.dt)
-        amp2 = self.TTL1 if (self.e2_freq & 2) else self.TTL1 / 2.0
+        # DISCRETE_SWITCH is `SWITCH ? IN1 : IN0`, and the netlist passes
+        # IN0 = TTL_1, IN1 = TTL_1/2. So the HIGH frequency bit makes this
+        # quieter, not louder. Having it the other way round doubled the
+        # level over 11.5-16.5 s, where the game sits on 0x66/0x67 and
+        # effect 2 is the loudest thing in the mix.
+        amp2 = self.TTL1 / 2.0 if (self.e2_freq & 2) else self.TTL1
         snd2 = e2 * amp2
 
         # ---- final mixer --------------------------------------------------
-        # R19+R21 = 57k and R38+R47 = 30k into a 10k feedback, then the
-        # netlist's own final gain. Each input is AC-coupled by a 10uF cap, so
-        # the DC the square waves carry never reaches the speaker.
-        out = (snd1 / 57e3 + snd2 / 30e3) * 10e3
-        self.dc += (out - self.dc) * (1.0 - math.exp(-self.dt / 0.05))
-        # The netlist's own scaling (a 40000 final gain into MAME's discrete
-        # output) does not survive being reasoned about, so the level is
-        # calibrated against MAME instead -- see docs/measurements.md.
-        return (out - self.dc) * self.gain
+        # R19+R21 = 57k and R38+R47 = 30k, each AC-coupled by a 10uF cap so the
+        # DC the square waves carry never reaches the speaker, summed as
+        # currents and turned back into a voltage by every leg in parallel.
+        # The 40000 is the netlist's own final gain; MAME's discrete stream is
+        # already in +/-32768 units, so dividing by 32768 puts this on the same
+        # +/-1 footing as the melody and the noise board.
+        self.hp1 += (snd1 - self.hp1) * self.hp1_exp
+        self.hp2 += (snd2 - self.hp2) * self.hp2_exp
+        v = ((snd1 - self.hp1) / 57e3 + (snd2 - self.hp2) / 30e3) * self.r_total
+        self.dc += (v - self.dc) * self.dc_exp
+        return (v - self.dc) * 40000.0 / 32768.0
 
 
 def load_trace(path):

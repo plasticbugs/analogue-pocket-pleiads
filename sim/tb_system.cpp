@@ -92,6 +92,7 @@ int main(int argc, char **argv) {
     if (argc < 4) {
         fprintf(stderr,
             "usage: tb_system bus    <rom.bin> <out_bus.txt> [max_transactions]\n"
+            "       tb_system audio  <rom.bin> <out.wav> [seconds]\n"
             "       tb_system frames <rom.bin> <out_prefix> <target> [window]\n");
         return 2;
     }
@@ -129,6 +130,56 @@ int main(int argc, char **argv) {
         }
         fclose(out);
         fprintf(stderr, "logged %ld transactions in %ld clocks\n", n, guard);
+        delete dut;
+        return 0;
+    }
+
+    if (mode == "audio") {
+        // Run the real core from reset and record what its own audio output
+        // does. The audio bench feeds phoenix_audio a command stream captured
+        // from MAME, which proves the sound module right when given the right
+        // commands and says nothing about whether the core produces them.
+        //
+        // It also logs the sound latch writes the core makes, in the same
+        // format tools/sound_trace.lua produces for MAME, so the capture can
+        // be checked against the reference model driven by *this* run's
+        // commands. Comparing it against MAME's recording directly does not
+        // work: that session had a coin put in and a game played, while the
+        // core here sits in attract, so the two diverge as soon as the
+        // recorded session presses a button.
+        double seconds = (argc > 4) ? atof(argv[4]) : 20.0;
+        FILE *cmd = (argc > 5) ? fopen(argv[5], "w") : nullptr;
+        if (cmd) fprintf(cmd, "# t_seconds latch value\n");
+        uint8_t la = 0, lb = 0, lc = 0;
+        bool first = true;
+        std::vector<int16_t> out;
+        out.reserve((size_t)(seconds * 48000) + 16);
+        long total = (long)(seconds * 44000000L);
+        for (long c = 0; c < total; c++) {
+            tick();
+            if (cmd) {
+                double t = (double)c / 44000000.0;
+                if (first || dut->snd_a != la) fprintf(cmd, "%.9g A %02x\n", t, dut->snd_a);
+                if (first || dut->snd_b != lb) fprintf(cmd, "%.9g B %02x\n", t, dut->snd_b);
+                if (first || dut->snd_c != lc) fprintf(cmd, "%.9g C %02x\n", t, dut->snd_c);
+                la = dut->snd_a; lb = dut->snd_b; lc = dut->snd_c; first = false;
+            }
+            if (dut->dbg_audio_tick) out.push_back((int16_t)dut->audio);
+        }
+        if (cmd) fclose(cmd);
+        FILE *w = fopen(argv[3], "wb");
+        if (!w) { fprintf(stderr, "cannot write %s\n", argv[3]); return 2; }
+        uint32_t n = (uint32_t)out.size() * 2, sr = 48000;
+        auto u32 = [&](uint32_t v) { fwrite(&v, 4, 1, w); };
+        auto u16 = [&](uint16_t v) { fwrite(&v, 2, 1, w); };
+        fwrite("RIFF", 1, 4, w); u32(36 + n); fwrite("WAVE", 1, 4, w);
+        fwrite("fmt ", 1, 4, w); u32(16); u16(1); u16(1);
+        u32(sr); u32(sr * 2); u16(2); u16(16);
+        fwrite("data", 1, 4, w); u32(n);
+        fwrite(out.data(), 1, n, w);
+        fclose(w);
+        fprintf(stderr, "wrote %s: %zu samples from the core itself\n",
+                argv[3], out.size());
         delete dut;
         return 0;
     }

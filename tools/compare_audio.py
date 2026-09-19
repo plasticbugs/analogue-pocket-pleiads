@@ -64,18 +64,35 @@ def _fft(x):
 
 
 def band_energies(x, sr, bands):
-    """Energy in each band, from one FFT of a Hann-windowed 8192-point slice."""
+    """Energy in each band, averaged over the whole of `x`.
+
+    Hann-windowed 8192-point frames at 50% overlap, power spectra averaged.
+
+    This used to take a single frame from the *start* of whatever it was
+    given, which is 0.17 s however long the window was. It read the one-second
+    window at 3 s as silent — Phoenix's tune starts at 3.382 s — while its RMS
+    was 2900, and it meant the bench's "band energy over a 4.0 s window"
+    covered a twenty-third of that window.
+    """
     m = 8192
-    seg = x[:m] if len(x) >= m else x + [0] * (m - len(x))
+    if len(x) < m:
+        x = x + [0] * (m - len(x))
     win = [0.5 - 0.5 * math.cos(2 * math.pi * i / m) for i in range(m)]
-    spec = _fft([v * w for v, w in zip(seg, win)])
     half = m // 2
-    out = []
+    idx = []
     for f0, f1 in bands:
         k0 = max(1, int(f0 * m / sr))
         k1 = min(half, max(k0 + 1, int(f1 * m / sr)))
-        out.append(sum(abs(spec[k]) ** 2 for k in range(k0, k1)))
-    return out
+        idx.append((k0, k1))
+    out = [0.0] * len(bands)
+    frames = 0
+    for s in range(0, len(x) - m + 1, m // 2):
+        spec = _fft([v * w for v, w in zip(x[s:s + m], win)])
+        pwr = [abs(spec[k]) ** 2 for k in range(half)]
+        for i, (k0, k1) in enumerate(idx):
+            out[i] += sum(pwr[k0:k1])
+        frames += 1
+    return [v / frames for v in out] if frames else out
 
 
 BANDS = [(20, 200), (200, 600), (600, 1500), (1500, 4000), (4000, 12000)]
@@ -129,6 +146,46 @@ def main():
     num = sum(x * y for x, y in zip(da, db))
     den = math.sqrt(sum(x * x for x in da) * sum(y * y for y in db))
     print(f'\ncorrelation over the first {seg/sra:.0f} s: {num/den if den else 0:+.4f}')
+
+    spectrogram(a, b, sra)
+
+
+SPEC_BANDS = [(150, 400), (400, 800), (800, 1600), (1600, 3200), (3200, 8000)]
+
+
+def spectrogram(a, b, sr):
+    """Band energies second by second across the whole recording.
+
+    This exists because the summary above does not cover the recording. It
+    correlates the first four seconds and takes one band window a third of the
+    way in, and Phoenix shipped on that: the game does not start until 3.4 s,
+    so every number above described attract mode while the in-game music was
+    wrong. Anything that only sounds during play has to be looked at where it
+    sounds.
+
+    Band energy rather than correlation, because two square-wave oscillators
+    free-running against each other are spectrally identical and correlate at
+    zero. Windows where A is silent are skipped; the ratio there is the
+    quotient of two noise floors and means nothing.
+    """
+    n = min(len(a), len(b))
+    print(f'\nband energies per second, B/A  (1.00 = same spectrum)')
+    print(f'{"t":>5}  ' + ' '.join(f'{f0}-{f1}'.rjust(9) for f0, f1 in SPEC_BANDS))
+    errs = []
+    for s in range(0, n - sr + 1, sr):
+        wa, wb = a[s:s + sr], b[s:s + sr]
+        if rms(wa) < 100:
+            print(f'{s//sr:>4}s  ' + '   (silent)'.ljust(9))
+            continue
+        ea = band_energies(wa, sr, SPEC_BANDS)
+        eb = band_energies(wb, sr, SPEC_BANDS)
+        errs.append(sum(abs(math.log((y + 1) / (x + 1))) for x, y in zip(ea, eb))
+                    / len(ea))
+        print(f'{s//sr:>4}s  ' + ' '.join(
+            f'{(y/x if x else 0):9.2f}' for x, y in zip(ea, eb)))
+    if errs:
+        print(f'\nmean |log| band-energy error: {sum(errs)/len(errs):.3f}'
+              f'   (0 = identical spectrum)')
 
 
 if __name__ == '__main__':

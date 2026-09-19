@@ -12,9 +12,9 @@ a couple of video-register bits, so the gateware sums the 16 KB program region
 as the image loads and recognises which game it has.
 
 > **Status: alpha.** Both games boot, play, and produce MAME's exact picture.
-> Pleiads has been played on a Pocket and looks and sounds right. Phoenix's
-> sound section was rewritten after that first hardware test and has not been
-> heard on hardware yet.
+> Pleiads has been played on a Pocket and looks and sounds right. Phoenix looks
+> right on hardware; its in-game sound was wrong in v0.1.0-alpha and has been
+> reworked since, and that rework has not been heard on hardware yet.
 
 ## How it is being built
 
@@ -41,13 +41,13 @@ Following `METHODOLOGY.md`, which is the write-up from a previous core:
 | CPU bus trace vs MAME | 53 004 transactions identical | 100 985 identical |
 | CPU cycle counts vs MAME | 131 393 instructions, 0 wrong | 135 027, 0 wrong |
 | **End to end: core plays the game** | **4/4 frames, 0 px** | **3/3 frames, 0 px** |
-| Audio vs MAME | **correlation +1.0000** | **correlation +0.889** |
+| Audio vs MAME | **correlation +1.0000** | **spectral error 0.028** (in-game 0.050) |
 | Pocket integration | compiles, timing met | compiles, timing met |
-| Run on hardware | **yes, looks and sounds right** | video yes, new audio not yet |
+| Run on hardware | **yes, looks and sounds right** | video yes, reworked audio not yet |
 
-On a Cyclone V 5CEBA4: 5,359 of 18,480 ALMs (29%), 54 of 66 DSP blocks, 47 of
-308 RAM blocks, and no negative slack on any clock at any corner — setup, hold
-or minimum pulse width.
+On a Cyclone V 5CEBA4: 13,091 of 18,480 ALMs (71%), 49 of 66 DSP blocks, and no
+negative slack on any clock at any corner — +9.2 ns on the core clock, +3.1 ns
+worst case, which is the platform's own 74 MHz domain.
 
 "End to end" means the core is given nothing but the ROM image, boots it, runs
 the game's own code for up to 1800 frames, and its own video output is diffed
@@ -56,9 +56,15 @@ against MAME's picture of the same moment. `sim/run_endtoend.sh`.
 Phoenix's sound is a different design from Pleiads' — an MM6221AA playing
 built-in tunes, a custom board that makes only noise, and a discrete netlist of
 two 555-based effects — and all three are modelled. `docs/measurements.md` has
-the numbers and what they do and do not establish; in particular the effects'
-level is calibrated against MAME rather than derived, and global correlation is
-the wrong way to judge a free-running oscillator.
+the numbers and what they do and do not establish. The two games are judged
+differently on purpose: Pleiads' melody chip is restarted by the CPU on every
+note and stays phase-locked to MAME, so waveform correlation is meaningful and
+reads +1.0000. Phoenix's oscillators free-run, and two of those are spectrally
+identical while correlating at zero, so it is judged on band energy per second
+instead — mean |log| error, 0 being an identical spectrum. v0.1.0-alpha shipped
+on a correlation figure taken over four seconds of attract mode, with the
+in-game effects at about a sixth of their proper energy; that document has the
+account.
 
 ## What CI covers, and what it does not
 

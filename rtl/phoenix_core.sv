@@ -79,7 +79,8 @@ module phoenix_core (
     output logic        dbg_stb,
     output logic        dbg_fetch,
     output logic [8:0]  dbg_hcnt,
-    output logic [7:0]  dbg_vcnt
+    output logic [7:0]  dbg_vcnt,
+    output logic        dbg_audio_tick
 );
     // ------------------------------------------------------------ clock enables
     logic [3:0] div;
@@ -226,7 +227,7 @@ module phoenix_core (
         .clk(clk), .reset(reset),
         .is_phoenix(game_phoenix),
         .snd_a(snd_a), .snd_b(snd_b), .snd_c(snd_c),
-        .sample(audio), .sample_tick(),
+        .sample(audio), .sample_tick(dbg_audio_tick),
         .clk_audio(clk_audio), .audio_out(audio_sync),
         .dbg_tms(), .dbg_fx(), .dbg_freq0(), .dbg_vol0(),
         .dbg_pb4(), .dbg_notes(), .dbg_poly(), .dbg_pa6(), .dbg_pc5(), .dbg_pa5()

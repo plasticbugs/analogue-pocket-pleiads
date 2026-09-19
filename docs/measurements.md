@@ -429,6 +429,12 @@ t_low  =       R2  * C * ln(2)
 against control voltage, and a phase accumulator does the rest. The capacitor
 waveform is never heard.
 
+That holds for the 555 at the *end* of each chain, the one clocking the
+counter, and it is still what the core does there. It does **not** hold for the
+oscillators upstream that shape the control voltage, which is where this
+reasoning was applied too widely and had to be undone — see "Carrying the
+capacitor, not the phase" below.
+
 Anti-aliasing is 4× oversampling rather than MAME's energy output, because the
 energy fraction needs a divide by a *variable* phase step; Quartus builds that
 as a real divider and it took the design from 54 DSP blocks to 81 on a device
@@ -447,11 +453,9 @@ the same.
 | 1500–4000 Hz | 1.03 | 0.98 | 1.05 |
 | 4000–12000 Hz | 1.12 | 0.80 | 1.41 |
 
-The effects' level is **calibrated, not derived**: the netlist's own 40000
-final gain into MAME's discrete output does not survive being reasoned about,
-so it was fitted instead — 0.25 minimises the mean |log| band-energy ratio over
-600 Hz–12 kHz across four windows where the effect is armed, taking it from
-1.254 to 0.815.
+That table is attract mode, and reading it as the answer was the mistake that
+sent the first release out with the in-game music wrong. See
+"The headline number covered four seconds of the wrong thing" below.
 
 Global correlation is the wrong metric for these effects and was nearly a
 trap: adding them *lowers* it, because an oscillator free-running against
@@ -468,3 +472,177 @@ every call site. Sequencing them through one datapath would be tidier and there
 is ample time for it, but the short resource was DSP blocks and the spare one
 was logic, so the QSF says so and the synthesiser moves those multipliers into
 LUTs: 23 DSP blocks and 12 660 ALMs.
+
+
+## The headline number covered four seconds of the wrong thing
+
+Phoenix shipped in v0.1.0-alpha on a measured **+0.889** correlation, and the
+music in a running game was still bad. The number was taken over the first four
+seconds of the capture. The game does not start until 3.4 s. Every figure in
+the table above describes attract mode, and nothing in the bench looked past
+7 s — `sim/run_audio.sh` correlates the first 4 s and takes one band-energy
+window at 7 s.
+
+Per-2 s correlation against MAME told a different story, and it is the shape
+that matters rather than the values:
+
+```
+   0s +0.049 | 2s +0.914 | 4s +0.850 | 6s +0.739 | 8s +0.526
+  10s +0.075 | 12s +0.010 | 14s -0.008 | 16s +0.041 | 18s +0.007
+```
+
+### Correlation was the wrong instrument, twice
+
+Chasing that collapse cost most of a day on a false trail. Note-by-note pitch
+comparison said the melody matched exactly for notes 0–30, diverged for 31–62
+and matched again from 63, which reads like a tune-table or note-timing bug. It
+was not. A lag search of ±300 ms on a melody-only render found best
+correlations of 0.86, 0.74, 0.77, **0.34, 0.37, 0.27**, 0.78, 0.86 at lags that
+were not monotonic — so not a tempo error either.
+
+What settled it was measuring **band energies instead of waveform
+correlation**. Over 18–20 s, where the effects are silent and only the melody
+and the noise board are sounding:
+
+| band | MAME | core |
+|---|---|---|
+| 150–400 Hz | 2.36e6 | 1.69e6 |
+| 400–800 Hz | 2.24e7 | 2.26e7 |
+| 800–1600 Hz | 2.52e6 | 2.53e6 |
+| 1600–3200 Hz | 1.10e6 | 1.06e6 |
+| 3200–8000 Hz | 1.26e6 | 1.04e6 |
+
+The melody was never wrong. Two square-wave synthesisers with a sub-note timing
+offset are spectrally identical and correlate at +0.007, and 70 notes into a
+tune that offset is arbitrary. Correlation is the right tool for Pleiads, whose
+melody chip is restarted by the CPU on every note and so stays phase-locked to
+MAME for the whole capture (+1.0000). It is the wrong tool for anything
+free-running.
+
+The real fault was **effect 2**, whose armed span — 11.31 s to 16.59 s — is
+exactly where the collapse sits.
+
+### Three bugs in effect 2, two of them in the netlist reading
+
+1. **The amplitude switch was inverted.** `DISCRETE_SWITCH(NODE, ENAB, SWITCH,
+   INP0, INP1)` evaluates as `SWITCH ? IN1 : IN0`, and the netlist passes
+   `IN0 = TTL_1`, `IN1 = TTL_1/2`. The high frequency-select bit therefore makes
+   effect 2 *quieter*. Reading it the other way round doubled the level over
+   exactly the stretch where the game sits on latch A = 0x66.
+
+2. **Both free-running 555s were 50% duty.** A 555 astable charges through
+   R1+R2 and discharges through R2, so it is high for (R1+R2)/(R1+2·R2) —
+   59.5% for IC44, 66.7% for IC51. Those two squares are summed onto C22 to
+   make effect 2's control voltage, so their duty *is* the shape of the swoop.
+
+3. **The level was fitted when it did not need to be.** The earlier note that
+   the netlist's 40000 gain "does not survive being reasoned about" was wrong;
+   the arithmetic just has to include every leg. `dst_mixer` is Millman with
+   the feedback resistor counted in the denominator:
+   `v = Σ(Vi/Ri) / (Σ(1/Ri) + 1/rF)`, and for `phoenix_mixer` that denominator
+   is 1/57k + 1/30k + 1/20k + 1/20k + 1/10k, giving 3986 Ω. A 3.4 V square on
+   the effect-2 leg is then 3.4/30k × 3986 × 40000 = 18069 of 32768, which is
+   what MAME produces. The fitted 0.25 was 1.95× short. Both the model and the
+   RTL now use the netlist's own numbers, including the per-input 10 µF
+   coupling caps and C32.
+
+### Carrying the capacitor, not the phase
+
+The remaining error was in *when* the swoop moved. IC44's capacitor is
+selected by the game — C18 alone, or with C16 and/or C17 — giving 584, 12.2,
+5.8 or 3.95 Hz, and the game switches it about ten times a second while a bird
+is on screen. MAME keeps the capacitor voltage across the change, so the
+oscillator carries on from wherever it had got to with a new time constant. A
+phase accumulator instead preserves the *fraction* of a cycle, which is a
+different waveform every time the select changes. Both the model and the RTL
+now carry `v_cap` and the flip-flop, as `dsd_555_astbl` does, which also makes
+the duty cycle fall out for free rather than being a constant to get right.
+
+In gateware the exponential steps are tiny — IC51 moves five parts per million
+of the way to its rail per 192 kHz tick — so each RC keeps a 24-bit residue and
+commits only whole millivolts. Without that the increments truncate to zero and
+the slow oscillators never start at all.
+
+### Two more, found by running the core rather than the bench
+
+`sim/run_audio.sh` feeds `phoenix_audio` a command stream captured from MAME.
+That proves the sound module right when given the right commands and says
+nothing about whether the core produces them. `sim/tb_system.cpp` now has an
+`audio` mode that runs the whole core from reset, records its own audio output
+and logs the sound-latch writes it makes in the same format. The core's stream
+is identical to MAME's, values and timestamps to six figures:
+
+```
+MAME                      core
+0.033504364 C 01          0.0335018409 C 01
+0.066962182 C 00          0.0669596591 C 00
+0.082029455 A 0F          0.0820276591 A 0f
+```
+
+Comparing the core's audio against the model driven by *that* stream found two
+things the trace-replay bench could not:
+
+4. **Effect 1's sweep constants were 48 kHz values used at 192 kHz, and paired
+   the wrong way round.** `latch_b[4]` selects the 0.553 V target, which goes
+   with the *fast* 3.137 ms time constant; the RTL gave it the slow 168.7 ms
+   one. That asymmetry is the siren. Effect 1 is silent for this whole capture
+   (both games sit at data 15), so no amount of replaying it would have shown
+   this.
+
+5. **`dst_rcdisc4` resets its capacitor to 0**, so effect 1's control voltage
+   starts at zero and sweeps up. The RTL started it at its resting value.
+
+### The instrument was broken too
+
+Writing the per-second check into the bench turned up a row that could not be
+true: at 3 s MAME's RMS was 2900 and its band energies read 1e-23.
+`band_energies` took a single 8192-point frame from the *start* of whatever it
+was handed — 0.17 s, however long the window — and Phoenix's tune starts at
+3.382 s. So the bench's "band energy over a 4.0 s window" had always covered a
+twenty-third of that window, and every per-second figure gathered during this
+investigation described the first 171 ms of its second. It now averages
+Hann-windowed frames at 50% overlap across the whole window. The conclusions
+held; the numbers below are the re-measured ones.
+
+### Where it actually ended up
+
+RTL against MAME, band energy per second as a ratio, v0.1.0-alpha as shipped
+and now. Rebuilt from git rather than remembered:
+
+| t | 800–1600 Hz | 1600–3200 Hz | 3200–8000 Hz | | 800–1600 Hz | 1600–3200 Hz | 3200–8000 Hz |
+|---|---|---|---|---|---|---|---|
+| | *shipped* | | | | *now* | | |
+| 0 s | 0.00 | 0.00 | 0.00 | | 0.99 | 0.98 | 0.99 |
+| 9 s | 1.00 | 0.97 | 0.43 | | 1.00 | 0.97 | 1.01 |
+| 10 s | 0.18 | 0.36 | 0.23 | | 0.98 | 1.22 | 1.02 |
+| 11 s | 0.13 | 0.45 | 0.22 | | 1.06 | 1.06 | 1.02 |
+| 12 s | 0.13 | 0.31 | 0.21 | | 1.04 | 0.96 | 0.99 |
+| 13 s | 0.19 | 0.28 | 0.29 | | 0.97 | 1.01 | 1.04 |
+| 14 s | 0.22 | 0.26 | 0.27 | | 1.01 | 0.92 | 1.03 |
+| 15 s | 0.16 | 0.34 | 0.23 | | 1.02 | 1.05 | 1.00 |
+| 16 s | 0.38 | 0.43 | 0.45 | | 0.96 | 1.34 | 1.00 |
+
+Mean |log| band-energy error over 5 bands from 150 Hz to 8 kHz, silent windows
+excluded, 0 being an identical spectrum:
+
+| | shipped | now |
+|---|---|---|
+| whole capture | 1.062 | **0.028** |
+| in-game, 10–17 s | 0.883 | **0.050** |
+
+The shipped core was producing effect 2 at about a sixth of its proper energy
+and at the wrong pitch, under a melody that was right all along. Pleiads is
+unchanged at +1.0000 against MAME, and the video and bus regressions still pass
+unaltered.
+
+### What is still not right
+
+Effect 2's swoop is driven by two oscillators that free-run from power-on, so
+their phase against MAME's after ten seconds is not something this reproduces
+sample for sample. Averaged over a second it no longer shows: the worst band in
+the in-game stretch is 1.34.
+
+The first 82 ms — the power-on blip, before both latches settle at 0x0f — has
+the RTL's noise board louder than the model's, peak 23084 against 16543. It
+predates this work (the 20 s trace-replay bench puts RTL and model at 1.004 on
+peak), it is confined to that one burst, and it is not diagnosed.
