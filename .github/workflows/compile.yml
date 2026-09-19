@@ -29,15 +29,42 @@ jobs:
       - name: Verify the reciprocal constants are exact
         run: python3 tools/gen_recip.py --check
 
-      - name: Verify the palette LUT still reproduces MAME's palette
+      # The video regression, the palette check and the audio benches all need
+      # ROM data, which must never be committed. They run locally and are not
+      # covered here. Saying so in the job summary matters: a green tick that
+      # quietly skipped its most important check is worse than a red one,
+      # because it reads as coverage that does not exist.
+      - name: State what is and is not covered
         run: |
-          if [ -f pleiads.rom ]; then python3 tools/gen_palette_lut.py; \
-          else echo "no ROM image in the tree, skipped (this is expected)"; fi
+          {
+            echo "### What this run checked"
+            echo ""
+            echo "| check | status |"
+            echo "|---|---|"
+            echo "| RTL lint | ran |"
+            echo "| reciprocal constants exhaustively exact | ran |"
+            echo "| Quartus synthesis and fit | ran |"
+            echo "| timing closure | ran |"
+            echo "| frozen-state video regression | **not run — needs ROM data** |"
+            echo "| palette LUT against MAME | **not run — needs ROM data** |"
+            echo "| audio against MAME | **not run — needs ROM data** |"
+            echo ""
+            echo "The three that do not run here are the ones held directly"
+            echo "against MAME. They require a romset, which is never committed,"
+            echo "so they run locally before a release. See docs/measurements.md."
+          } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Frozen-state video regression
+      - name: Confirm the verification corpus is present
         run: |
-          if [ -f pleiads.rom ] && [ -d artifacts/pleiads ]; then ./sim/run_video.sh; \
-          else echo "no ROM image in the tree, skipped (this is expected)"; fi
+          n=$(ls artifacts/*/state_*.txt 2>/dev/null | wc -l)
+          m=$(ls artifacts/*/mame_*.png 2>/dev/null | wc -l)
+          echo "frozen states: $n, MAME snapshots: $m"
+          # These were silently absent for every run before this check existed,
+          # because an unanchored gitignore pattern swallowed the directories.
+          if [ "$n" -lt 14 ] || [ "$m" -lt 14 ]; then
+            echo "::error::verification corpus is incomplete ($n states, $m snapshots)"
+            exit 1
+          fi
 
   compile:
     needs: check
@@ -66,13 +93,19 @@ jobs:
 
       - name: Timing must be met
         run: |
-          sta=projects/output_files/pleiads_pocket.sta.rpt
-          echo "--- worst-case slack ---"
-          grep -A4 "Slow.*Setup Summary" "$sta" | head -20 || true
-          if grep -qE "Timing requirements not met" "$sta"; then
+          sta=projects/output_files/pleiads_pocket.sta.summary
+          test -f "$sta" || { echo "::error::no timing summary"; exit 1; }
+          echo "--- slack on every clock and corner ---"
+          grep -E "^Type|^Slack|^TNS" "$sta" | paste - - - | sed 's/Type  : //'
+          # Test the numbers, not a message. An earlier version grepped the
+          # full report for "Timing requirements not met", which is a phrase
+          # that may or may not appear; a negative slack always does.
+          if grep -q -- "Slack : -" "$sta"; then
             echo "::error::timing not met"
+            grep -B2 -- "Slack : -" "$sta" | head -12
             exit 1
           fi
+          echo "timing met on every clock at every corner"
 
       - name: Package for the SD card
         run: python3 package-pocket.py

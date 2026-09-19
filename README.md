@@ -60,6 +60,20 @@ the numbers and what they do and do not establish; in particular the effects'
 level is calibrated against MAME rather than derived, and global correlation is
 the wrong way to judge a free-running oscillator.
 
+## What CI covers, and what it does not
+
+The badge on a green run means lint, the reciprocal constants, Quartus
+synthesis and fit, and timing closure on every clock at every corner.
+
+It does **not** mean the core matches MAME. The three checks that establish
+that — the frozen-state video regression, the palette LUT, and the audio
+benches — all need ROM data, which is never committed. They run locally before
+a release, and every run prints which side of that line it is on.
+
+This is stated because it was not obvious: an unanchored `.gitignore` pattern
+hid the entire verification corpus for the project's first ten CI runs, and the
+video regression skipped in silence while the job still went green.
+
 ## Building the ROM
 
 The core is gateware; it cannot unzip a romset. Build the image on a computer:
