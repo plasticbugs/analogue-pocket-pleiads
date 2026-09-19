@@ -43,7 +43,7 @@
 </style></head><body><div class="wrap">
 <header>
   <h1>Pleiads / Phoenix &mdash; video regression</h1>
-  <p class="sub">Reference renderer against MAME, one row per frozen state. Generated 2026-09-18 16:57:16.</p>
+  <p class="sub">Reference renderer against MAME, one row per frozen state. Generated 2026-09-18 22:20:54.</p>
   <div class="summary">ALL 14 STATES PIXEL-IDENTICAL</div>
 </header>
 
@@ -228,49 +228,103 @@ RMS over 4 s windows:
 
 band energy over a 4.0 s window from 7s:
        band Hz            A            B      B/A
-        20-200    1.858e+13    1.845e+13    0.993
-       200-600    4.785e+13    4.809e+13    1.005
-      600-1500    8.190e+13    8.019e+13    0.979
-     1500-4000    2.459e+13    2.377e+13    0.967
-    4000-12000    7.929e+12    1.176e+13    1.483
+        20-200    7.377e+13    1.028e+14    1.394
+       200-600    1.993e+14    1.497e+14    0.751
+      600-1500    7.575e+13    6.811e+13    0.899
+     1500-4000    4.198e+13    3.969e+13    0.945
+    4000-12000    1.215e+13    1.360e+13    1.120
 
 correlation over the first 4 s: +1.0000
+
+band energies per second, B/A  (1.00 = same spectrum)
+    t    150-400   400-800  800-1600 1600-3200 3200-8000
+   0s       1.00      1.00      1.00      1.00      1.00
+   1s       0.97      0.99      0.99      1.01      1.00
+   2s       0.97      0.99      0.99      1.01      1.00
+   3s       0.97      0.99      0.99      1.01      1.00
+   4s       0.97      0.99      0.99      1.01      1.00
+   5s       0.97      0.99      0.99      1.01      1.00
+   6s       1.00      0.99      0.98      0.96      1.12
+   7s       0.55      0.87      0.93      0.90      0.98
+   8s       0.49      0.86      0.76      0.84      0.85
+   9s       0.78      0.99      0.90      0.97      0.97
+  10s       1.00      0.98      0.99      1.03      0.99
+  11s     (silent)
+  12s       1.01      1.01      1.01      1.01      1.01
+  13s       0.58      0.90      0.93      0.91      1.03
+  14s       0.56      0.92      0.74      0.87      0.93
+  15s       0.79      1.01      0.89      0.97      0.93
+  16s       1.03      1.00      0.99      1.00      1.00
+  17s       1.00      1.01      0.99      0.97      1.05
+  18s       0.62      0.91      0.99      0.95      1.08
+
+mean |log| band-energy error: 0.071   (0 = identical spectrum)
 </pre></details>
     </section>
 
-    <section class="state bad">
+    <section class="state ok">
       <h2>phoenix &middot; audio
-          <span class="badge">correlation +0.8892</span></h2>
-      <p class="meta">RMS ratio to MAME <code>0.864</code> &middot;
+          <span class="badge">spectral error 0.028</span></h2>
+      <p class="meta">RMS ratio to MAME <code>1.012</code> &middot;
          same sound command stream, twenty seconds of play</p>
       <div class="imgs">
         <figure><audio controls src="audio/phoenix_mame.wav"></audio>
                 <figcaption>MAME (oracle)</figcaption></figure>
         <figure><audio controls src="audio/phoenix_rtl.wav"></audio>
                 <figcaption>this core</figcaption></figure>
+        <figure><audio controls src="audio/phoenix_ingame_1_mame.wav"></audio>
+                <figcaption>in-game, MAME</figcaption></figure>
+        <figure><audio controls src="audio/phoenix_ingame_2_shipped.wav"></audio>
+                <figcaption>in-game, v0.1.0-alpha as shipped</figcaption></figure>
+        <figure><audio controls src="audio/phoenix_ingame_3_now.wav"></audio>
+                <figcaption>in-game, this core now</figcaption></figure>
       </div>
       <details><summary>full measurement</summary><pre>/Users/scottmoschella/work/pleiads/build/mame_phoenix.wav vs /Users/scottmoschella/work/pleiads/build/rtl_phoenix.wav: 959999 samples at 48000 Hz (20.0 s)
 
                             A            B      B/A
-peak                    22539        14351    0.637
-rms                    4562.4       3941.4    0.864
+peak                    22539        23084    1.024
+rms                    4562.4       4615.8    1.012
 
 RMS over 4 s windows:
     window          A          B      B/A
-        0s     1900.1     1454.9    0.766
-        4s     3034.1     3040.5    1.002
-        8s     5633.9     4704.0    0.835
-       12s     6519.6     5279.4    0.810
+        0s     1900.1     2034.9    1.071
+        4s     3034.1     3043.6    1.003
+        8s     5633.9     5874.1    1.043
+       12s     6519.6     6513.8    0.999
 
 band energy over a 4.0 s window from 7s:
        band Hz            A            B      B/A
-        20-200    4.016e+12    4.051e+12    1.009
-       200-600    5.927e+13    5.888e+13    0.993
-      600-1500    6.382e+12    7.493e+12    1.174
-     1500-4000    3.417e+12    3.530e+12    1.033
-    4000-12000    1.735e+12    1.945e+12    1.121
+        20-200    3.064e+12    3.133e+12    1.022
+       200-600    3.568e+13    3.577e+13    1.002
+      600-1500    3.361e+13    3.537e+13    1.052
+     1500-4000    8.491e+12    8.031e+12    0.946
+    4000-12000    4.923e+12    5.227e+12    1.062
 
-correlation over the first 4 s: +0.8892
+correlation over the first 4 s: +0.8909
+
+band energies per second, B/A  (1.00 = same spectrum)
+    t    150-400   400-800  800-1600 1600-3200 3200-8000
+   0s       0.96      0.97      0.99      0.98      0.99
+   1s     (silent)
+   2s     (silent)
+   3s       1.00      1.00      1.01      0.98      0.98
+   4s       1.00      1.00      1.01      0.98      0.98
+   5s       1.00      1.00      1.01      0.98      0.98
+   6s       1.00      1.00      0.99      0.99      0.99
+   7s       1.00      1.00      1.00      0.98      0.99
+   8s       1.00      1.00      1.00      0.98      1.00
+   9s       1.00      1.02      1.00      0.97      1.01
+  10s       1.01      1.07      0.98      1.22      1.02
+  11s       0.98      0.91      1.06      1.06      1.02
+  12s       0.97      1.10      1.04      0.96      0.99
+  13s       0.99      1.01      0.97      1.01      1.04
+  14s       1.05      1.00      1.01      0.92      1.03
+  15s       1.01      1.04      1.02      1.05      1.00
+  16s       0.84      0.94      0.96      1.34      1.00
+  17s       0.96      0.98      0.97      0.97      0.99
+  18s       0.99      0.99      1.00      0.98      0.99
+
+mean |log| band-energy error: 0.028   (0 = identical spectrum)
 </pre></details>
     </section>
 </div></body></html>

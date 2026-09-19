@@ -70,7 +70,25 @@ def main():
                              capture_output=True, text=True).stdout
         corr = re.search(r'correlation over the first [\d.]+ s: ([+-][\d.]+)', out)
         rms = re.search(r'^rms\s+\S+\s+\S+\s+([\d.]+)', out, re.M)
-        audio.append(dict(game=game, corr=corr.group(1) if corr else '?',
+        spec = re.search(r'mean \|log\| band-energy error: ([\d.]+)', out)
+        # The two games are judged differently on purpose. Pleiads' melody chip
+        # is restarted by the CPU on every note, so it stays phase-locked to
+        # MAME and waveform correlation means something. Phoenix's oscillators
+        # free-run, and two of those are spectrally identical while correlating
+        # at zero -- so it is judged on band energy per second instead.
+        if game == 'phoenix':
+            val = float(spec.group(1)) if spec else 9.9
+            badge, good = f'spectral error {val:.3f}', val < 0.15
+        else:
+            val = float(corr.group(1)) if corr else 0.0
+            badge, good = f'correlation {val:+.4f}', val > 0.9
+        extra = []
+        for name, cap in ((f'{game}_ingame_1_mame.wav', 'in-game, MAME'),
+                          (f'{game}_ingame_2_shipped.wav', 'in-game, v0.1.0-alpha as shipped'),
+                          (f'{game}_ingame_3_now.wav', 'in-game, this core now')):
+            if os.path.exists(os.path.join(adir, name)):
+                extra.append((f'audio/{name}', cap))
+        audio.append(dict(game=game, badge=badge, good=good, extra=extra,
                           rms=rms.group(1) if rms else '?', text=out,
                           mame=f'audio/{game}_mame.wav', rtl=f'audio/{game}_rtl.wav'))
 
@@ -95,18 +113,21 @@ def main():
     if audio:
         rows = []
         for a in audio:
-            good = a['corr'].startswith('+') and float(a['corr']) > 0.9
+            good = a['good']
+            more = ''.join(f'''
+        <figure><audio controls src="{src}"></audio>
+                <figcaption>{html.escape(cap)}</figcaption></figure>''' for src, cap in a['extra'])
             rows.append(f'''
     <section class="state {'ok' if good else 'bad'}">
       <h2>{html.escape(a['game'])} &middot; audio
-          <span class="badge">correlation {html.escape(a['corr'])}</span></h2>
+          <span class="badge">{html.escape(a['badge'])}</span></h2>
       <p class="meta">RMS ratio to MAME <code>{html.escape(a['rms'])}</code> &middot;
          same sound command stream, twenty seconds of play</p>
       <div class="imgs">
         <figure><audio controls src="{a['mame']}"></audio>
                 <figcaption>MAME (oracle)</figcaption></figure>
         <figure><audio controls src="{a['rtl']}"></audio>
-                <figcaption>this core</figcaption></figure>
+                <figcaption>this core</figcaption></figure>{more}
       </div>
       <details><summary>full measurement</summary><pre>{html.escape(a['text'])}</pre></details>
     </section>''')
