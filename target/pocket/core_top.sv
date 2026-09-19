@@ -934,6 +934,7 @@ module core_top
         .snd_a         (                ),
         .snd_b         (                ),
         .snd_c         (                ),
+        .reverb_mode   ( mod_sw1[7:6]   ),   // Cabinet Reverb: off / light / medium / heavy
         .clk_audio     ( clk_74b        ),
         .audio         ( ph_audio       ),
         .audio_sync    ( ph_audio_sync  ),

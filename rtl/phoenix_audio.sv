@@ -15,14 +15,10 @@
 // against MAME, which resamples with a filter; interpolating lands at 76% of
 // it, closer, and costs one multiply.
 //
-// The clock-domain crossing is here and is deliberate. METHODOLOGY 5.4 is
-// about exactly this: a multi-bit audio sample handed between clock domains
-// without a handshake can be latched half-old and half-new, and a torn 16-bit
-// sample is not a small error -- one flipped high bit throws the value across
-// the range, heard as clicks and static. It defeats every measurement because
-// both sides are individually correct. So the sample is held stable and handed
-// over with a toggle flag that the receiving side synchronises, from the
-// start, rather than retrofitted after the noise shows up on hardware.
+// What leaves here is the dry mix in the core clock domain. The optional
+// cabinet reverb and the handover to the platform's audio clock both follow it
+// in phoenix_core -- outside this module on purpose, because the SDC gives
+// every path in here eight clocks and neither of those can be given that.
 
 module phoenix_audio #(
     parameter int CLK_HZ = 44_000_000,
@@ -36,13 +32,9 @@ module phoenix_audio #(
     input  logic [7:0]  snd_b,
     input  logic [7:0]  snd_c,
 
-    // Core-domain output, for benches and for anything staying in this domain.
+    // The dry mix, one sample per tick, in the core clock domain.
     output logic signed [15:0] sample,
     output logic               sample_tick,
-
-    // Handover to the platform's audio clock.
-    input  logic        clk_audio,
-    output logic signed [15:0] audio_out,
 
     // Observation only.
     output logic [15:0] dbg_tms,
@@ -224,24 +216,4 @@ module phoenix_audio #(
         end
     end
 
-    // --------------------------------------------------- clock domain crossing
-    // Hold the sample, flip a toggle, synchronise the toggle on the far side
-    // and only then move the data. By the time the receiving side sees the
-    // edge, the held value has been stable for three of its clocks.
-    logic        snd_tog;
-    logic [15:0] snd_hold;
-
-    always_ff @(posedge clk) begin
-        if (reset) begin snd_tog <= 1'b0; snd_hold <= '0; end
-        else if (sample_tick) begin
-            snd_hold <= sample;
-            snd_tog  <= ~snd_tog;
-        end
-    end
-
-    logic [2:0] tog_sync;
-    always_ff @(posedge clk_audio) begin
-        tog_sync <= {tog_sync[1:0], snd_tog};
-        if (tog_sync[2] != tog_sync[1]) audio_out <= snd_hold;
-    end
 endmodule

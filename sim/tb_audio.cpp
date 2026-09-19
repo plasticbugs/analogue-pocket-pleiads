@@ -45,7 +45,7 @@ int main(int argc, char **argv) {
     dut->is_phoenix = (getenv("PL_GAME") && !strcmp(getenv("PL_GAME"), "phoenix")) ? 1 : 0;
     fprintf(stderr, "game: %s\n", dut->is_phoenix ? "phoenix" : "pleiads");
     dut->snd_a = 0; dut->snd_b = 0; dut->snd_c = 0;
-    dut->clk = 0; dut->clk_audio = 0;
+    dut->clk = 0;
     for (int i = 0; i < 64; i++) { dut->clk = 0; dut->eval(); dut->clk = 1; dut->eval(); }
     dut->reset = 0;
 

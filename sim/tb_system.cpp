@@ -156,6 +156,8 @@ int main(int argc, char **argv) {
         // work: that session had a coin put in and a game played, while the
         // core here sits in attract, so the two diverge as soon as the
         // recorded session presses a button.
+        // PL_REVERB picks the cabinet reverb setting, 0 to 3.
+        dut->reverb_mode = getenv("PL_REVERB") ? atoi(getenv("PL_REVERB")) & 3 : 0;
         double seconds = (argc > 4) ? atof(argv[4]) : 20.0;
         FILE *cmd = (argc > 5) ? fopen(argv[5], "w") : nullptr;
         if (cmd) fprintf(cmd, "# t_seconds latch value\n");

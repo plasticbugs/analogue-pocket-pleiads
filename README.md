@@ -11,12 +11,21 @@ One core, one ROM format. The two games differ only in their sound section and
 a couple of video-register bits, so the gateware sums the 16 KB program region
 as the image loads and recognises which game it has.
 
-> **Status: alpha.** Both games boot, play, and produce MAME's exact picture.
-> Pleiads has been played on a Pocket and looks and sounds right. Phoenix looks
-> right on hardware. Through v0.1.0-alpha it was never *recognised* on hardware
-> and ran on Pleiads' sound board — no tunes, only beeps; v0.1.1-alpha fixes the
-> detection, and its Phoenix sound has been heard in simulation but not yet on
-> a Pocket.
+> **Status: alpha.** Both games boot, play, produce MAME's exact picture, and
+> have been played on a Pocket, where both look and sound right. Through
+> v0.1.0-alpha Phoenix was never *recognised* on hardware and ran on Pleiads'
+> sound board — no tunes, only beeps; v0.1.1-alpha fixed the detection.
+
+## Settings
+
+In the core's menu, under Core Settings:
+
+| | |
+|---|---|
+| **Screen Shape** | Arcade, or Fill Screen |
+| **Cabinet Reverb** | Off (default), Light, Medium, Heavy — a short dark room around the whole mix. An option, not the board: the same filter and settings as the Punch-Out!!, Cloak & Dagger, Pole Position and Namco cores, so it means the same thing in each. Off returns the board's audio untouched, sample for sample. |
+| **Lives, Bonus Life, Coinage, Demo Sounds** | the board's DIP switches, 0 meaning as shipped |
+| **Cocktail Cabinet** | the PCB's cabinet link; unverified |
 
 ## How it is being built
 
@@ -45,7 +54,7 @@ Following `METHODOLOGY.md`, which is the write-up from a previous core:
 | **End to end: core plays the game** | **4/4 frames, 0 px** | **3/3 frames, 0 px** |
 | Audio vs MAME | **correlation +1.0000** | **spectral error 0.028** (in-game 0.050) |
 | Pocket integration | compiles, timing met | compiles, timing met |
-| Run on hardware | **yes, looks and sounds right** | video yes, reworked audio not yet |
+| Run on hardware | **yes, looks and sounds right** | **yes, looks and sounds right** (v0.1.1) |
 
 On a Cyclone V 5CEBA4: 13,138 of 18,480 ALMs (71%), 49 of 66 DSP blocks, and no
 negative slack on any clock at any corner — +9.3 ns on the core clock, +3.2 ns

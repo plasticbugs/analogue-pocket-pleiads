@@ -689,3 +689,58 @@ The general point is the one METHODOLOGY makes about the platform boundary:
 the benches were exact about the machine and approximate about how the Pocket
 talks to it, and the approximation was idempotent for everything except the
 one thing that was not.
+
+
+## Cabinet reverb: the port that would have clipped one sample in eight
+
+The reverb is the other cores' — three feedback combs at 29.7, 37.1 and 41.1 ms
+with a one-pole low-pass in each loop, from Punch-Out!! by way of Cloak &
+Dagger's mono version — and the intent was to port it unchanged so the setting
+means the same thing everywhere. `tools/reverb_model.py` is a bit-exact integer
+model of it and `sim/run_reverb.sh` holds the RTL to that on real game audio in
+all four modes, with the input scribbled on between samples and only twelve
+clocks between them where the core gives 917.
+
+Ported unchanged it was bit-exact and wrong for this board. Counting samples at
+the rails in a 20 s capture:
+
+| | dry | Light | Medium | Heavy |
+|---|---|---|---|---|
+| Phoenix, as ported | 0 | 113 | 1,334 | 2,392 |
+| Pleiads, as ported | 178 | 17,120 | **114,023** | 19,425 |
+| Phoenix, DC-blocked send | 0 | 0 | 0 | 0 |
+| Pleiads, DC-blocked send | 178 | 675 | 1,103 | 1,158 |
+
+This board's mix carries a DC offset, +2686 on Phoenix and −2118 on Pleiads of
+32767. MAME's carries the same one, so it stays in the dry path. But a feedback
+comb has a gain of 1/(1−g) at 0 Hz — 2.7× at 5/8, 5.3× for Heavy's 13/16 — and
+three of them summed turned Pleiads' −2118 into −6431, on a mix that already
+reaches full scale. The other cores' mixes are presumably DC-free and never
+showed it.
+
+So the *send into the combs* is high-passed at 7.5 Hz and the dry path is not
+touched. A room has nothing to say about 0 Hz. On Phoenix, where neither
+version clips much, band energy from 150 Hz to 8 kHz is within 1.5% of the
+unblocked filter in every band, so it is the same reverb.
+
+### Where it lives, and why not where it would be tidier
+
+The SDC gives every register-to-register path inside `phoenix_audio` eight
+clocks, which is right for sound generators with hundreds of clocks per sample
+and wrong for a state machine that sets a RAM address on one clock and takes
+the data two later. Inside that boundary the reverb would have been relaxed
+with everything else, met timing on paper, and been free to fail on hardware —
+the same shape of fault as the ROM checksum, a thing every tool calls correct.
+So it is instantiated in `phoenix_core`, and the handover to the audio clock,
+which has to follow it, moved out of `phoenix_audio` too.
+
+### What was checked
+
+- RTL against the model, 959,999 samples, both games, four modes: 0 differ.
+- Off against its own input: 0 differ.
+- The sound section's output after the restructure: byte-identical, both games.
+- The whole core with the reverb Off: byte-identical to the capture taken
+  before the reverb existed.
+- The whole core on Medium against the model run on the core's own dry output:
+  0 of 287,999 samples differ — which is the check on the wiring rather than on
+  the filter.

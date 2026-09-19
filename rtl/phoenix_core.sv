@@ -67,6 +67,9 @@ module phoenix_core (
     output logic [7:0]  snd_b,
     output logic [7:0]  snd_c,
 
+    // Cabinet reverb: 0 off, 1 light, 2 medium, 3 heavy. Any clock domain.
+    input  logic [1:0]  reverb_mode,
+
     // Audio, in the core's own clock domain and in the platform's
     input  logic        clk_audio,
     output logic signed [15:0] audio,
@@ -223,15 +226,65 @@ module phoenix_core (
     );
 
     // ------------------------------------------------------------------ audio
+    logic signed [15:0] audio_dry;
+    logic               audio_dry_tick;
+
     phoenix_audio #(.CLK_HZ(44_000_000), .RATE(48_000)) u_audio (
         .clk(clk), .reset(reset),
         .is_phoenix(game_phoenix),
         .snd_a(snd_a), .snd_b(snd_b), .snd_c(snd_c),
-        .sample(audio), .sample_tick(dbg_audio_tick),
-        .clk_audio(clk_audio), .audio_out(audio_sync),
+        .sample(audio_dry), .sample_tick(audio_dry_tick),
         .dbg_tms(), .dbg_fx(), .dbg_freq0(), .dbg_vol0(),
         .dbg_pb4(), .dbg_notes(), .dbg_poly(), .dbg_pa6(), .dbg_pc5(), .dbg_pa5()
     );
+
+    // --------------------------------------------------------- cabinet reverb
+    // An option, off by default: a short dark room around the whole mix, the
+    // same filter and the same four settings as the other cores that have it.
+    // It lives here rather than in phoenix_audio because that module's paths
+    // are all given eight clocks by the SDC, and this one's cannot be.
+    //
+    // The setting comes from the platform's register file in another clock
+    // domain. It is two bits that change when someone moves a menu, so a plain
+    // two-flop synchroniser is enough, and the reverb samples it only on a
+    // sample boundary.
+    logic [1:0] rv_mode_m, rv_mode_s;
+    always_ff @(posedge clk) begin
+        rv_mode_m <= reverb_mode;
+        rv_mode_s <= rv_mode_m;
+    end
+
+    phoenix_reverb u_reverb (
+        .clk(clk), .reset(reset),
+        .ce(audio_dry_tick), .mode(rv_mode_s), .in(audio_dry),
+        .out(audio), .out_tick(dbg_audio_tick)
+    );
+
+    // --------------------------------------------------- clock domain crossing
+    // METHODOLOGY 5.4 is about exactly this: a multi-bit audio sample handed
+    // between clock domains without a handshake can be latched half-old and
+    // half-new, and a torn 16-bit sample is not a small error -- one flipped
+    // high bit throws the value across the range, heard as clicks and static.
+    // It defeats every measurement because both sides are individually
+    // correct. So the sample is held stable and handed over with a toggle flag
+    // that the receiving side synchronises: by the time the far side sees the
+    // edge, the held value has been stable for three of its clocks.
+    logic        snd_tog;
+    logic [15:0] snd_hold;
+
+    always_ff @(posedge clk) begin
+        if (reset) begin snd_tog <= 1'b0; snd_hold <= '0; end
+        else if (dbg_audio_tick) begin
+            snd_hold <= audio;
+            snd_tog  <= ~snd_tog;
+        end
+    end
+
+    logic [2:0] tog_sync;
+    always_ff @(posedge clk_audio) begin
+        tog_sync <= {tog_sync[1:0], snd_tog};
+        if (tog_sync[2] != tog_sync[1]) audio_sync <= snd_hold;
+    end
 
     // ------------------------------------------------------------ bench port
     // One strobe per CPU bus cycle, so a bench can log the transaction
