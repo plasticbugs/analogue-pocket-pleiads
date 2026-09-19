@@ -59,10 +59,22 @@ echo "packaged $ZIP ($(wc -c < "$ZIP") bytes)"
 git tag -a "$TAG" -m "$TAG" 2>/dev/null || true
 git push -q origin "$TAG"
 
+# A tag that says alpha, beta or rc is a pre-release; a plain vX.Y.Z is not.
+# This used to pass --prerelease unconditionally, which was right while every
+# tag was an alpha and would have quietly mislabelled the first one that wasn't.
+case "$TAG" in
+    *-alpha*|*-beta*|*-rc*) PRE="--prerelease" ;;
+    *)                      PRE="" ;;
+esac
+# The Pocket shows core.json's version, not the tag, so they have to agree.
+WANT=$(echo "$TAG" | sed 's/^v//')
+HAVE=$(python3 -c "import json;print(json.load(open('pkg/pocket/Cores/plasticbugs.pleiads/core.json'))['core']['metadata']['version'])")
+[ "$WANT" = "$HAVE" ] || { echo "core.json says version $HAVE but the tag is $TAG"; exit 1; }
+
 if [ -n "$NOTES" ]; then
-    gh release create "$TAG" "$ZIP" --title "$TAG" --notes-file "$NOTES" --prerelease
+    gh release create "$TAG" "$ZIP" --title "$TAG" --notes-file "$NOTES" $PRE
 else
-    gh release create "$TAG" "$ZIP" --title "$TAG" --generate-notes --prerelease
+    gh release create "$TAG" "$ZIP" --title "$TAG" --generate-notes $PRE
 fi
 echo "published $TAG"
 gh release view "$TAG" --json assets --jq '.assets[] | "  asset: \(.name) \(.size) bytes"'
