@@ -46,7 +46,7 @@ Following `METHODOLOGY.md`, which is the write-up from a previous core:
 | Run on hardware | **yes, looks and sounds right** | video yes, reworked audio not yet |
 
 On a Cyclone V 5CEBA4: 13,091 of 18,480 ALMs (71%), 49 of 66 DSP blocks, and no
-negative slack on any clock at any corner — +9.2 ns on the core clock, +3.1 ns
+negative slack on any clock at any corner — +8.6 ns on the core clock, +2.8 ns
 worst case, which is the platform's own 74 MHz domain.
 
 "End to end" means the core is given nothing but the ROM image, boots it, runs
