@@ -11,10 +11,11 @@ One core, one ROM format. The two games differ only in their sound section and
 a couple of video-register bits, so the gateware sums the 16 KB program region
 as the image loads and recognises which game it has.
 
-> **Status: released, v0.1.2.** Both games boot, play, produce MAME's exact
+> **Status: released, v0.1.3.** Both games boot, play, produce MAME's exact
 > picture, and have been played on a Pocket, where both look and sound right.
-> Known gaps: cocktail flip is unverified, and the Cabinet Reverb option is
-> verified in simulation but has not been heard on hardware. If you have
+> Known gaps: cocktail flip is unverified, the Cabinet Reverb option is
+> verified in simulation but has not been heard on hardware, and v0.1.3's
+> game list (Run → Pleiads / Phoenix) has not yet been tried on a Pocket. If you have
 > v0.1.0-alpha, update: Phoenix was never *recognised* on real hardware there
 > and ran on Pleiads' sound board — no tunes, only beeps.
 
