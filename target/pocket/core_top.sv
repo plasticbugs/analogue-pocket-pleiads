@@ -852,9 +852,9 @@ module core_top
     synch_3 sync_rst(reset_sw, reset_sw_s, clk_sys);
     wire ph_reset = reset_sw_s | ioctl_download | ~pll_core_locked_s;
 
-    //! ROM: one slot holding the flat 25,088-byte image built by
+    //! ROM: slot 1, the flat 25,088-byte image built by
     //! tools/mra_build.py. phoenix_mem decodes the regions itself.
-    wire        ioctl_isROM = ioctl_download && ioctl_index == 16'h0;
+    wire        ioctl_isROM = ioctl_download && ioctl_index == 16'h1;   // slot 0 is the instance JSON
     wire        dl_we       = ioctl_isROM && ioctl_wr;
     wire [16:0] dl_addr     = ioctl_addr[16:0];
     wire  [7:0] dl_data     = ioctl_data;

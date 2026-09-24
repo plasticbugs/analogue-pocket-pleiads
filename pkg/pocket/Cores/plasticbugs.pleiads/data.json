@@ -3,8 +3,17 @@
         "magic": "APF_VER_1",
         "data_slots": [
             {
-                "name": "ROM Image",
+                "name": "Arcade Game",
                 "id": 0,
+                "required": true,
+                "parameters": "0x113",
+                "extensions": [
+                    "json"
+                ]
+            },
+            {
+                "name": "ROM",
+                "id": 1,
                 "required": true,
                 "parameters": "0x108",
                 "extensions": [

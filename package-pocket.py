@@ -52,6 +52,16 @@ if not os.path.isdir(slot) or not os.listdir(slot):
              "empty - it needs a tracked placeholder note, since git drops empty "
              "directories and the core cannot find its ROM without that folder")
 
+# Backstop: the instance JSONs are how the Pocket lists the games, and how an
+# updater learns which ROM files to fetch. Losing one silently drops a game from
+# the menu, which looks like a core bug rather than a packaging one.
+inst = os.path.join(OUT, "Assets", PLATFORM_ID, CORE_ID)
+want = {"Pleiads.json", "Phoenix.json"}
+have = set(os.listdir(inst)) if os.path.isdir(inst) else set()
+if want - have:
+    sys.exit("refusing to package, instance JSON missing:\n  " +
+             "\n  ".join(sorted(want - have)))
+
 # Backstop: a gitignored test ROM in the package tree must never reach a release.
 strays = [os.path.join(dp, f) for dp, _, fs in os.walk(OUT) for f in fs
           if f.lower().endswith(('.rom', '.zip'))]

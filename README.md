@@ -105,6 +105,12 @@ python3 tools/mra_build.py phoenix.mra /path/to/phoenix.zip
 Every part is CRC-checked and the finished image is verified against the md5 in
 the `.mra`. Nothing but Python 3 is needed. **No ROMs are distributed here.**
 
+The images go in `Assets/pleiads/common/` and must be named exactly
+`pleiads.rom` and `phoenix.rom`. Choosing Run lists the two games by name. The
+list comes from the instance JSONs in `Assets/pleiads/plasticbugs.pleiads/`, and
+each one names the image it loads. Updaters such as pupdate read those names to
+know which files to fetch.
+
 ## Watching it
 
 ```sh
