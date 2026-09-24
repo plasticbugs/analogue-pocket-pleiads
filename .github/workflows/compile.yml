@@ -110,8 +110,23 @@ jobs:
       - name: Package for the SD card
         run: python3 package-pocket.py
 
+      # package-pocket.py writes to release/pocket, not pkg/. Uploading pkg/**
+      # shipped every definition file and no bitstream, which went unnoticed
+      # while releases were cut locally.
       - name: Upload the package
         uses: actions/upload-artifact@v4
         with:
           name: pleiads-pocket
-          path: pkg/**
+          path: release/pocket/**
+          if-no-files-found: error
+
+      # The raw bitstream and its timing report, so a release can be cut from
+      # this exact build with tools/cut-release.sh.
+      - name: Upload the bitstream
+        uses: actions/upload-artifact@v4
+        with:
+          name: pleiads-bitstream
+          path: |
+            projects/output_files/pleiads_pocket.rbf
+            projects/output_files/pleiads_pocket.sta.summary
+          if-no-files-found: error
