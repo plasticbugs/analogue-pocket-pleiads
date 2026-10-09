@@ -52,3 +52,7 @@ release/
 __pycache__/
 *.pyc
 .DS_Store
+
+# the Analogizer bench
+sim/obj_analogizer/
+sim/obj_analogizer.log

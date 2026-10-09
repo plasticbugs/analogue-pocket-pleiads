@@ -29,6 +29,23 @@ In the core's menu, under Core Settings:
 | **Cabinet Reverb** | Off (default), Light, Medium, Heavy — a short dark room around the whole mix. An option, not the board: the same filter and settings as the Punch-Out!!, Cloak & Dagger, Pole Position and Namco cores, so it means the same thing in each. Off returns the board's audio untouched, sample for sample. |
 | **Lives, Bonus Life, Coinage, Demo Sounds** | the board's DIP switches, 0 meaning as shipped |
 | **Cocktail Cabinet** | the PCB's cabinet link; unverified |
+| **Analogizer**, **Analogizer Video**, **SNAC Adapter**, **SNAC Assignment**, **Analogizer H / V Position**, **Analogizer H Size** | the Analogizer adapter, below |
+
+## Analogizer
+
+The core supports RndMnkIII's [Analogizer](https://github.com/RndMnkIII/Analogizer)
+adapter: the board's own 15 kHz picture out of its VGA port (RGBS, RGsB,
+YPbPr, Y/C, or scandoubled for a VGA monitor) and SNAC controllers in. It is
+set up in the core's own menu (Analogizer, Analogizer Video, SNAC Adapter,
+SNAC Assignment, H and V Position to centre the picture on the CRT, and H
+Size for its width -- with the set on its side, the game's height); with
+"Analogizer" off, the default, the core is unchanged, and no
+`analogizer.bin` is needed. The CRT gets the vertical monitor's own raster,
+unrotated (256 × 208 at 15.625 kHz, 61.04 Hz): stand the set on its side,
+turned clockwise as you face it, as MAME's ROT90. Because the core declares
+a cartridge adapter, the Pocket powers the slot: take any game cartridge out
+first. `docs/analogizer.md` has the modes, the controller assignments and
+what has been checked; nothing of it has been tried on hardware yet.
 
 ## How it is being built
 
@@ -168,6 +185,11 @@ starts from his template. Mostly MIT, some GPL-3.0-or-later; each file says.
 * `ref/mame/` holds those files fetched verbatim, each under the licence in its
   own header, so the reference this was built against is pinned rather than
   described.
+* **RndMnkIII** -- the [Analogizer](https://github.com/RndMnkIII/Analogizer)
+  adapter and its openFPGA module, vendored verbatim in
+  `target/pocket/analogizer/` (see `modules/VENDOR.md`), with Mike Simone's
+  Y/C encoder, Sorgelig's and Ludvig Strigeus' scandoubler and HQ2x, and
+  the SNAC controller code it credits.
 * [T80](https://opencores.org/projects/t80) by **Daniel Wallner**
   (BSD-3-Clause), via the MSX2 Pocket core's copy, is vendored in
   `modules/cpu-t80` — see `modules/VENDOR.md`. It is **not instantiated**: the

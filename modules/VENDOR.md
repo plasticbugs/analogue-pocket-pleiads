@@ -6,6 +6,7 @@ self-contained and reproducible.
 | module | upstream | via | licence |
 |---|---|---|---|
 | cpu-t80 | Daniel Wallner's T80, http://www.opencores.org/cvsweb.shtml/t80/ | the MSX2 Pocket core's copy | BSD-3-Clause (header in each file) |
+| `target/pocket/analogizer/` | RndMnkIII's openFPGA_Pocket_Analogizer (1.4) and what it instantiates, https://github.com/RndMnkIII/Analogizer | pocket-core-template 9233037, which took it from MiraxPocket 9dfdd2b; verbatim, with the template's `analogizer.qip` (only what is used) | the authors' own terms, in each file's header (Mike Simone's Y/C, MiSTer's scandoubler and HQ2x by Sorgelig and Ludvig Strigeus) |
 
 ## Why T80 for an 8085 board
 

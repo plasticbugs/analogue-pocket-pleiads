@@ -27,6 +27,16 @@ Pleiads' melody chip is an Epson 7910E
 whose ROM has never been dumped. MAME
 substitutes a TMS3615, and so does this.
 
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture, H Size sets its width: the
+game's height with the set on its
+side). The CRT gets the vertical
+monitor's raster: stand the set on its
+side. The slot is powered: remove any
+cartridge first.
+
 No ROMs included. Put pleiads.rom and
 phoenix.rom in Assets/pleiads/common.
 Build them with tools/mra_build.py from
