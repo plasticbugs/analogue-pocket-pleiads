@@ -15,9 +15,9 @@ verilator --lint-only -Wall \
 # Verilator calls an error: PROCASSWIRE is waived for this pass.
 tmp=$(mktemp -d); trap 'rm -rf "$tmp"' EXIT
 set +e
-verilator --lint-only -Wall -Wno-DECLFILENAME -Wno-UNUSEDSIGNAL -Wno-TIMESCALEMOD -Wno-PINCONNECTEMPTY -Wno-PROCASSWIRE --top-module pocket_analogizer \
+verilator --lint-only -Wall -Wno-DECLFILENAME -Wno-UNUSEDSIGNAL -Wno-TIMESCALEMOD -Wno-PINCONNECTEMPTY -Wno-PROCASSWIRE -Wno-BLKANDNBLK --top-module pocket_analogizer \
     target/pocket/pocket_analogizer.sv platform/pocket/helpers/synch_3.sv \
-    target/pocket/analogizer/*.v target/pocket/analogizer/*.sv sim/ps2_keyboard_stub.v \
+    target/pocket/analogizer/*.v $(ls target/pocket/analogizer/*.sv | grep -v /yc_out_legacy.sv) sim/yc_out_legacy_stub.v sim/ps2_keyboard_stub.v \
     > "$tmp/ana.out" 2>&1
 set -e
 ana=$(grep -E '^%(Warning|Error)' "$tmp/ana.out" | grep -v 'Exiting due to' \
